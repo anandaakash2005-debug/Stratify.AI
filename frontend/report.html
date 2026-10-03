@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports — Satquery.AI</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/report.css" />
+</head>
+<body>
+
+<div class="bg-orbs">
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img class="nav-logo-icon" src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="42" height="42" />
+    <span class="nav-logo-text">Satquery.AI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="analysis.html" class="nav-link">Analyze</a></li>
+    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+    <li><a href="report.html" class="nav-link active">Reports</a></li>
+    <li><a href="chatbot.html" class="ai-nav-btn">🚀 AI Copilot</a></li>
+  </ul>
+  <div class="nav-cta">
+    <button id="theme-toggle" class="btn btn-ghost btn-icon" title="Toggle theme">☀️</button>
+    <button class="btn btn-ghost btn-sm" onclick="window.print()">🖨️ Print</button>
+    <a href="analysis.html" class="btn btn-primary btn-sm">+ New Analysis</a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-menu">
+  <a href="index.html" class="nav-mobile-link">Home</a>
+  <a href="analysis.html" class="nav-mobile-link">Analyze</a>
+  <a href="dashboard.html" class="nav-mobile-link">Dashboard</a>
+  <a href="report.html" class="nav-mobile-link">Reports</a>
+  <a href="chatbot.html" class="nav-mobile-link">🚀 AI Copilot</a>
+</div>
+
+<div class="page-content">
+
+  <!-- Report Hero -->
+  <div class="report-hero anim-fade-in" id="report-container">
+    <div class="report-hero-inner">
+      <div class="report-meta">
+        <div class="badge badge-success"><span class="dot"></span> Report Generated</div>
+        <div class="badge badge-indigo" id="reportIndustry">Industry</div>
+        <div class="badge badge-muted">Confidential</div>
+        <div style="margin-left:auto;display:flex;gap:.5rem">
+          <button
+            class="btn btn-ghost btn-sm"
+            id="shareLinkBtn"
+          >🔗 Share</button>
+          <!-- ✅ UPDATED: real ID for PDF export -->
+          <button
+            class="btn btn-primary btn-sm"
+            id="exportPDFBtn"
+          >📄 Export PDF</button>
+        </div>
+      </div>
+      <h1 class="report-title">
+        Startup Survival Report:<br>
+        <span class="gradient-text" id="reportStartupName">Startup</span>
+      </h1>
+      <p style="font-size:.95rem;color:var(--text-secondary);max-width:640px;line-height:1.7">
+        A comprehensive AI-generated analysis of market position, financial health, competitive dynamics,
+        and survival probability for the 12-month period ahead.
+      </p>
+
+      <div class="report-info-row">
+        <div class="report-info-item">
+          <div class="report-info-label">Report Date</div>
+          <!-- ✅ UPDATED: dynamic date -->
+          <div class="report-info-val" id="reportDate">—</div>
+        </div>
+        <div class="report-info-item">
+          <div class="report-info-label">Analysis Version</div>
+          <div class="report-info-val">v3.2.1</div>
+        </div>
+        <div class="report-info-item">
+          <div class="report-info-label">Data Points</div>
+          <div class="report-info-val">320M+</div>
+        </div>
+        <div class="report-info-item">
+          <div class="report-info-label">Signals Processed</div>
+          <div class="report-info-val">14</div>
+        </div>
+        <div class="report-info-item">
+          <div class="report-info-label">Benchmark Cohort</div>
+          <div class="report-info-val" id="reportCohort">SaaS / AI, Seed (n=847)</div>
+        </div>
+        <div class="report-info-item">
+          <div class="report-info-label">Survival Score</div>
+          <div class="report-info-val" id="reportScore" style="color:var(--indigo-light)">0 / 100</div>
+        </div>
+        <!-- ✅ NEW: Report ID row for persistence/sharing -->
+        <div class="report-info-item" id="reportIdRow" style="display:none">
+          <div class="report-info-label">Report ID</div>
+          <div class="report-info-val" id="reportIdDisplay" style="font-size:.72rem;word-break:break-all;color:var(--text-muted)">—</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Report body -->
+  <div class="report-body">
+    <div class="report-layout">
+
+      <!-- TOC -->
+      <aside>
+        <div class="glass-card toc">
+          <div class="toc-title">Contents</div>
+          <ul class="toc-list">
+            <li><a href="#exec-summary" class="active">1. Executive Summary</a></li>
+            <li><a href="#score-breakdown">2. Score Breakdown</a></li>
+            <li><a href="#financial-health">3. Financial Health</a></li>
+            <li><a href="#runway-report">3A. Runway Analysis</a></li>
+            <li><a href="#market-analysis">4. Market Analysis</a></li>
+            <li><a href="#risk-assessment">5. Risk Assessment</a></li>
+            <li><a href="#swot-report">6. SWOT Analysis</a></li>
+            <li><a href="#competitive-report">7. Competitive Intel</a></li>
+            <li><a href="#funding-report">8. Funding Readiness</a></li>
+            <li><a href="#recommendations-report">9. Action Plan</a></li>
+            <li><a href="#appendix">10. Appendix</a></li>
+          </ul>
+        </div>
+
+        <div class="glass-card toc" style="margin-top:1rem;padding:1.25rem">
+          <div class="toc-title">Score Summary</div>
+          <div style="text-align:center;padding:.75rem 0">
+            <div
+              id="reportScoreLarge"
+              style="
+                font-family:var(--font-display);
+                font-size:3rem;
+                font-weight:800;
+                background:var(--grad-primary);
+                -webkit-background-clip:text;
+                -webkit-text-fill-color:transparent;
+                background-clip:text;
+                letter-spacing:-.04em;
+                line-height:1
+              "
+            >0</div>
+            <div style="font-size:.72rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-top:.25rem">/ 100 Score</div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" id="scoreFill" data-width="0" style="width:0%"></div>
+          </div>
+          <div
+            id="reportSurvivalProbability"
+            style="font-size:.72rem;color:var(--emerald);font-weight:600;text-align:center;margin-top:.5rem"
+          >Loading...</div>
+        </div>
+
+        <!-- ✅ NEW: Share Report card in sidebar -->
+        <div class="glass-card toc" style="margin-top:1rem;padding:1.25rem" id="shareCard">
+          <div class="toc-title">Share Report</div>
+          <p style="font-size:.72rem;color:var(--text-muted);margin:.5rem 0 .75rem">Copy a direct link to this report.</p>
+          <button
+            class="btn btn-ghost btn-sm"
+            style="width:100%"
+            id="copyShareLinkBtn"
+          >🔗 Copy Link</button>
+        </div>
+      </aside>
+
+      <!-- Report content -->
+      <div class="report-sections">
+
+        <!-- 1. Executive Summary -->
+        <section class="report-section" id="exec-summary">
+          <div class="report-section-header">
+            <div class="report-section-num">01</div>
+            <div class="report-section-title">Executive Summary</div>
+            <div class="badge badge-success" style="margin-left:auto" id="execSummaryBadge">Strong</div>
+          </div>
+
+          <!-- ✅ UPDATED: fully dynamic exec summary paragraphs -->
+          <div id="execSummaryContent">
+            <p class="exec-summary" id="execSummaryP1">Loading analysis...</p>
+            <p class="exec-summary" style="margin-top:1rem" id="execSummaryP2"></p>
+            <p class="exec-summary" style="margin-top:1rem" id="execSummaryP3"></p>
+          </div>
+
+          <!-- ✅ Dynamic callouts rendered by JS -->
+          <div id="execCallouts"></div>
+        </section>
+
+        <!-- 2. Score Breakdown -->
+        <section class="report-section" id="score-breakdown">
+          <div class="report-section-header">
+            <div class="report-section-num">02</div>
+            <div class="report-section-title">Score Breakdown</div>
+          </div>
+
+          <!-- ✅ UPDATED: rendered dynamically from AI data -->
+          <div class="score-breakdown anim-fade-up" id="scoreBreakdownGrid">
+            <!-- Filled by JS -->
+          </div>
+
+          <div class="callout callout-info" style="margin-top:1.5rem">
+            <div class="callout-icon">ℹ️</div>
+            <div class="callout-body">
+              <div class="callout-title">Composite Score Methodology</div>
+              <div class="callout-text">The Survival Score is a weighted composite: Financial Health (25%), Market Opportunity (20%), Traction (20%), Team (15%), Product/IP (12%), Risk Exposure (8%). Scores are benchmarked against 847 Seed-stage SaaS/AI startups from 2020–2025.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. Financial Health -->
+        <section class="report-section" id="financial-health">
+          <div class="report-section-header">
+            <div class="report-section-num">03</div>
+            <div class="report-section-title">Financial Health</div>
+            <div class="badge badge-warning" style="margin-left:auto" id="financialBadge">Needs Attention</div>
+          </div>
+
+          <!-- ✅ UPDATED: dynamic financial table rendered by JS -->
+          <div class="glass-card" style="overflow:hidden">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Metric</th>
+                  <th id="colStartupName">Your Startup</th>
+                  <th>Cohort Median</th>
+                  <th>Assessment</th>
+                </tr>
+              </thead>
+              <tbody id="financialTableBody">
+                <!-- Filled by JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <div id="financialCallout" style="margin-top:1.25rem"></div>
+        </section>
+
+        <!-- 3A. Runway Analysis -->
+        <section class="report-section" id="runway-report">
+          <div class="report-section-header">
+            <div class="report-section-num">03A</div>
+            <div class="report-section-title">Runway Analysis</div>
+            <div class="badge badge-warning" id="runwayBadge" style="margin-left:auto">—</div>
+          </div>
+          <div class="glass-card" style="padding:1.5rem">
+            <div style="font-size:3rem;font-weight:800" id="reportRunwayValue">—</div>
+            <div style="margin-top:.5rem;color:var(--text-secondary)" id="reportRunwayStatus">—</div>
+            <div style="margin-top:1rem;color:var(--text-muted)" id="reportRunwayDescription">—</div>
+          </div>
+        </section>
+
+        <!-- 4. Market Analysis -->
+        <section class="report-section" id="market-analysis">
+          <div class="report-section-header">
+            <div class="report-section-num">04</div>
+            <div class="report-section-title">Market Analysis</div>
+            <div class="badge badge-success" style="margin-left:auto">Excellent</div>
+          </div>
+
+          <!-- ✅ UPDATED: dynamic market stat cards -->
+          <div class="dash-grid" id="marketStatCards">
+            <!-- Filled by JS -->
+          </div>
+
+          <p class="exec-summary" style="margin-top:1.5rem" id="marketAnalysisPara">
+            Loading market data...
+          </p>
+
+          <div id="marketCallout" style="margin-top:1rem"></div>
+        </section>
+
+        <!-- 5. Risk Assessment -->
+        <section class="report-section" id="risk-assessment">
+          <div class="report-section-header">
+            <div class="report-section-num">05</div>
+            <div class="report-section-title">Risk Assessment</div>
+            <!-- ✅ UPDATED: badge count is dynamic -->
+            <div class="badge badge-danger" style="margin-left:auto" id="riskCountBadge">— Risks</div>
+          </div>
+
+          <div class="risk-list anim-fade-up" id="riskList">
+            <!-- Filled by JS -->
+          </div>
+        </section>
+
+        <!-- 6. SWOT -->
+        <section class="report-section" id="swot-report">
+          <div class="report-section-header">
+            <div class="report-section-num">06</div>
+            <div class="report-section-title">SWOT Analysis</div>
+            <div class="badge badge-indigo" style="margin-left:auto">AI-Generated</div>
+          </div>
+          <div class="glass-card" style="padding:1.5rem">
+            <!-- ✅ UPDATED: SWOT rendered dynamically from AI data -->
+            <div class="swot-grid" id="swotGrid">
+              <!-- Filled by JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. Competitive Intel -->
+        <section class="report-section" id="competitive-report">
+          <div class="report-section-header">
+            <div class="report-section-num">07</div>
+            <div class="report-section-title">Competitive Intelligence</div>
+            <!-- ✅ UPDATED: badge count is dynamic -->
+            <div class="badge badge-warning" style="margin-left:auto" id="competitorCountBadge">— Threats</div>
+          </div>
+
+          <div class="glass-card" style="overflow:hidden">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Competitor</th>
+                  <th>Stage</th>
+                  <th>Funding</th>
+                  <th>Key Differentiator</th>
+                  <th>Threat</th>
+                </tr>
+              </thead>
+              <!-- ✅ UPDATED: rows rendered dynamically -->
+              <tbody id="competitorTableBody">
+                <!-- Filled by JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <div id="competitiveCallout" style="margin-top:1.25rem"></div>
+        </section>
+
+        <!-- 8. Funding Readiness -->
+        <section class="report-section" id="funding-report">
+          <div class="report-section-header">
+            <div class="report-section-num">08</div>
+            <div class="report-section-title">Funding Readiness Assessment</div>
+            <!-- ✅ UPDATED: dynamic badge -->
+            <div class="badge badge-indigo" style="margin-left:auto" id="fundingReadinessBadge">—% Ready</div>
+          </div>
+
+          <p class="exec-summary" id="fundingReadinessSummary">Loading funding readiness...</p>
+
+          <!-- ✅ UPDATED: bars rendered dynamically -->
+          <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:.75rem" id="fundingBarsContainer">
+            <!-- Filled by JS -->
+          </div>
+        </section>
+
+        <!-- 9. Action Plan -->
+        <section class="report-section" id="recommendations-report">
+          <div class="report-section-header">
+            <div class="report-section-num">09</div>
+            <div class="report-section-title">Priority Action Plan</div>
+            <!-- ✅ UPDATED: dynamic badge count -->
+            <div class="badge badge-warning" style="margin-left:auto" id="actionCountBadge">— Actions</div>
+          </div>
+
+          <!-- ✅ UPDATED: cards rendered dynamically -->
+          <div style="display:flex;flex-direction:column;gap:.875rem" id="actionPlanContainer">
+            <!-- Filled by JS -->
+          </div>
+        </section>
+
+        <!-- 10. Appendix -->
+        <section class="report-section" id="appendix">
+          <div class="report-section-header">
+            <div class="report-section-num">10</div>
+            <div class="report-section-title">Appendix — Input Data</div>
+          </div>
+
+          <!-- ✅ UPDATED: appendix grid rendered dynamically from _form_data -->
+          <div class="appendix-grid anim-fade-up" id="appendixGrid">
+            <!-- Filled by JS -->
+          </div>
+
+          <div class="callout callout-info" style="margin-top:1.5rem">
+            <div class="callout-icon">ℹ️</div>
+            <div class="callout-body">
+              <div class="callout-title">Disclaimer</div>
+              <div class="callout-text">This report is generated by Satquery.AI's AI analysis engine and is based on the information provided by the user and cross-referenced against our proprietary startup database. It is intended for informational purposes only and does not constitute financial, legal, or investment advice. Results are probabilistic and based on historical patterns — they do not guarantee future outcomes.</div>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /report-sections -->
+    </div><!-- /report-layout -->
+  </div><!-- /report-body -->
+
+</div><!-- /page-content -->
+
+<!-- Print FAB -->
+<div class="print-fab">
+  <button class="btn btn-primary" onclick="window.print()" style="border-radius:50px;box-shadow:var(--shadow-glow)">🖨️ Print Report</button>
+</div>
+
+<!-- Toast -->
+<div id="toast-container"></div>
+
+<!-- ✅ NEW: html2canvas + jsPDF for real PDF export -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+<script type="module" src="js/config.js"></script>
+<script src="js/report-init.js"></script>
+<script src="js/ai-mentor-init.js"></script>
+</body>
+</html>

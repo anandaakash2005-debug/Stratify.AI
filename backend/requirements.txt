@@ -1,0 +1,28 @@
+# requirements.txt — AI Startup Survival Intelligence Platform
+# Production runtime dependencies. Install test tools from requirements-dev.txt.
+
+# Web framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# Validation and settings
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# HTTP client
+httpx==0.27.2
+
+# Supabase
+supabase==2.10.0
+
+# Environment
+python-dotenv==1.0.1
+
+# Rate limiting
+slowapi==0.1.9
+
+# Machine learning
+numpy==2.3.3
+scikit-learn==1.7.2
+joblib==1.5.2
+sentence-transformers==6.0.1

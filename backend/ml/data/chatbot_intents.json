@@ -1,0 +1,4714 @@
+[
+  {
+    "text": "How can I improve my funding readiness score?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're bootstrapped but thinking about seed rounds—what should we prepare?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What do institutional investors actually look for in early-stage startups?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We've hit $10K MRR—are we ready to approach Series A investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Is my cap table clean enough for institutional investment?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I prepare my financial model for investor diligence?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Should I incorporate in Delaware before fundraising?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's the difference between SAFE notes and convertible notes for seed rounds?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I calculate my startup valuation for a pre-seed round?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What metrics matter most for B2B SaaS fundraising?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How long should my pitch deck be for a Series A pitch?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Do I need a warm intro to a VC or can I just cold email?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What should a data room include for due diligence?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I build social proof to attract institutional investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's a reasonable equity dilution for a seed round?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I find angel investors in my industry?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Should I target micro VCs or larger funds for my Series A?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What documentation do I need before approaching VCs?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I position my go-to-market strategy for investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's the typical Series B fundraising timeline?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I leverage our product traction in fundraising conversations?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What revenue run rate do investors expect at Series B?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I handle investor due diligence on our technology?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Should we raise from industry strategics or pure VCs?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's a realistic Series B valuation for our company?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I write a compelling executive summary for investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What KPIs should I highlight in my Series A pitch?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I negotiate term sheet terms as a first-time founder?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's the fundraising playbook for enterprise SaaS startups?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How critical is product-market fit for institutional fundraising?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Should I aim for a Series A round or bridge financing?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What financial metrics do enterprise VCs prioritize?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I position our competitive advantage to investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's the typical board seat expectation for Series A investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I handle investor concerns about our churn rate?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's required in a term sheet for a priced seed round?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Should we be raising or focusing on profitability right now?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I identify the right lead investor for our round?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's our realistic Series A target based on current metrics?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I communicate our market opportunity to investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What should I know about investor signaling and soft commits?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How important is a diversified cap table for future fundraising?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Should our next round be a Series A or Series Seed?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's the most common reason investors pass on startups like ours?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do we make ourselves more attractive to top-tier VC firms?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What preparation reduces investor due diligence friction?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We just closed a SAFE round—what comes next in our journey?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "My Founder Intelligence Report says Funding Readiness dropped from 78 to 62—why?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We bootstrapped to $100K ARR—can we skip seed and go straight to Series A?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "As a repeat founder, how do I fast-track institutional relationships?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Our financial model shows breakeven in 24 months—is that compelling for VCs?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're losing top talent because equity is underwater—how does this affect fundraising?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Is $5M Series B valuation realistic for $200K MRR with 8% monthly growth?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "My co-founder quit mid-fundraise—how do I explain this to investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We have 35% CAC payback period—will VCs see that as a red flag?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Our gross margin is 68% but we're burning $150K/month—what do investors care about?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "First-time founder here—what's the actual bar for seed funding in 2026?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Should I include my debt financing in the data room?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "How do I address the fact we pivoted twice before finding product-market fit?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're a bootstrapped marketplace with 12K users—what's our path to seed?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Our Series A scorecard shows strengths in growth but weaknesses in retention—priorities?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "As a female founder in cleantech, how do I overcome VC bias in pitching?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We have 5 customers representing 80% of revenue—can we still raise Series A?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "My net dollar retention is negative—how bad is this for fundraising?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Should we hire a fractional CFO before approaching VCs?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're still in stealth mode—how do I demonstrate traction to investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "My ARR is $320K but I'm 6 months away from cash running out—should I panic raise?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "The Founder Intelligence Report says Funding Readiness is strong but Investor Readiness lags—what's the diff?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We just fired our VP Sales—how do I explain the leadership change to investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's the typical check size for pre-seed rounds in B2B SaaS?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're unprofitable but have 24 months of runway—is that enough time to raise Series A?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Our technical moat is AI/ML—how do I communicate defensibility to investors?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're a B2B2C marketplace—how does that affect fundraising strategy?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "My startup is AI-native—what's different about pitching AI companies to VCs?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We have strong brand awareness but weak conversion—how do I position this?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Should we spend time optimizing deck polish or just focus on metrics?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're expanding into 3 new verticals—is this a strength or a distraction in fundraising?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Are we at the right founder-to-investor ratio for our round?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's the real number of founders who transition from bootstrap to Series A?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We've been approached by corporates for partnership—should we leverage this for fundraising?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "I'm a solopreneur thinking about bringing on a co-founder before fundraising—good idea?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're in a regulated industry—how does that impact our fundraising narrative?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "My previous exit gives me credibility—how do I leverage it without seeming arrogant?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're one of few female-founded startups in our sector—is that a funding advantage or disadvantage?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "Our MVP got 10K signups with zero marketing—is that impressive enough for Series A?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "We're expanding internationally but haven't proven USA market yet—red flag?",
+    "intent": "funding_readiness"
+  },
+  {
+    "text": "What's an investor readiness score and how is it different from funding readiness?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "The Investor Readiness metric says we're not investment-ready yet. What does that mean?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How attractive are we to institutional investors right now?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What would make us a must-fund company from an investor perspective?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do we assess investor confidence in our business?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What signals tell an investor that we're ready to scale?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How important is our founding team to investor confidence?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Does our product roadmap appeal to growth-stage investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Are we positioned as a venture-scale opportunity?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What would increase investor confidence in our market opportunity?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do we demonstrate we're not a lifestyle business?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What does it mean to have investment-grade unit economics?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Are we building a company that venture investors actually want to back?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do we evaluate our attractiveness vs competitive startups for investment?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What's the investor perspective on our go-to-market fit?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How does our Founder Intelligence Dashboard assess investor readiness?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Are we at the sweet spot for investor interest right now?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What patterns do investors look for that we might be missing?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How investor-ready is our current product-market fit evidence?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What makes a startup investment-ready from a due diligence perspective?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Are we attractive to angels, micro-VCs, or institutional VCs?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How does our team capability look to potential investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What's our investor attractiveness score based on current metrics?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How investment-ready is our market position compared to competitors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What would enterprise VCs think about our current state?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Is our burn trajectory investor-friendly?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How attractive is our business model to institutional investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What's our likelihood of being able to raise at higher valuations?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Are we investor-ready from a compliance and governance perspective?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How would tier-1 VCs evaluate our current investment thesis?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Based on my latest analysis, what should I focus on next?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Act as my AI co-founder and help prioritize the next quarter.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My dashboard shows conflicting signals. What should I do?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What would a strong founder do in my situation?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "I'm torn between growth and profitability. Which should I prioritize?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Help me decide if we should pivot or double down on our current product.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I hire a VP of Sales or keep doing it myself?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "The Founder Intelligence Report shows mixed signals. How do I interpret that?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's the right next step after hitting $1M ARR?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "I'm overwhelmed with conflicting advice from advisors. What should I actually do?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "The AI Founder Copilot recommends focusing on retention. Why?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Help me prioritize between customer acquisition and product improvements.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should we raise Series A right now or wait 6 months?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "I have three major initiatives competing for resources. Which should win?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's my biggest risk right now given the current data?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My investors are pushing for different strategies. How do I decide?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I keep this underperforming product line or kill it?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Help me craft a plan to get to Series B readiness.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's my biggest leverage point right now to accelerate growth?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I expand geographically or deepen market penetration?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "The Founder Dashboard shows my Startup Health Score declining. Why and what to do?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "I need to cut costs by 30%. What should I cut without killing growth?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I focus on NPS improvement or revenue growth this quarter?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Help me think through whether to acquire this competitor or build.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's the right time to transition from sales-led to product-led growth?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My co-founder and I disagree on strategy. How should we resolve this?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Given my runway and burn rate, what's my strategic priority?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I reduce headcount or find new revenue?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Help me prioritize the top 5 things I should do differently.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What should my board meeting focus be this month?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I negotiate better terms with my largest customer or diversify?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "The Risk Vector Analysis shows customer concentration. How critical is this?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Help me craft the story for my next fundraising round.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's my unfair advantage and how should I leverage it?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I build or buy this capability?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My top competitor just launched something similar. How should I respond?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Help me decide if I should take this venture debt offer.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What metrics should I obsess over this quarter?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I focus on enterprise or SMB?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Help me think about equity distribution with a new hire.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "The Strategic Recommendations suggest a pricing change. Worth doing?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What should I stop doing immediately?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should we go upmarket or stay where we are?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "I'm paralyzed by options. Help me make a decision.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What would unlock the most growth for us right now?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My dashboard paints a confusing picture. Walk me through it.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We're at an inflection point. What do I do?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What should I do next given our current startup health?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "The AI Founder Copilot identified 3 critical blindspots. How do I address them?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My instinct says go left but the data says go right. What wins?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "I have 6 months before cash runs out. What's my playbook?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We're losing to a competitor. How do we reposition?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I fire my head of product or give them more time?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My investors want me to pivot. Do I fight or go with it?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We have $2M in the bank but only 8 months of runway. Strategic implications?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Three different board members pushing for different strategies. Tie-breaker?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "I'm considering stepping down as CEO. Should I?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We have PMF but can't scale efficiently. Root cause analysis?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "One customer is 40% of revenue and threatening to leave. Contingency plan?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "The Founder Intelligence Engine says we're heading for a crisis. What crisis?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My team morale is declining. How do I turn it around?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should we do an acquihire or keep fighting independently?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We're technically strong but commercially weak. How to fix?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My biggest strength is also my biggest liability. What do I do?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I hire operators now or wait until Series A funding?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We have 3 equally good product directions. How do I choose?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My worst performing segment has the highest NPS. Implication?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We're faster than competitors but less polished. Strategic advantage or disadvantage?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "I've been offered a strategic partnership with a giant. Take it or decline?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Our unit economics look great at scale but terrible today. How do I think about this?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What would a world-class operator do in my position?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "My biggest competitor just got funded 10x more than us. How to respond?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Our product is admired but not used. How do we make it sticky?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We're profitable but capped at $5M ARR. Breakout move?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Our team's trust in the vision is wavering. Confidence builder?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should we be more aggressive or more cautious right now?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How do I stay motivated when everything feels stuck?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's the one thing that would most improve our situation?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Is our current strategy aligned with market opportunities?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We've maxed out organic growth. What's next?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How critical is our next hire decision?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's preventing us from 10x growth?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Give me a contrarian hot take on what we should do.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What would I regret NOT doing in the next 12 months?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How do I know if I'm being too cautious or too aggressive?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What does the path from where we are to $100M ARR look like?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Is our runway crisis temporary or structural?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What would make our company 10x more valuable?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "We're in a messy situation. What's the clean way out?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How do I strengthen my weakest functional area?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's the minimum viable path to Series B?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should I take this acquisition offer or keep building?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's the next 90-day sprint that changes everything?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Is our business model fundamentally broken or just poorly executed?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What would make me feel confident about our future?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How do I know when to pivot vs persevere?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Give me the honest truth about our situation.",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's the biggest risk we're not talking about?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How do I build a world-class organization?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's our biggest opportunity that we're overlooking?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Should we be running faster or should we be running slower?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How do I make this company legendary?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What would the best version of our company look like?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What are we missing about our customers?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How much of our problem is execution vs strategy?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What should we be doing that we're not?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Is our biggest risk talent, capital, or execution?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Can we realistically reach our 5-year vision?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What would break our business beyond repair?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How do I make better decisions faster?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's the foundation we need to build now for massive scale?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Is our culture helping or hurting us?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How many pivots can we survive?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What would the graveyard of failed startups tell us?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What's the unfair advantage we're not leveraging?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "How do we become antifragile to market downturns?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Is our success dependent on any one person?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "What changes our trajectory in 30 days?",
+    "intent": "founder_copilot"
+  },
+  {
+    "text": "Can our team execute our vision?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "The Founder Intelligence Report flagged execution risk.",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we have enough operational maturity to scale?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our team capable of delivering a Series A roadmap?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "What execution gaps do we have?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "The Execution Readiness Score is only 52. What does that mean?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we need to hire a COO or can we survive without one?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our current engineering team capable of handling our roadmap?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "What would make us more execution-ready?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "My investors say we have execution risk. How do I fix that?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Are we organized well enough to 5x?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we have the right people in the right roles?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can we realistically hit our growth targets with current ops?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "What operational improvements would unlock 10x growth?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our processes and documentation good enough for Series A?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we have strong enough PMs to execute on product roadmap?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "What's our biggest execution bottleneck?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can we execute at scale with our current infrastructure?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we need more middle management or less?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our sales team capable of hitting these targets?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "What would a Series A investor worry about regarding our execution?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can we maintain culture while scaling 10x?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we have the systems and processes in place for scale?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our founder/CEO capable of leading a bigger company?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "What would improve our execution capability the most?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we have enough financial visibility and controls?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can our product team handle a 5x product expansion?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our customer success team strong enough to scale?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "What's preventing us from executing at our potential?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we have the leadership bench strength for Series B?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can we realistically go from 5 to 25 people without chaos?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "What execution risks should I be thinking about?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our hiring and onboarding process mature enough?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Are we prepared to scale the business operationally?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Should we bring in experienced operators to strengthen execution?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our infrastructure scalable to 10x our current load?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we have the right technical leadership for our roadmap?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can we execute a major pivot without falling apart?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Are we risk-aware or risk-blind in our execution?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our org structure enabling or constraining execution?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can we keep the company aligned as we scale?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Do we have the data and metrics to make good execution decisions?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our product quality and speed in sync?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can we scale with our current compensation structure?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Are our processes documenting best practices or just adding friction?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our tech debt manageable or career-limiting?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can we execute a multi-country expansion with current ops?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Are our contractors and vendors reliable at scale?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our founder level execution or manager level?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Can we maintain our execution cadence under pressure?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "Is our execution visible or hidden to stakeholders?",
+    "intent": "execution_readiness"
+  },
+  {
+    "text": "What is our probability of success?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we reach Series A within 18 months?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Where will this company likely be in two years?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "The Startup Prediction Engine reduced our success probability. Why?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our probability of reaching profitability?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Are we on track to become a unicorn?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our survival probability if market contracts 30%?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we realistically compete with the incumbents?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's the likelihood we'll need more fundraising rounds?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Will we be able to maintain unit economics at scale?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our probability of acquisition vs IPO?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we grow into our valuation?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's the likelihood of competitive disruption?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Are we likely to hit our 3-year revenue targets?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our probability of becoming the market leader?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Will our business model work at scale?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our probability of raising the next round?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we realistically hit $10M ARR?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's the likelihood we'll need to pivot?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Will we be profitable by year 3?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our chance of achieving product-market fit?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Are we on the right trajectory given market dynamics?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our probability of surviving 5 more years?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we maintain our growth rate for 2 more years?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's the likelihood of a major customer churn event?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Will we be able to attract top talent long-term?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our probability of market expansion success?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Are we more likely to boom or bust?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we realistically become category leaders?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our probability of hitting breakeven?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Will our team stay intact for the long haul?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Is Series A likely in the next 12 months?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our chance of becoming a major player in this space?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we sustain our competitive advantage?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's the probability of a market downturn affecting us severely?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Will our valuation 5x in the next 2 years?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Are we likely to achieve our 5-year vision?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our probability of maintaining market share growth?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we build a sustainable business long-term?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Is this company more likely to exit or continue growing?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Our Prediction Engine suggests we need to improve funding readiness.",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What would improve our long-term success probability?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Are we building a business or a lifestyle company?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our realistic success probability given all factors?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What could derail us from our current trajectory?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What signals should we be watching for course correction?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Are we building something durable or temporary?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's the probability of a black swan event affecting us?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we stay ahead of market trends?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our edge against increasingly competitive threats?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Will we matter to the market in 5 years?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's the probability we become a default choice?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Can we create a defensible moat?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "What's our realistic 10-year outlook?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "Are we building a category or a feature?",
+    "intent": "startup_prediction"
+  },
+  {
+    "text": "How can we grow faster than our market?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we prioritize customer acquisition or retention?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Our growth has plateaued. What should we do?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "The Growth Signals show CAC is increasing. How do we fix it?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's the most efficient growth channel for our business?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we go upmarket or focus on SMB?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How should we balance sales-led vs product-led growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "We're growing 15% MoM. How do we accelerate?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's the right growth trajectory for Series B?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we expand into new markets or penetrate existing ones?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we grow while maintaining unit economics?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What marketing strategy would double our growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we invest in partnerships for growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we create a viral growth loop?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What would improve our LTV:CAC ratio?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we focus on logo growth or expansion revenue?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How should we think about growth rate benchmarks?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's blocking us from 10x growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we hire a VP Sales to accelerate growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How should we prioritize growth experiments?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Is our growth sustainable or running on fumes?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What growth levers are underutilized?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we do partnerships or keep growth organic?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we grow in a crowded market?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's the right pricing strategy for growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we do aggressive discounting for growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How should we think about sales cycles and growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's the fastest way to 10x ARR?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we grow into our Series B valuation?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we build or buy for growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Our runway has extended. How should we use this to grow?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How much cash should we allocate to growth vs operations?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Is our growth strategy aligned with market dynamics?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "We need to accelerate growth to hit our Series A targets.",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What channel mix gives us the best growth efficiency?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we invest heavily in one growth channel or diversify?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Our net revenue retention is positive. How do we accelerate?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What would a 10x growth plan look like for us?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we focus on new customer acquisition or land expansion?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we measure and optimize for growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "We're at $500K MRR. What's our path to $2M?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Our CAC is high but LTV justifies it. How do we scale?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What if we doubled our sales team? Growth impact?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we enter the enterprise market to accelerate growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we leverage our existing customers for growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's our biggest growth opportunity right now?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Revenue is growing but costs are growing faster. Fix?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do I prioritize between product and go-to-market for growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "We're growing 20% MoM. Is that sustainable?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What are we doing wrong in our growth approach?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Can we grow faster without breaking the org?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we grow without losing what made us special?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Our competitors are growing faster. Strategy?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we generate demand instead of just capturing it?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we be doing content marketing for growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Our product is best but market share is small. Why?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we grow without price wars?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's our unfair advantage in growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we get customers to talk about us?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we focus on retention or growth this year?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we grow our brand while growing revenue?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's the one growth lever we're not pulling?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Can we grow into profitability?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we grow without burning out the team?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What if growth slowed 50%? Strategic implications?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we measure growth quality vs growth speed?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Should we focus on depth or breadth for growth?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's our growth ceiling without major product changes?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we accelerate our growth engine?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Is our growth strategy investor-friendly?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What growth metrics matter most to our future?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we sustain rapid growth long-term?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What's our biggest growth constraint right now?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we stay focused while growing?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What does our growth roadmap look like?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How do we make our growth repeatable?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "Is our growth strategy working or do we need pivots?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "What would 100% growth look like for us?",
+    "intent": "growth_strategy"
+  },
+  {
+    "text": "How is our runway looking?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "The Runway Analysis Report says we have 14 months. Then what?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How long until we need to fundraise again?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Should we optimize burn to extend runway or raise now?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What's our runway if nothing changes?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "We have $500K left. How much longer can we operate?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How much cash do we need to raise for 24 months?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What happens to our runway if we hire 5 more people?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Is our runway healthy for our stage?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How much cash buffer should we maintain?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "If we hit our growth targets, how much longer can we operate?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Should we be concerned about our runway timeline?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What's the minimum runway we should have?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How should we communicate runway to the board?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "If we don't hit fundraising targets, what's Plan B?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What's the financial forecast for next 18 months?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Can we reach profitability before cash runs out?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How should we plan hiring given our runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Should we raise a bridge round or wait for Series A?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What's the best way to extend runway without fundraising?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How conservative should our runway projections be?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "If growth slows 50%, how much runway do we have?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What are our options if we run out of cash?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Should we start fundraising 6 months before runout?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How realistic is our cash flow forecast?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Can we hit breakeven before cash runs out?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What's our cash position vs competitors?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How should burn rate changes impact runway planning?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Is our runway timeline stressing the team?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Should we do a full financial reforecast?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What levers can we pull to extend runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Is our runway scenario analysis thorough enough?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How do we use runway insights to guide strategy?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "We're burning $80K/month with $2M in the bank.",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What timeline should we model for fundraising success?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How do we balance aggressive spending with runway preservation?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What's our realistic fundraising timeline given runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Should we cut back on hiring to extend runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How much contingency should we build into runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What's the relationship between burn rate and runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How do we communicate runway stress without alarming investors?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Should we consider a bridge loan to extend runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What happens if we miscalculate runway by 3 months?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Is our runway enough to hit critical milestones?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How should we adjust strategy given limited runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What's our backup plan if fundraising falls through?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How do we maintain team morale with runway concerns?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Should we prioritize burn reduction or growth acceleration?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What early warning signs indicate runway is tightening?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How do we plan for the unexpected to protect runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Is our runway realistic or optimistic?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What if we need to do a down round—impact on runway plans?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How do we ensure runway is used effectively?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "What's our exit runway—time to profitability or fundraise?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "Are we traction, burn rate, or runway constrained?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Is our burn rate too high for our stage?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We're burning $180K per month with $40K MRR. Is that sustainable?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "The Founder Dashboard says burn efficiency is deteriorating.",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How long can we survive at our current burn rate?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our monthly expenses are $250K but we're only doing $80K revenue. Help.",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What's a healthy burn multiple for a Series A company?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We increased the team from 5 to 12 people. Now burn is up 220%. Is that normal?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Burn Rate Score just dropped below 50. What does that mean?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our dashboard shows we're burning cash 2x faster than last quarter.",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Can we extend our runway by cutting burn or should we fundraise?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How do top founders manage burn efficiency while hiring aggressively?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We're spending $150K/month but only generating $20K in revenue. Red flag?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "The Founder Intelligence Report says our burn rate is unsustainable.",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Is it better to cut costs or raise more money when burn accelerates?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our burn multiple is 5.2. How does that compare to benchmarks?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We have 18 months of runway at current burn. Should we be worried?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Operating expenses are eating 80% of our revenue. What's the fix?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Can I model what happens if we hire 5 more engineers given our burn?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our cash burn accelerated after launching in Europe. Expected?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What metrics should I track to optimize burn efficiency?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We're profitable on unit economics but bleeding cash overall. Why?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How should I think about burn vs growth trade-offs at Series B?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Monthly burn jumped from $120K to $320K after a major hire. Concerning?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "The Founder Dashboard flagged our burn trajectory as unsustainable.",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Should I include runway analysis in my Series A pitch?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We're in pre-revenue but burning $200K/month. What should our runway be?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our investor said our burn rate needs to improve. By how much?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Can we reduce burn without impacting our growth trajectory?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We expanded internationally and burn jumped 45%. Is this normal?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What's the relationship between burn rate and Series A valuation?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We're burning cash faster than we imagined. Time to raise?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Monthly burn increased but ARR is stable. What's happening?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Should burn optimization be a board-level priority for us?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We cut burn by 30% and revenue only dropped 5%. Worth it?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How aggressive should we be about burn reduction right now?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Burn Rate Score: 38. Is this good or bad for our stage?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We're burning $95K/month with 8 people. Sustainable?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How do I forecast burn for the next 24 months accurately?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our burn accelerated when we hired a VP of Sales. Expected?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What should our burn rate be at Series C?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We're pre-product with $150K burn/month. Is that normal for fundraising?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How much should we optimize burn versus focusing on growth?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Burn jumped 60% this quarter. Should I alert investors?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What's a healthy CAC payback period given our burn constraints?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our burn multiple of 3.8 is apparently concerning. How do I improve it?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Can I model impact on runway if we acquire a team with burn?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We're at $250K/month burn with $500K ARR. Red flag?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How should I present burn to Series B VCs?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Should I deprioritize hiring to reduce burn?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our cash burn is our biggest vulnerability right now.",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What's our optimal burn rate for sustainable growth?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We need to be more aggressive on spend control.",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our burn efficiency has improved 40% YoY. That's good, right?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How does our burn rate compare to similar startups?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Should we model different burn scenarios for planning?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We're considering layoffs to reduce burn. Right call?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What if we cut marketing spend in half? Impact on burn?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our burn funnel shows where the money is actually going.",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "We need a more detailed breakdown of our burn by department.",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How do we communicate burn responsibility to the team?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Is our burn trajectory alarming stakeholders?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What department is burning the most cash?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How do we optimize burn without cutting core capabilities?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Should we do a burn audit to identify inefficiencies?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our burn is increasing while revenue is flat. Problem?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What's our burn rate as a percentage of MRR?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Is our burn rate trending in the right direction?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How do we benchmark our burn against industry standards?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Should we hire a CFO to manage burn better?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What's the breakeven burn rate for our business model?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "How do we talk about burn to employees without creating panic?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Is our burn aligned with our growth aspirations?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What if we invested the money differently—burn implications?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Our burn is under control but growth is slow—right balance?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "What if we aggressively cut burn for 6 months?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Is our burn rate a feature or a bug?",
+    "intent": "burn_rate_analysis"
+  },
+  {
+    "text": "Have we traction?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "The Traction Analysis shows we have early adopter interest.",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Is our traction strong enough for Series A?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What traction metrics matter most to VCs?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Our MRR grew 200% YoY. Is that good traction?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How fast should we be growing at this stage?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Is our customer acquisition traction healthy?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What's our most impressive traction metric?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Our growth is slowing. Is our traction declining?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What would impressive traction look like for our space?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Should we focus on user growth or revenue traction?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Are we accumulating traction or just chasing vanity metrics?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What traction gaps do we need to fill?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How should we communicate traction to investors?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Is our traction concentrated or diversified?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What's the trajectory of our traction?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Are we building real traction or hype?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How many months of strong traction do we need for Series A?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What would validate our market traction?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Is our product traction translating to business traction?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How should we demonstrate traction to potential hires?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What traction would make us a must-fund company?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Are our traction metrics authentic or padded?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How many customers do we need for strong traction?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Should we focus on traction or profitability?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What would double our traction in 3 months?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Is our traction repeatable at scale?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What traction milestones should we set?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Is our traction sustainable or built on borrowed time?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do we communicate traction authenticity to investors?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What's our traction multiplier—how fast does it compound?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How is our team's health?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Are we at risk of losing key people?",
+    "intent": "team_health"
+  },
+  {
+    "text": "The Founder Dashboard shows team satisfaction declining.",
+    "intent": "team_health"
+  },
+  {
+    "text": "Do we have the right team composition?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Should we make any hiring changes?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How is our founding team relationship?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Are we hiring the right people?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Is our team equipped to scale?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What gaps do we have in our team?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Should we bring in outside experienced help?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How's team morale given our current situation?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Do we need a COO or CFO?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Is our engineering team strong enough?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Should we hire a dedicated head of marketing?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How's our company culture holding up?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Do we have strong enough bench depth?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Are we losing talent to better offers?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What would improve team productivity?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Do we have the right leadership team for Series A?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Are we in risk of key person dependencies?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Should we restructure our org chart?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Is our board of advisors helpful?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What would strengthen our founding team?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Are we hiring too fast or too slow?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Do we need professional management?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How are critical roles performing?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Is our team bought-in on our vision?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What's our retention risk?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Should we hire specialists or generalists?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How should we think about equity distribution?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Is our hiring bar high enough?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Can we afford our best people long-term?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Are we building the right team for the next phase?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What's causing team friction?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Have we validated product-market fit?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "The Market Validation Report shows strong demand signals.",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do we know we have product-market fit?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What would confirm we've achieved PMF?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Are our early customers representative of our target market?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Is there real demand for our product?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How should we test market receptiveness?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Should we do more customer interviews?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Are we solving a real problem or imaginary one?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What evidence do we have of market need?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How strong is customer pull for our product?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Should we pivot based on market feedback?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Is our TAM estimate realistic?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Do customers really need our solution?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What validation should we have before Series A?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Are we chasing a real trend or fad?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How should we weight user vs revenue validation?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Are we solving problem #1 or #3 for our customer?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Do we have proof of willingness to pay?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What alternative solutions are customers using?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Should we expand our target market definition?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How repeatable is our sales process?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Are we moving from luck to scalable validation?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What would make investors confident in our market?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Are customers sticky or churning?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Do we understand our customer's workflow?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Is our market large enough to build a big company?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Should we validate more markets or double down?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What does real market validation look like?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do we move from hypothesis to validated?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Should we position market timing to investors?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is now the right time to be in this market?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "The Strategic Recommendations suggest accelerating market entry.",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Are we early, late, or perfectly timed to our market?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should we wait for the market to develop or move now?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How does market timing affect our growth potential?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is the market ready for our solution?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What market trends are in our favor?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Are we ahead or behind the market wave?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should we accelerate growth given market dynamics?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is our market contracting or expanding?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What tailwinds or headwinds are we facing?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is this market at inflection point?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How long until our market becomes mainstream?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should we bet big on this market now or wait?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Are we playing the right market size?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is the market pulling us toward success or pushing?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What's our window of opportunity?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How will market maturity affect unit economics?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should we expand adjacent markets or double down?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is market timing a strategic advantage or liability?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "When is the best time to raise in this market?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Are we capturing timing advantage properly?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What happens if market contracts?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is market consolidation coming?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Who are our most dangerous competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How should we respond to X competitor's recent launch?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "We're worried about AWS entering our space. Should we be?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What's our unfair advantage vs the top 3 competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "The Founder Intelligence Report ranked our competition.",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What should we learn from our competitors' go-to-market?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How are we positioned vs incumbent players?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What's our competitor's biggest weakness?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Should we be concerned about new entrants?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How should we differentiate from well-funded competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What are our competitors' pricing strategies?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Are we losing customers to specific competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How well can we compete on product?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What's our most defensible competitive advantage?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Should we copy competitor features or build differently?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How much should we monitor competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What can we learn from our competitors' playbook?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Are our competitors in fundraising mode?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What competitive advantages can we build quickly?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How do we get market share from competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Should we hire talent from our competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What's our competitor's achilles heel?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Are we winning or losing the competitive battle?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How should we think about platform risk from competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What would it take to beat the market leader?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Should we be concerned about open-source competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How should we position against enterprise competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What are competitors' biggest customer complaints?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How much will competition change our addressable market?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Should we do a competitive analysis for investors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How should we think about long-term positioning?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What's our competitive moat?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How vulnerable are we to competitor pricing?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Can we out-innovate our competitors long-term?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What are the biggest risks to our startup?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "The Risk Vector Analysis shows customer concentration is critical.",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What should we do about our top 3 risks?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "Are we prepared for a major customer to churn?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What's our biggest existential risk?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "The Founder Intelligence Report flagged execution risk.",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How vulnerable are we to competitive threats?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What market risks should we be thinking about?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "Is our business model vulnerable?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What would happen if our largest customer left?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How prepared are we for a 30% market downturn?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What talent risks do we face?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "Are we dependent on any key people?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What technology risks do we have?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How exposed are we to regulatory changes?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What are our fundraising risks?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How vulnerable is our unit economics to price competition?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What retention risks do we have?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "Are we exposed to a single market segment?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What vendor or supplier risks do we have?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How resilient are we operationally?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What financing risks should we be concerned about?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How exposed are we to key customer concentration?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What would break our business model?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "Are we building defensibility against competition?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What partnership risks do we have?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How vulnerable are we to team turnover?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What IP risks do we need to address?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How would a price war affect us?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What are our main threats from incumbents?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "Are we prepared for a recession?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What legal or compliance risks do we have?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How exposed are we to geopolitical risks?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What's our biggest blind spot?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How should we think about strategic partnerships?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "The Risk Vector Analysis shows our weaknesses.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What are our core strengths vs competitors?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Where are we most vulnerable?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What market opportunities should we pursue?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What external threats should concern us?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "How should we leverage our strengths?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What weaknesses must we address?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Which opportunities align with our strengths?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What's our biggest threat right now?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "How should we position around our strengths?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What weaknesses hurt us vs competitors?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Should we pursue this opportunity or pass?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "How vulnerable are we to this threat?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What's our most defensible strength?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Should we hire to cover our weaknesses?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Which opportunity should we prioritize?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What would eliminate our biggest threat?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "How should we frame our opportunities to investors?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Are we playing to our strengths?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What's our unfair advantage?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Should we address weaknesses or double down on strengths?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "How could we turn threats into opportunities?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What combination of S+O is most powerful?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Are there any black swan opportunities?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What would make our threats irrelevant?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What strategic recommendations should we follow?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "The Founder Dashboard provided specific action items.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What should be our top 3 priorities this quarter?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "How should we use AI insights to guide strategy?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What's our detailed 12-month plan?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What needs to happen for us to hit Series A goals?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "How should we communicate our plan to stakeholders?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What milestones matter most for fundraising?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What's our 90-day action plan?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Give me a 30-day action plan.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What should we accomplish before Series A?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Create a 90-day roadmap.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What are the top 5 actions to improve Startup Health?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Build an action plan to reduce burn.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What are the foundational actions we need to take?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Create a roadmap to product-market fit.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What's our path to raising Series A?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What specific actions improve our Funding Readiness?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Build a 6-month execution plan.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What actions strengthen our competitive positioning?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Create an action plan to reduce customer concentration risk.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What are the critical path items to Series B?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Give me a retention improvement action plan.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What's our growth acceleration playbook?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Create an action plan for market expansion.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What are the priority actions for team health?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Build a 3-month execution plan for profitabilty.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What are the immediate actions to reduce execution risk?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Create a plan to strengthen our unit economics.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What's our roadmap to becoming Series A-ready?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Give me an action plan based on the Risk Vector Analysis.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What actions should we take this month?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Create a board-level action plan.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What strategic actions unlock the next phase?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Build an investor readiness action plan.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What actions improve our Startup Health Score?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Create an action plan for improving NPS.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What's our 18-month roadmap to unicorn status?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Give me a hiring action plan.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What are the tactical actions for this week?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Create a go-to-market action plan.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What's our action plan for defending market position?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Build a fundraising readiness action plan.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "What actions would transform our business?",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "Give me a product strategy action plan.",
+    "intent": "startup_action_plan"
+  },
+  {
+    "text": "How is our startup health overall?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "The Startup Health Dashboard shows mixed signals.",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What's our biggest health concern?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How do we improve our overall startup health?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What's our Startup Health Score telling us?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Are we healthy for our stage?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What metrics most impact our startup health?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Where is our startup health weakest?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How do we address our health blindspots?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What's most critical to improve startup health?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is our startup on a healthy trajectory?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How do we move from declining to improving health?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What would optimal startup health look like?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Are we building a healthy long-term business?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What health indicators should we be monitoring?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Who are my main competitors in this space?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How do I do a competitive analysis?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What is my competitive moat?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How do I differentiate from competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Map out my competitive landscape.",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Who else is solving this problem?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What are my competitors doing differently?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Compare my startup to the competition.",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How do I win against established players?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What is my unfair advantage over rivals?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Analyze my top three competitors.",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How does my pricing compare to competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Who are the emerging threats in my market?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What is the competitive landscape like?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Are there any indirect competitors I should watch?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How do I track competitor moves?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What can I learn from my competitors failures?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Benchmark my product against the competition.",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Who is winning in my market segment?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What are my competitors spending on marketing?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How do I build a competitive moat?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Are we better than the competition?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What is competitor X doing that we are not?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How saturated is my competitive landscape?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What are the barriers to entry for competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Is my product truly differentiated?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Who would buy from a competitor instead of us?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What do customers say about my competitors?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "How do competitors price their product?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "What features do competitors have that we lack?",
+    "intent": "competitive_intelligence"
+  },
+  {
+    "text": "Are we ready for institutional investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What do investors look for in a cap table?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Is my company investable right now?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do I get investor ready in 90 days?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What metrics matter most to investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Do I need a board before raising?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do I prepare a data room?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What should my financials look like for investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Are our unit economics good enough for VCs?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do I value my company for investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What stage do I need to be at for angels?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do I create an investor update?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Should I warm up investors before raising?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What legal docs do I need before fundraising?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do I build relationships with VCs?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Is my traction enough for seed investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What do investors think about my market?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do I pass due diligence?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What are red flags for investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How important is team for investor decisions?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Do I need a lead investor?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do I choose the right investors?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What is a typical seed round structure?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Should I raise from angels or VCs first?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How long does due diligence take?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What documents are in a data room?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do I prepare for investor meetings?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "What questions will investors ask me?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "How do I handle investor rejections?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Should I raise a note or a round?",
+    "intent": "investor_readiness"
+  },
+  {
+    "text": "Is now a good time to launch my startup?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should I wait for the market to mature?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is this the right moment to enter the market?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Are we ahead of the market curve?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is the market ready for what we are building?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How do I know if the timing is right?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Are we too late for this opportunity?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What market trends should I consider for timing?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should I launch now or wait?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How does market timing affect fundraising?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is there a window of opportunity right now?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What is the best season to launch?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Are macro conditions right for my startup?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How do market cycles affect my startup?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is this a good time to raise capital?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should I pivot based on market timing?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How do I know if I am too early?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What signals indicate the market is ready?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is the economy good for startups right now?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How does timing affect my go-to-market strategy?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should I accelerate my launch timeline?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What happens if I launch too early?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How do I assess market readiness?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is there a first-mover advantage here?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Am I better as a fast follower?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What is the market adoption rate?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How do I time my fundraising round?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Are we early enough to capture the market?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should we soft launch to test timing?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "What macroeconomic factors affect my launch?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is investor sentiment favorable right now?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How do market trends affect my runway planning?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Should I wait for regulatory clarity?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "Is the market growing or shrinking?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How do I validate market timing with customers?",
+    "intent": "market_timing"
+  },
+  {
+    "text": "How do I validate my startup idea?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Is there real demand for my product?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I test product-market fit?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What experiments should I run to validate?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How many customer interviews is enough?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I know if people will pay for this?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What is the best way to validate a B2B idea?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Should I build an MVP to validate?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I measure product-market fit?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What metrics show market validation?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I validate pricing?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What is willingness to pay for my solution?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Should I run a landing page test?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I find early adopters?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Is pre-selling a good validation strategy?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I validate my target market size?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What are signals of strong product-market fit?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I validate my solution before building?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Should I build a prototype first?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I conduct customer discovery?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What questions should I ask in validation interviews?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I validate my value proposition?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Is a landing page with signups enough validation?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I validate across different segments?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What is the minimum validation I need before building?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I validate without spending money?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What are common validation mistakes?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How long should validation take?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "How do I validate a marketplace idea?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "Should I validate both sides of the marketplace?",
+    "intent": "market_validation"
+  },
+  {
+    "text": "What are the top risks for my startup right now?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I assess risk in my business?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What keeps you up at night about my startup?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "Identify the biggest threats to my business.",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What are the operational risks I should address?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I create a risk mitigation plan?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What financial risks should I worry about?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What market risks could kill my startup?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I build a risk register?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What are the technical risks in my stack?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How vulnerable is my startup to competition?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What regulatory risks apply to my business?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I prioritize risks?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What is my biggest exposure right now?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I reduce risk in my business model?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What are the risks of scaling too fast?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I hedge against market downturns?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What people risks does my team face?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I mitigate key person risk?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What risks come with our current burn rate?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I stress-test my business model?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What are our single points of failure?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What concentration risks do we have?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I protect against IP risks?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What are the risks of our pricing model?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How exposed are we to supplier risk?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What technology risks should I address?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I manage risk while innovating?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "What are the worst case scenarios?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How do I build a risk-aware culture?",
+    "intent": "risk_assessment"
+  },
+  {
+    "text": "How healthy is my startup overall?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Give me a complete startup health check.",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is my startup in good shape?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Rate the overall health of my business.",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How do I measure startup health?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What is my startup health score?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is my business viable long term?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Run a full health assessment on my startup.",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What are the key indicators of startup health?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How do I know if my startup is failing?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What is the pulse of my startup right now?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is my startup on track for success?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How do I benchmark my startup health?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What is a healthy startup look like?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Are we in the danger zone?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How do I improve my startup health?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What metrics define a healthy startup?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Diagnose my startup health issues.",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is my burn rate healthy?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Am I growing fast enough to be healthy?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What is the temperature of my startup?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Give me a founder health check.",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How resilient is my startup?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What is the overall health score?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Check all vital signs of my startup.",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is my unit economics healthy?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How healthy is my revenue growth?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Assess my startup viability.",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Are we a healthy startup or struggling?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What is the health of my market position?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How healthy is our customer acquisition?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is our team structure healthy?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How do I fix an unhealthy startup?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What are red flags in my startup health?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is our churn rate healthy?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What healthy growth rate should I target?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Are our margins healthy?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How healthy is our cash position?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is our runway healthy?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Give my startup a health score out of 10.",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What is my startup diagnosis?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "How do I know if I am building something viable?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Is my startup model sustainable?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "What are the signs of a dying startup?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Am I on the right track?",
+    "intent": "startup_health"
+  },
+  {
+    "text": "Run a SWOT analysis for my startup.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What are my biggest strengths?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What are my critical weaknesses?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Where are the opportunities for my startup?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What threats should I watch out for?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "SWOT my business please.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Break down my strengths and weaknesses.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What opportunities can I capitalize on?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What external threats could hurt me?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Analyze my startup using SWOT framework.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Help me identify my competitive strengths.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What are my hidden weaknesses?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What market opportunities should I pursue?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What threats are emerging in my market?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Give me a strategic SWOT analysis.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What are my internal strengths?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What internal weaknesses hold me back?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What external opportunities can I leverage?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What external threats keep me up at night?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "SWOT analysis for my business model.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Analyze my competitive position using SWOT.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What is my SWOT profile?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Do a strategic SWOT for my startup.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Highlight my top three strengths.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Identify my top three weaknesses.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What strengths differentiate me?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What weaknesses do I need to address urgently?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Where should I focus my SWOT efforts?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What does my SWOT tell me?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "How do I use SWOT to plan strategy?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "Give me an honest SWOT assessment.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What are the opportunities I am missing?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "What threats are about to hit my market?",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "SWOT me.",
+    "intent": "swot_analysis"
+  },
+  {
+    "text": "How strong is my founding team?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Do we have the right talent on the team?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What skills are missing from my team?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I build a stronger team?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Is our team balanced enough?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Should I hire a CTO?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I attract top talent?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What is the right team size for my stage?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I evaluate team performance?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Are we lacking any key roles?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I build company culture?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Is our team aligned on the vision?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I handle team conflict?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What is team cohesion and why does it matter?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I know if I have the right co-founder?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Should I replace a underperforming team member?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I motivate my team?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What equity should I offer early hires?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I assess founder-market fit?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Is my advisory board strong enough?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I find a technical co-founder?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What makes a great startup team?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I scale my team as we grow?",
+    "intent": "team_health"
+  },
+  {
+    "text": "What team metrics matter most?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How do I retain key employees?",
+    "intent": "team_health"
+  },
+  {
+    "text": "Should I hire for experience or potential?",
+    "intent": "team_health"
+  },
+  {
+    "text": "How is our user growth trending?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What is our month-over-month growth?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Are we growing fast enough?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What are our key traction metrics?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do I measure traction?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What traction do investors want to see?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Is our growth rate healthy?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do I improve customer retention?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What is our activation rate?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Are users sticking around?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do I drive more engagement?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What is our viral coefficient?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do I improve our conversion funnel?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What is our customer acquisition cost trending?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How does our traction compare to benchmarks?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Are we seeing product-market fit signals?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do I accelerate our growth?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What is our weekly active user count?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do I reduce churn?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What is our net dollar retention?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do we get our first 100 customers?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do we get to 1000 users?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What growth channels are working best?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do I measure product engagement?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What is our daily active user count?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do we improve our NPS?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "What is our customer lifetime value?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How do I prove traction to investors?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "Are we seeing repeat usage?",
+    "intent": "traction_analysis"
+  },
+  {
+    "text": "How long will our current runway last?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "We have $150K left, what is our runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How do I extend my runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How much cash do we have in the bank?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "When will we run out of money?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "How do I calculate runway?",
+    "intent": "runway_analysis"
+  },
+  {
+    "text": "recommend a mentor for my startup",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "best founder for advice",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who should guide my startup",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find an advisor for my startup",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "best mentors for agritech",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "which founder should i learn from",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "suggest a mentor who understands AI startups",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find me a mentor in fintech",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who is the best advisor for fundraising",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "connect me with a mentor in healthtech",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "i need a mentor for product strategy",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "recommend someone to help with go to market",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "looking for a mentor in edtech",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "best mentor for series a fundraising",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who can help me with my pitch deck",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find an expert in ai product management",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "i want to talk to someone who built a saas company",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "suggest a mentor for growth marketing",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "need advice from a seasoned founder",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who should i talk to about fundraising",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "recommend an advisor who knows deep tech",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "best mentor for early stage startups",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find a mentor with experience in ai",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who can guide me through seed fundraising",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "i need a mentor who has raised venture capital",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "recommend a founder i should follow",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "suggest mentors for my industry",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who are the top mentors in saas",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find a mentor to help with business development",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "i need guidance from an experienced entrepreneur",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "show me mentors specializing in ai strategy",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "recommend a mentor for my agritech startup",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "best mentor for b2b saas companies",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who can advise me on product market fit",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "i need a sales mentor for my startup",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "suggest a mentor who understands blockchain",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find someone to help with my business model",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "recommend a mentor for marketing strategy",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who should mentor me as a first time founder",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find a technical cofounder or mentor",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "i need a mentor with exit experience",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "recommend a mentor for my industry and stage",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "best advisor for ai ml startups",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "suggest a mentor to help with investor relations",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who can teach me about startup fundraising",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find a mentor who works in climate tech",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "recommend an expert in crowdfunding",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "i want a mentor with a strong investor network",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "guide me to the right mentor for my problem",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "show me high rated mentors in my field",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who is the best person to advise on growth",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find a mentor with domain expertise in healthtech",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "recommend a mentor who has built successful startups",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "i need a mentor for strategic partnerships",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "suggest a mentor who can help with my cap table",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "who should i reach out to for mentorship",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "recommend a mentor for pre seed stage",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "find a mentor who exited a startup before",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "i need a mentor in the ai space",
+    "intent": "mentor_recommendation"
+  },
+  {
+    "text": "top mentors for first time founders",
+    "intent": "mentor_recommendation"
+  }
+]

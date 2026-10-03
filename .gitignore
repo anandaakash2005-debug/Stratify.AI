@@ -1,0 +1,23 @@
+# Local secrets and environment files
+.env
+.env.*
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Generated frontend build output
+/frontend/dist/
+
+# Logs and local editor files
+*.log
+.vscode/

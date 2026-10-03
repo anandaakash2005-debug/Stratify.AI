@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satquery.AI — AI Startup Intelligence</title>
+  <meta name="description" content="Satquery.AI provides AI-powered startup analysis, survival scoring, financial insights, risk intelligence, and strategic recommendations." />
+  <meta property="og:title" content="Satquery.AI — AI Startup Intelligence" />
+  <meta property="og:description" content="Satquery.AI provides AI-powered startup analysis, survival scoring, financial insights, risk intelligence, and strategic recommendations." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+<!-- Background -->
+<div class="bg-orbs">
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img class="nav-logo-icon" src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="42" height="42" />
+    <span class="nav-logo-text">Satquery.AI</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link active">Home</a></li>
+    <li><a href="analysis.html" class="nav-link">Analyze</a></li>
+    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+    <li><a href="report.html" class="nav-link">Reports</a></li>
+    <li><a href="chatbot.html" class="ai-nav-btn">🚀 AI Copilot</a></li>
+  </ul>
+
+  <div class="nav-cta">
+    <button id="theme-toggle" class="btn btn-ghost btn-icon" title="Toggle theme">☀️</button>
+    <a href="signin.html" class="btn btn-ghost btn-sm">Sign In</a>
+    <a href="analysis.html" class="btn btn-primary btn-sm">Get Started →</a>
+  </div>
+
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav-mobile-menu">
+  <a href="index.html" class="nav-mobile-link">Home</a>
+  <a href="analysis.html" class="nav-mobile-link">Analyze</a>
+  <a href="dashboard.html" class="nav-mobile-link">Dashboard</a>
+  <a href="report.html" class="nav-mobile-link">Reports</a>
+  <a href="chatbot.html" class="nav-mobile-link">🚀 AI Copilot</a>
+  <a href="analysis.html" class="btn btn-primary" style="margin-top:.5rem">Get Started →</a>
+</div>
+
+<!-- Page Content -->
+<div class="page-content">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="scan-line"></div>
+    <div class="hero-inner">
+      <div class="hero-badge anim-fade-in">
+        <span class="dot"></span>
+        AI-Powered Startup Intelligence
+      </div>
+
+      <h1 class="hero-title anim-fade-up delay-1">
+        Know If Your Startup<br>
+        <span class="gradient-text">Will Survive</span>
+      </h1>
+
+      <p class="hero-sub anim-fade-up delay-2">
+        Deep AI analysis of your startup's health, market position, risks, and runway.
+        Get actionable intelligence before the market does.
+      </p>
+
+      <div class="hero-actions anim-fade-up delay-3">
+        <a href="analysis.html" class="btn btn-primary btn-lg pulse-glow">
+          ⚡ Analyze My Startup
+        </a>
+        <a href="dashboard.html" class="btn btn-ghost btn-lg">
+          View Sample Dashboard →
+        </a>
+      </div>
+
+      <div class="hero-stats anim-fade-up delay-4">
+        <div class="hero-stat-item">
+          <div class="hero-stat-val" data-count="12400" data-suffix="+">0+</div>
+          <div class="hero-stat-label">Startups Analyzed</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-val" data-count="91" data-suffix="%">0%</div>
+          <div class="hero-stat-label">Prediction Accuracy</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-val" data-count="48" data-suffix="h">0h</div>
+          <div class="hero-stat-label">Ahead of Market</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-val" data-count="320" data-suffix="M+">0M+</div>
+          <div class="hero-stat-label">Data Points Processed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="features-header">
+      <div class="section-tag">⚙️ Platform Features</div>
+      <h2 class="section-heading">
+        Everything You Need to<br>
+        <span class="gradient-text">Survive & Thrive</span>
+      </h2>
+      <p style="color:var(--text-secondary);max-width:520px;margin:0 auto;font-size:.95rem;line-height:1.7">
+        Our AI engine processes hundreds of signals to give your startup a complete survival report in seconds.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <div class="glass-card glass-card-interactive feature-card hover-lift anim-fade-up delay-1" data-animate>
+        <div class="feature-icon indigo">🎯</div>
+        <div class="feature-title">Survival Score</div>
+        <p class="feature-desc">A composite 0–100 score predicting your startup's 12-month survival probability, updated in real time as you input data.</p>
+      </div>
+
+      <div class="glass-card glass-card-interactive feature-card hover-lift anim-fade-up delay-2" data-animate>
+        <div class="feature-icon cyan">📊</div>
+        <div class="feature-title">Risk Vector Analysis</div>
+        <p class="feature-desc">Identify critical, high, medium, and low-risk factors across financial, operational, market, and regulatory dimensions.</p>
+      </div>
+
+      <div class="glass-card glass-card-interactive feature-card hover-lift anim-fade-up delay-3" data-animate>
+        <div class="feature-icon violet">🧬</div>
+        <div class="feature-title">SWOT Intelligence</div>
+        <p class="feature-desc">AI-generated SWOT analysis that goes beyond templates — deeply personalized to your market, team, and traction signals.</p>
+      </div>
+
+      <div class="glass-card glass-card-interactive feature-card hover-lift anim-fade-up delay-4" data-animate>
+        <div class="feature-icon emerald">💰</div>
+        <div class="feature-title">Funding Readiness</div>
+        <p class="feature-desc">Benchmark your pitch, metrics, and team against successful funding rounds. Know exactly where you stand before approaching VCs.</p>
+      </div>
+
+      <div class="glass-card glass-card-interactive feature-card hover-lift anim-fade-up delay-5" data-animate>
+        <div class="feature-icon rose">⚔️</div>
+        <div class="feature-title">Competitor Landscape</div>
+        <p class="feature-desc">Automated competitor discovery, threat scoring, and differentiation analysis so you always know your competitive position.</p>
+      </div>
+
+      <div class="glass-card glass-card-interactive feature-card hover-lift anim-fade-up delay-6" data-animate>
+        <div class="feature-icon amber">🤖</div>
+        <div class="feature-title">AI Recommendations</div>
+        <p class="feature-desc">Prioritized, actionable playbooks generated specifically for your startup's weakest areas — not generic advice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="hiw-inner">
+      <div class="hiw-header">
+        <div class="section-tag">🔄 Process</div>
+        <h2 class="section-heading">From Input to Intelligence<br><span class="gradient-text">in 60 Seconds</span></h2>
+      </div>
+
+      <div class="steps-list">
+        <div class="glass-card step-item hover-glow anim-slide-left delay-1" data-animate>
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-title">Enter Your Startup Details</div>
+            <p class="step-desc">Provide basic information: industry, stage, team size, monthly burn, revenue, and competitive landscape. No financial statements needed.</p>
+          </div>
+        </div>
+
+        <div class="glass-card step-item hover-glow anim-slide-left delay-2" data-animate>
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-title">AI Runs Deep Analysis</div>
+            <p class="step-desc">Our engine cross-references 320M+ data points from successful and failed startups, current market conditions, and funding trends.</p>
+          </div>
+        </div>
+
+        <div class="glass-card step-item hover-glow anim-slide-left delay-3" data-animate>
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-title">Review Your Survival Report</div>
+            <p class="step-desc">Get a comprehensive dashboard: survival score, risk map, SWOT, competitor threats, funding readiness, and your priority action plan.</p>
+          </div>
+        </div>
+
+        <div class="glass-card step-item hover-glow anim-slide-left delay-4" data-animate>
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <div class="step-title">Execute the Playbook</div>
+            <p class="step-desc">Follow AI-generated, sequenced recommendations. Track your score improvement over time as you implement changes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-inner pulse-glow">
+      <div class="section-tag" style="margin-bottom:1.5rem">🚀 Start Free</div>
+      <h2 class="cta-title">Your Startup Deserves<br><span class="gradient-text">Unfair Intelligence</span></h2>
+      <p class="cta-sub">Join founders who use Satquery.AI to make smarter decisions, raise faster, and build companies that last.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1">
+        <a href="analysis.html" class="btn btn-primary btn-lg">⚡ Analyze My Startup Free</a>
+        <a href="dashboard.html" class="btn btn-ghost btn-lg">See Sample Report</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a class="footer-logo" href="index.html"><img src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="28" height="28" />Satquery.AI</a>
+    <p class="footer-copy">© 2025 Satquery.AI. Built for founders who mean business.</p>
+    <ul class="footer-links">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+
+</div><!-- /page-content -->
+
+<!-- Toast Container -->
+<div id="toast-container"></div>
+
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+<script src="js/ai-mentor-init.js"></script>
+</body>
+</html>

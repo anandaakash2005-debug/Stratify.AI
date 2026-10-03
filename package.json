@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "backend": "cd backend && venv\\Scripts\\activate && uvicorn main:app --reload",
+    "frontend": "cd frontend && python -m http.server 5500",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "qa:frontend-xss": "node qa/frontend-xss.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.106.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@playwright/test": "^1.63.0",
+    "concurrently": "^9.2.1"
+  }
+}

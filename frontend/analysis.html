@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyze Startup — Satquery.AI</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/analysis.css" />
+    
+</head>
+<body>
+
+<div class="bg-orbs">
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img class="nav-logo-icon" src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="42" height="42" />
+    <span class="nav-logo-text">Satquery.AI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="analysis.html" class="nav-link active">Analyze</a></li>
+    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+    <li><a href="report.html" class="nav-link">Reports</a></li>
+    <li><a href="chatbot.html" class="ai-nav-btn">🚀 AI Copilot</a></li>
+  </ul>
+  <div class="nav-cta">
+    <button id="theme-toggle" class="btn btn-ghost btn-icon" title="Toggle theme">☀️</button>
+    <a href="dashboard.html" class="btn btn-ghost btn-sm">View Dashboard</a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-menu">
+  <a href="index.html" class="nav-mobile-link">Home</a>
+  <a href="analysis.html" class="nav-mobile-link">Analyze</a>
+  <a href="dashboard.html" class="nav-mobile-link">Dashboard</a>
+  <a href="report.html" class="nav-mobile-link">Reports</a>
+  <a href="chatbot.html" class="nav-mobile-link">🚀 AI Copilot</a>
+</div>
+
+<div class="page-content">
+  <div class="analysis-page">
+    <div class="analysis-container">
+
+      <!-- Header -->
+      <div class="analysis-header anim-fade-up">
+        <div class="section-tag" style="margin:0 auto 1rem">🔬 Startup Analysis</div>
+        <h1>Tell Us About <span class="gradient-text">Your Startup</span></h1>
+        <p>Answer a few questions and our AI will generate your complete survival intelligence report.</p>
+      </div>
+
+      <!-- Steps indicator -->
+      <div class="form-steps anim-fade-in delay-1">
+        <div class="form-step active" data-step-indicator="1">
+          <div class="step-circle">1</div>
+          <div class="step-label">Basics</div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="form-step" data-step-indicator="2">
+          <div class="step-circle">2</div>
+          <div class="step-label">Financials</div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="form-step" data-step-indicator="3">
+          <div class="step-circle">3</div>
+          <div class="step-label">Market</div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="form-step" data-step-indicator="4">
+          <div class="step-circle">4</div>
+          <div class="step-label">Team</div>
+        </div>
+      </div>
+
+      <!-- Layout with sidebar -->
+      <div class="analysis-layout anim-fade-up delay-2">
+        <!-- Main form -->
+        <div class="form-main">
+
+          <!-- Panel 1: Basics -->
+          <div class="form-panel active" id="panel-1">
+            <div class="glass-card form-card">
+              <div class="form-card-title"><span>🏢</span> Company Basics</div>
+              <div style="display:flex;flex-direction:column;gap:1rem">
+                <div class="form-group">
+                  <label class="form-label">Startup Name <span class="req">*</span></label>
+                  <input type="text" class="form-control" id="startup-name" placeholder="e.g. Acme Corp" />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">Industry <span class="req">*</span></label>
+                    <select class="form-control" id="industry">
+                      <option value="">Select industry…</option>
+                      <option>SaaS / Software</option>
+                      <option>Fintech</option>
+                      <option>HealthTech</option>
+                      <option>E-Commerce</option>
+                      <option>EdTech</option>
+                      <option>CleanTech</option>
+                      <option>AI / ML</option>
+                      <option>Hardware</option>
+                      <option>Marketplace</option>
+                      <option>Consumer App</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Stage <span class="req">*</span></label>
+                    <select class="form-control" id="stage">
+                      <option value="">Select stage…</option>
+                      <option>Idea / Pre-Product</option>
+                      <option>MVP / Beta</option>
+                      <option>Early Revenue</option>
+                      <option>Growth</option>
+                      <option>Scale</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Business Model <span class="req">*</span></label>
+                  <select class="form-control" id="business-model">
+                    <option value="">Select business model…</option>
+                    <option value="SaaS">SaaS</option>
+                    <option value="Marketplace">Marketplace</option>
+                    <option value="Subscription">Subscription</option>
+                    <option value="B2B">B2B</option>
+                    <option value="B2C">B2C</option>
+                    <option value="DTC">Direct-to-Consumer</option>
+                    <option value="Hardware">Hardware Sales</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">One-Line Description <span class="req">*</span></label>
+                  <input type="text" class="form-control" id="description" placeholder="What does your startup do in one sentence?" />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">Founded Year</label>
+                    <input type="number" class="form-control" id="founded" placeholder="e.g. 2022" min="2000" max="2025" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Country / Region</label>
+                    <input type="text" class="form-control" id="country" placeholder="e.g. United States" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <span class="text-muted text-sm">Step 1 of 4</span>
+              <button class="btn btn-primary" onclick="nextPanel(1)">Next: Financials →</button>
+            </div>
+          </div>
+
+          <!-- Panel 2: Financials -->
+          <div class="form-panel" id="panel-2">
+            <div class="glass-card form-card">
+              <div class="form-card-title"><span>💰</span> Financial Health</div>
+              <div style="display:flex;flex-direction:column;gap:1.25rem">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">Monthly Burn Rate (USD)</label>
+                    <input type="number" class="form-control" id="burn" placeholder="e.g. 50000" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Monthly Revenue (USD)</label>
+                    <input type="number" class="form-control" id="revenue" placeholder="e.g. 20000" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">Cash in Bank (USD)</label>
+                    <input type="number" class="form-control" id="cash" placeholder="e.g. 500000" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Total Funding Raised (USD)</label>
+                    <input type="number" class="form-control" id="raised" placeholder="e.g. 1000000" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Revenue Growth Rate (MoM %)</label>
+                  <div class="range-wrap">
+                    <div class="range-header">
+                      <span class="text-muted text-xs">0%</span>
+                      <span class="range-val" id="growth-val">15%</span>
+                      <span class="text-muted text-xs">200%</span>
+                    </div>
+                    <input type="range" id="growth" min="0" max="200" value="15"
+                      oninput="document.getElementById('growth-val').textContent = this.value + '%'" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Last Round Type</label>
+                  <select class="form-control" id="round-type">
+                    <option value="">Select round…</option>
+                    <option>Bootstrapped</option>
+                    <option>Pre-Seed</option>
+                    <option>Seed</option>
+                    <option>Series A</option>
+                    <option>Series B+</option>
+                    <option>Grant / Non-dilutive</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-ghost" onclick="prevPanel(2)">← Back</button>
+              <button class="btn btn-primary" onclick="nextPanel(2)">Next: Market →</button>
+            </div>
+          </div>
+
+          <!-- Panel 3: Market -->
+          <div class="form-panel" id="panel-3">
+            <div class="glass-card form-card">
+              <div class="form-card-title"><span>🌍</span> Market Position</div>
+              <div style="display:flex;flex-direction:column;gap:1.25rem">
+                <div class="form-group">
+                  <label class="form-label">Target Market Size</label>
+                  <select class="form-control" id="market-size">
+                    <option value="">Select market size…</option>
+                    <option>Niche (&lt; $100M TAM)</option>
+                    <option>Small ($100M – $1B TAM)</option>
+                    <option>Medium ($1B – $10B TAM)</option>
+                    <option>Large ($10B – $100B TAM)</option>
+                    <option>Massive ($100B+ TAM)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Competitive Intensity</label>
+                  <div class="range-wrap">
+                    <div class="range-header">
+                      <span class="text-muted text-xs">None</span>
+                      <span class="range-val" id="competition-val">5</span>
+                      <span class="text-muted text-xs">Extreme</span>
+                    </div>
+                    <input type="range" id="competition" min="1" max="10" value="5"
+                      oninput="document.getElementById('competition-val').textContent = this.value" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Primary Differentiator</label>
+                  <select class="form-control" id="diff">
+                    <option value="">Select differentiator…</option>
+                    <option>Proprietary Technology / IP</option>
+                    <option>10× Better Performance</option>
+                    <option>Price / Cost Advantage</option>
+                    <option>Network Effects</option>
+                    <option>Brand / Community</option>
+                    <option>Regulatory / Compliance Moat</option>
+                    <option>Exclusive Partnerships</option>
+                    <option>Data Advantage</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Key Risks Facing Your Startup</label>
+                  <div class="checkbox-group" id="risks-group">
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="market_timing"> <span class="checkbox-label">Market Timing (too early/late)</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="competition"> <span class="checkbox-label">Intense Competition / Big Tech Entry</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="regulation"> <span class="checkbox-label">Regulatory / Legal Uncertainty</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="runway"> <span class="checkbox-label">Short Runway / Cash Crunch</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="product_market_fit"> <span class="checkbox-label">Product-Market Fit Uncertainty</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="talent"> <span class="checkbox-label">Hiring / Talent Retention</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-ghost" onclick="prevPanel(3)">← Back</button>
+              <button class="btn btn-primary" onclick="nextPanel(3)">Next: Team →</button>
+            </div>
+          </div>
+
+          <!-- Panel 4: Team -->
+          <div class="form-panel" id="panel-4">
+            <div class="glass-card form-card">
+              <div class="form-card-title"><span>👥</span> Team & Traction</div>
+              <div style="display:flex;flex-direction:column;gap:1.25rem">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label">Team Size</label>
+                    <select class="form-control" id="team-size">
+                      <option>1 (Solo)</option>
+                      <option>2–5</option>
+                      <option>6–15</option>
+                      <option>16–50</option>
+                      <option>50+</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Founder Experience</label>
+                    <select class="form-control" id="founder-exp">
+                      <option>First-time Founder</option>
+                      <option>1 Prior Startup</option>
+                      <option>Serial Entrepreneur (2+)</option>
+                      <option>Industry Veteran (10+ yrs)</option>
+                      <option>Prior Exit / Acquisition</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Technical Co-Founder?</label>
+                  <select class="form-control" id="tech-founder">
+                    <option>Yes, in-house CTO / technical founder</option>
+                    <option>Outsourced / Agency</option>
+                    <option>No technical co-founder yet</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Current Traction Signals</label>
+                  <div class="checkbox-group">
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="paying_customers"> <span class="checkbox-label">Paying customers</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="waitlist"> <span class="checkbox-label">Significant waitlist (1,000+)</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="lois"> <span class="checkbox-label">Letters of Intent (LOIs)</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="partnerships"> <span class="checkbox-label">Strategic partnerships signed</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="press"> <span class="checkbox-label">Press / media coverage</span>
+                    </label>
+                    <label class="checkbox-item">
+                      <input type="checkbox" value="accelerator"> <span class="checkbox-label">Accelerator / incubator (YC, Techstars, etc.)</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Additional Context (optional)</label>
+                  <textarea class="form-control" id="context" rows="3" placeholder="Any additional information that might be relevant to your analysis…"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-ghost" onclick="prevPanel(4)">← Back</button>
+              <button class="btn btn-primary btn-lg" id="analysis-button" type="button">
+                ⚡ Run Analysis
+              </button>
+            </div>
+          </div>
+
+        </div><!-- /form-main -->
+
+        <!-- Sidebar summary -->
+        <aside class="analysis-sidebar anim-slide-right delay-2">
+          <div class="glass-card summary-card">
+            <div class="summary-title">📋 Your Inputs</div>
+            <div class="summary-item">
+              <span class="summary-key">Company</span>
+              <span class="summary-val" id="sum-name">—</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-key">Industry</span>
+              <span class="summary-val" id="sum-industry">—</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-key">Stage</span>
+              <span class="summary-val" id="sum-stage">—</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-key">Monthly Burn</span>
+              <span class="summary-val" id="sum-burn">—</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-key">Revenue</span>
+              <span class="summary-val" id="sum-revenue">—</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-key">Runway</span>
+              <span class="summary-val" id="sum-runway">—</span>
+            </div>
+            <div class="summary-item">
+              <span class="summary-key">Growth MoM</span>
+              <span class="summary-val" id="sum-growth">15%</span>
+            </div>
+
+            <div class="readiness-score">
+              <div class="readiness-val" id="readiness-pct">72</div>
+              <div class="readiness-label">Input Completeness</div>
+              <div class="progress-track" style="margin-top:.75rem">
+                <div class="progress-fill" id="readiness-bar" style="width:72%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card" style="padding:1.25rem;margin-top:1rem">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="badge badge-success"><span class="dot"></span> Secure</div>
+              <div class="badge badge-muted">256-bit SSL</div>
+            </div>
+            <p style="font-size:.78rem;color:var(--text-muted);line-height:1.6">Your data is encrypted and never shared. Analysis runs in an isolated environment.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Loading Overlay -->
+<div id="loading-overlay" class="loading-overlay">
+  <div class="loader-orb">
+    <div class="loader-ring"></div>
+    <div class="loader-ring-2"></div>
+  </div>
+  <div class="loader-text">Analyzing Your Startup…</div>
+  <div class="loader-steps"></div>
+</div>
+
+<!-- Toast Container -->
+<div id="toast-container"></div>
+
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+<script type="module" src="js/analysis-init.js"></script>
+<script src="js/ai-mentor-init.js"></script>
+</body>
+</html>

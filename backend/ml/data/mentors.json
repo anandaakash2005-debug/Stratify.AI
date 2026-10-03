@@ -1,0 +1,1582 @@
+[
+  {
+    "id": "mentor_001",
+    "name": "Priya Nair",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "AI Strategy",
+      "Product Management",
+      "Fundraising"
+    ],
+    "experience": 14,
+    "current_role": "Founder & CEO, ContextAI",
+    "previous_roles": [
+      "Director of AI Products at Salesforce",
+      "Senior PM at Palantir"
+    ],
+    "education": [
+      "MS Computer Science, Stanford",
+      "BTech IIT Bombay"
+    ],
+    "mentor_rating": 4.9,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "San Francisco",
+    "bio": "Built and scaled two AI-native SaaS products from zero to Series A. Deep expertise in LLM productization and enterprise go-to-market. Passionate about helping founders navigate the AI hype cycle with disciplined product thinking."
+  },
+  {
+    "id": "mentor_002",
+    "name": "Marcus Webb",
+    "industry": [
+      "AI",
+      "Developer Tools"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Engineering Leadership",
+      "Product Strategy",
+      "B2B Sales"
+    ],
+    "experience": 17,
+    "current_role": "Managing Partner, Foundry Ventures",
+    "previous_roles": [
+      "CTO at DataBridge",
+      "Principal Engineer at AWS"
+    ],
+    "education": [
+      "BS Computer Science, MIT"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 3,
+    "investor_network": true,
+    "location": "Boston",
+    "bio": "Former AWS principal who transitioned into founder mode and built three developer tooling companies. Now backs technical founders at the pre-seed stage with both capital and deep engineering mentorship."
+  },
+  {
+    "id": "mentor_003",
+    "name": "Aisha Mwangi",
+    "industry": [
+      "AI",
+      "HealthTech"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Machine Learning",
+      "Fundraising",
+      "Partnerships"
+    ],
+    "experience": 11,
+    "current_role": "Co-Founder, MediSense AI",
+    "previous_roles": [
+      "ML Research Lead at DeepMind Health",
+      "Data Scientist at GE Healthcare"
+    ],
+    "education": [
+      "PhD Machine Learning, UCL"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Nairobi",
+    "bio": "Applied AI researcher turned founder. Built clinical decision support tooling deployed across 40 hospitals in East Africa. Specializes in helping founders apply ML responsibly in regulated industries."
+  },
+  {
+    "id": "mentor_004",
+    "name": "Jin-ho Park",
+    "industry": [
+      "AI",
+      "Enterprise Software"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Enterprise Sales",
+      "AI Strategy",
+      "Investor Relations"
+    ],
+    "experience": 20,
+    "current_role": "Angel Investor & Advisor",
+    "previous_roles": [
+      "SVP Product at SAP",
+      "VP Enterprise at Twilio"
+    ],
+    "education": [
+      "MBA, INSEAD"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Seoul",
+    "bio": "Two decades in enterprise software, with deep experience taking AI features into Fortune 500 procurement cycles. Mentors founders on enterprise GTM, pricing architecture, and navigating late-stage fundraising."
+  },
+  {
+    "id": "mentor_005",
+    "name": "Leila Rashid",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed"
+    ],
+    "skills": [
+      "Product Management",
+      "UX",
+      "Growth Marketing"
+    ],
+    "experience": 9,
+    "current_role": "VP Product, NovaMind",
+    "previous_roles": [
+      "Senior Product Manager at Notion",
+      "UX Lead at Intercom"
+    ],
+    "education": [
+      "BA Design, Parsons School of Design"
+    ],
+    "mentor_rating": 4.5,
+    "successful_startups": 1,
+    "investor_network": false,
+    "location": "Dubai",
+    "bio": "Product leader with a design background who has shipped AI-native features to millions of users. Helps early-stage founders build products that users love before scaling distribution."
+  },
+  {
+    "id": "mentor_006",
+    "name": "Tom\u00c3\u00a1s Herrera",
+    "industry": [
+      "AI",
+      "FinTech"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Fundraising",
+      "Finance",
+      "AI Strategy"
+    ],
+    "experience": 13,
+    "current_role": "Founder, AlgoLend",
+    "previous_roles": [
+      "Quant Analyst at Two Sigma",
+      "ML Engineer at Stripe"
+    ],
+    "education": [
+      "MS Financial Engineering, Columbia"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Mexico City",
+    "bio": "Quant finance background combined with ML engineering experience. Built an AI-driven lending platform now processing $200M monthly in LATAM. Mentors at the intersection of AI and financial services."
+  },
+  {
+    "id": "mentor_007",
+    "name": "Fatima Al-Zahrani",
+    "industry": [
+      "AI",
+      "EdTech"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Product Strategy",
+      "Growth Marketing",
+      "Fundraising"
+    ],
+    "experience": 10,
+    "current_role": "CEO, LearnFlow AI",
+    "previous_roles": [
+      "Head of Product at Coursera MENA",
+      "PM at Google Education"
+    ],
+    "education": [
+      "MBA, American University of Beirut"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Riyadh",
+    "bio": "Built one of the largest AI tutoring platforms in the GCC region from a single-person idea to 500,000 learners. Expert at product-market fit in emerging markets and EdTech monetization."
+  },
+  {
+    "id": "mentor_008",
+    "name": "Daniel Osei",
+    "industry": [
+      "AI",
+      "Cybersecurity"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Engineering Leadership",
+      "Machine Learning",
+      "B2B Sales"
+    ],
+    "experience": 16,
+    "current_role": "CTO, ShieldAI Labs",
+    "previous_roles": [
+      "Security Research Lead at Palo Alto Networks",
+      "Senior Engineer at CrowdStrike"
+    ],
+    "education": [
+      "MS Cybersecurity, Carnegie Mellon"
+    ],
+    "mentor_rating": 4.9,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Accra",
+    "bio": "Threat intelligence expert who applied ML to build behavioral anomaly detection systems now used by financial institutions across West Africa. Mentors technical founders on security product architecture."
+  },
+  {
+    "id": "mentor_009",
+    "name": "Mei-Ling Chen",
+    "industry": [
+      "AI",
+      "Consumer Apps"
+    ],
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Growth Marketing",
+      "B2C Growth",
+      "Customer Acquisition"
+    ],
+    "experience": 12,
+    "current_role": "Startup Advisor & Angel Investor",
+    "previous_roles": [
+      "CMO at ByteDance Southeast Asia",
+      "Growth Lead at Grab"
+    ],
+    "education": [
+      "BA Marketing, NUS"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 3,
+    "investor_network": true,
+    "location": "Singapore",
+    "bio": "Consumer growth veteran who helped ByteDance and Grab scale to hundreds of millions of users. Now advises AI consumer app founders on viral loops, retention mechanics, and Southeast Asian distribution."
+  },
+  {
+    "id": "mentor_010",
+    "name": "Alexei Volkov",
+    "industry": [
+      "AI",
+      "DeepTech"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Machine Learning",
+      "Fundraising",
+      "Product Strategy"
+    ],
+    "experience": 18,
+    "current_role": "General Partner, DeepLab Capital",
+    "previous_roles": [
+      "Research Director at NVIDIA Research",
+      "Principal Scientist at OpenAI (early)"
+    ],
+    "education": [
+      "PhD Neural Computation, Moscow State University"
+    ],
+    "mentor_rating": 4.9,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Berlin",
+    "bio": "Deep learning researcher who transitioned to venture capital after co-authoring foundational papers on transformer architectures. Backs and mentors founders working on frontier AI models and applications."
+  },
+  {
+    "id": "mentor_011",
+    "name": "Sunita Kapoor",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Operations",
+      "Customer Acquisition",
+      "Finance"
+    ],
+    "experience": 15,
+    "current_role": "COO, PredictIQ",
+    "previous_roles": [
+      "VP Operations at Freshworks",
+      "Business Operations Lead at Zoho"
+    ],
+    "education": [
+      "MBA, IIM Ahmedabad"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 2,
+    "investor_network": false,
+    "location": "Bengaluru",
+    "bio": "Operations leader with experience scaling SaaS businesses from Series A to IPO in the Indian market. Helps founders build efficient operational infrastructure for rapid headcount and revenue growth."
+  },
+  {
+    "id": "mentor_012",
+    "name": "Kwame Asante",
+    "industry": [
+      "AI",
+      "AgriTech"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Product Management",
+      "Partnerships",
+      "Go-To-Market"
+    ],
+    "experience": 8,
+    "current_role": "Founder, FarmSight AI",
+    "previous_roles": [
+      "Agricultural Technology Consultant at AGRA",
+      "PM at mPedigree"
+    ],
+    "education": [
+      "BS Agricultural Engineering, University of Ghana"
+    ],
+    "mentor_rating": 4.5,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Kumasi",
+    "bio": "Built AI-driven crop yield prediction tools adopted by smallholder farmers across Ghana and Nigeria. Specializes in low-bandwidth AI deployment and go-to-market in frontier agricultural markets."
+  },
+  {
+    "id": "mentor_013",
+    "name": "Rachel Bloom",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Enterprise Sales",
+      "Go-To-Market",
+      "Investor Relations"
+    ],
+    "experience": 22,
+    "current_role": "Operating Partner, Scale Venture Partners",
+    "previous_roles": [
+      "CRO at Gong",
+      "VP Sales at Outreach"
+    ],
+    "education": [
+      "BA Economics, University of Michigan"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 0,
+    "investor_network": true,
+    "location": "New York",
+    "bio": "Revenue leader who helped Gong scale from $10M to $100M ARR in 18 months. Specializes in coaching founders on enterprise sales motion, SDR team building, and CRO hiring at Series A and beyond."
+  },
+  {
+    "id": "mentor_014",
+    "name": "Haruto Tanaka",
+    "industry": [
+      "AI",
+      "Robotics"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Engineering Leadership",
+      "Fundraising",
+      "Partnerships"
+    ],
+    "experience": 14,
+    "current_role": "Co-Founder, Cognex Robotics",
+    "previous_roles": [
+      "Research Engineer at Toyota Research Institute",
+      "Systems Architect at ABB Robotics"
+    ],
+    "education": [
+      "PhD Robotics, Waseda University"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Tokyo",
+    "bio": "Robotics engineer turned founder with two successful hardware+AI exits. Helps founders navigate the unique challenges of hardware fundraising, manufacturing partnerships, and AI systems integration."
+  },
+  {
+    "id": "mentor_015",
+    "name": "Ingrid Svensson",
+    "industry": [
+      "AI",
+      "ClimateTech"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "AI Strategy",
+      "Fundraising",
+      "Product Strategy"
+    ],
+    "experience": 11,
+    "current_role": "CEO, CarbonTrace AI",
+    "previous_roles": [
+      "Product Lead at Vattenfall",
+      "Data Scientist at Northvolt"
+    ],
+    "education": [
+      "MSc Energy Systems, KTH Royal Institute of Technology"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Stockholm",
+    "bio": "Built AI-powered carbon accounting infrastructure now used by 200 European enterprises. Deep expertise at the intersection of climate science, energy policy, and machine learning."
+  },
+  {
+    "id": "mentor_016",
+    "name": "Omar Khalil",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Product Management",
+      "Growth Marketing",
+      "Customer Acquisition"
+    ],
+    "experience": 9,
+    "current_role": "VP Product, Luminary AI",
+    "previous_roles": [
+      "Senior PM at HubSpot",
+      "Growth Manager at Wix"
+    ],
+    "education": [
+      "BS Software Engineering, Cairo University"
+    ],
+    "mentor_rating": 4.4,
+    "successful_startups": 1,
+    "investor_network": false,
+    "location": "Cairo",
+    "bio": "Product and growth practitioner with experience launching AI features for SMB markets in MENA and Europe. Helps pre-seed founders ruthlessly prioritize product roadmaps and validate growth channels."
+  },
+  {
+    "id": "mentor_017",
+    "name": "Nadia Petrov",
+    "industry": [
+      "AI",
+      "HRTech"
+    ],
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Go-To-Market",
+      "B2B Sales",
+      "Product Strategy"
+    ],
+    "experience": 13,
+    "current_role": "Founder, TalentEngine",
+    "previous_roles": [
+      "VP Product at Workday",
+      "Head of Platform at LinkedIn Talent"
+    ],
+    "education": [
+      "MA Organizational Psychology, Moscow State University",
+      "MBA, London Business School"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "London",
+    "bio": "HR technology founder with deep expertise in AI-driven talent acquisition and workforce analytics. Grew TalentEngine to $15M ARR serving enterprise clients across EMEA. Coaches founders on B2B SaaS GTM execution."
+  },
+  {
+    "id": "mentor_018",
+    "name": "Vijay Sundaram",
+    "industry": [
+      "AI",
+      "FinTech"
+    ],
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Finance",
+      "Investor Relations",
+      "Enterprise Sales"
+    ],
+    "experience": 24,
+    "current_role": "Startup Advisor & Board Member",
+    "previous_roles": [
+      "CFO at Razorpay",
+      "Head of Finance at InMobi"
+    ],
+    "education": [
+      "CA, ICAI",
+      "MBA, ISB Hyderabad"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Bengaluru",
+    "bio": "CFO turned advisor with experience taking Indian fintech startups through Series B and pre-IPO rounds. Expertise in financial modeling, due diligence preparation, and investor narrative construction."
+  },
+  {
+    "id": "mentor_019",
+    "name": "Chloe Dubois",
+    "industry": [
+      "AI",
+      "Consumer Apps"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "UX",
+      "Product Management",
+      "Brand Building"
+    ],
+    "experience": 8,
+    "current_role": "Co-Founder, Aura AI",
+    "previous_roles": [
+      "Lead Designer at Spotify France",
+      "UX Researcher at IDEO Paris"
+    ],
+    "education": [
+      "MA Interaction Design, \u00c3\u2030cole de Design Nantes"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 1,
+    "investor_network": false,
+    "location": "Paris",
+    "bio": "Design-led founder who built an AI wellness companion app with 2M downloads. Expert at creating emotionally resonant AI products with ethical design principles."
+  },
+  {
+    "id": "mentor_020",
+    "name": "Ravi Chandran",
+    "industry": [
+      "AI",
+      "Logistics"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Operations",
+      "Product Strategy",
+      "Partnerships"
+    ],
+    "experience": 16,
+    "current_role": "CEO, RouteIQ",
+    "previous_roles": [
+      "Head of Logistics Technology at Amazon India",
+      "Director of Supply Chain at Flipkart"
+    ],
+    "education": [
+      "BTech Industrial Engineering, IIT Madras",
+      "MBA, IIM Calcutta"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Chennai",
+    "bio": "Supply chain and logistics veteran who built AI route optimization used by 3,000 delivery fleets across South Asia. Helps founders navigate enterprise logistics partnerships and operational scaling challenges."
+  },
+  {
+    "id": "mentor_021",
+    "name": "Kemi Adeyemi",
+    "industry": [
+      "AI",
+      "FinTech"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Fundraising",
+      "Product Management",
+      "Go-To-Market"
+    ],
+    "experience": 10,
+    "current_role": "Founder, CreditAI Africa",
+    "previous_roles": [
+      "Product Manager at Flutterwave",
+      "Analyst at Goldman Sachs Lagos"
+    ],
+    "education": [
+      "BSc Economics, University of Lagos",
+      "MBA, Judge Business School Cambridge"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Lagos",
+    "bio": "Fintech founder applying AI to alternative credit scoring for the unbanked in sub-Saharan Africa. Expert in emerging market regulatory navigation, mobile-first financial product design, and impact investor fundraising."
+  },
+  {
+    "id": "mentor_022",
+    "name": "Stefan Hoffmann",
+    "industry": [
+      "AI",
+      "Enterprise Software"
+    ],
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Enterprise Sales",
+      "Finance",
+      "Investor Relations"
+    ],
+    "experience": 21,
+    "current_role": "Managing Director, Horizon Growth Capital",
+    "previous_roles": [
+      "VP Sales at ServiceNow DACH",
+      "Regional Director at Oracle"
+    ],
+    "education": [
+      "MBA, WHU Otto Beisheim School"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 0,
+    "investor_network": true,
+    "location": "Frankfurt",
+    "bio": "Two decades of enterprise software sales across DACH and broader European markets. Advises AI enterprise software companies on channel strategy, partner ecosystems, and Series B growth execution."
+  },
+  {
+    "id": "mentor_023",
+    "name": "Amara Diallo",
+    "industry": [
+      "AI",
+      "HealthTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Machine Learning",
+      "Product Strategy",
+      "Fundraising"
+    ],
+    "experience": 9,
+    "current_role": "Co-Founder, DiagnostiQ",
+    "previous_roles": [
+      "ML Engineer at Roche Digital",
+      "Research Assistant at WHO Innovation Lab"
+    ],
+    "education": [
+      "PhD Biomedical Informatics, Sorbonne"
+    ],
+    "mentor_rating": 4.5,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Dakar",
+    "bio": "Biomedical AI researcher building diagnostic imaging tools for resource-constrained African health systems. Expert in federated learning for healthcare, impact fundraising, and multi-stakeholder deployment."
+  },
+  {
+    "id": "mentor_024",
+    "name": "James Whitfield",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Product Management",
+      "Pricing",
+      "Customer Acquisition"
+    ],
+    "experience": 15,
+    "current_role": "VP Product, NeuralDesk",
+    "previous_roles": [
+      "Head of Product at Zendesk AI",
+      "Senior PM at Atlassian"
+    ],
+    "education": [
+      "BS Mathematics, University of Edinburgh"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 1,
+    "investor_network": false,
+    "location": "Edinburgh",
+    "bio": "Product leader who shipped AI-native support automation to 10,000+ enterprise customers. Expert in AI product pricing, value metric design, and converting traditional SaaS customers to AI-first workflows."
+  },
+  {
+    "id": "mentor_025",
+    "name": "Nia Okafor",
+    "industry": [
+      "AI",
+      "Creator Economy"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Product Management",
+      "B2C Growth",
+      "Brand Building"
+    ],
+    "experience": 7,
+    "current_role": "Founder, CreatorStack AI",
+    "previous_roles": [
+      "Product Manager at TikTok Creator Economy",
+      "Growth Analyst at Patreon"
+    ],
+    "education": [
+      "BA Communications, Howard University"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 1,
+    "investor_network": false,
+    "location": "Atlanta",
+    "bio": "Creator economy product founder building AI tools that help independent creators monetize at scale. Deep expertise in creator motivation, content platform mechanics, and building viral creator acquisition loops."
+  },
+  {
+    "id": "mentor_026",
+    "name": "Yusuf Celik",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Engineering Leadership",
+      "Product Strategy",
+      "Fundraising"
+    ],
+    "experience": 13,
+    "current_role": "Co-Founder, Axon AI",
+    "previous_roles": [
+      "Engineering Manager at Microsoft Azure AI",
+      "Senior Software Architect at Siemens"
+    ],
+    "education": [
+      "MSc Software Engineering, Bogazici University"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Istanbul",
+    "bio": "Engineer-turned-founder with deep experience in AI infrastructure. Built two cloud-native AI platforms and exited one to a European enterprise software company. Mentors technical co-founders on architecture decisions and fundraising."
+  },
+  {
+    "id": "mentor_027",
+    "name": "Ananya Reddy",
+    "industry": [
+      "AI",
+      "HealthTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Product Strategy",
+      "Partnerships",
+      "Go-To-Market"
+    ],
+    "experience": 12,
+    "current_role": "Startup Advisor",
+    "previous_roles": [
+      "Head of Partnerships at Apollo Hospitals Innovation",
+      "Product Director at Practo"
+    ],
+    "education": [
+      "MBBS, AIIMS Delhi",
+      "MBA, ISB Hyderabad"
+    ],
+    "mentor_rating": 4.9,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Hyderabad",
+    "bio": "Physician-turned-product leader with an unparalleled network in Indian healthcare systems. Helps HealthTech founders build clinical partnerships, navigate ABDM compliance, and design products clinicians actually use."
+  },
+  {
+    "id": "mentor_028",
+    "name": "Sebastian Mayer",
+    "industry": [
+      "AI",
+      "DeepTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Machine Learning",
+      "Engineering Leadership",
+      "Fundraising"
+    ],
+    "experience": 19,
+    "current_role": "Principal, Earlybird Venture Capital",
+    "previous_roles": [
+      "Research Lead at Fraunhofer AI Lab",
+      "ML Engineer at DeepMind"
+    ],
+    "education": [
+      "PhD Machine Learning, TU Munich"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Munich",
+    "bio": "Deep learning researcher who backed and mentored over 30 AI and DeepTech startups across Europe. Focuses on helping research-heavy founders translate academic breakthroughs into fundable product narratives."
+  },
+  {
+    "id": "mentor_029",
+    "name": "Taiwo Ogundimu",
+    "industry": [
+      "AI",
+      "Logistics"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed"
+    ],
+    "skills": [
+      "Operations",
+      "Go-To-Market",
+      "Product Management"
+    ],
+    "experience": 8,
+    "current_role": "Co-Founder, HaulAI",
+    "previous_roles": [
+      "Operations Manager at DHL Africa",
+      "Supply Chain Analyst at Dangote Group"
+    ],
+    "education": [
+      "BSc Logistics, University of Ibadan"
+    ],
+    "mentor_rating": 4.4,
+    "successful_startups": 1,
+    "investor_network": false,
+    "location": "Lagos",
+    "bio": "Logistics operator who built AI-powered last-mile delivery coordination for African urban markets. Helps founders understand informal freight networks, last-mile infrastructure constraints, and operational unit economics."
+  },
+  {
+    "id": "mentor_030",
+    "name": "Elena Marchetti",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Go-To-Market",
+      "Brand Building",
+      "Marketing"
+    ],
+    "experience": 16,
+    "current_role": "CMO, Verba AI",
+    "previous_roles": [
+      "VP Marketing at UiPath",
+      "Head of Growth at Contentful"
+    ],
+    "education": [
+      "MA Marketing Communications, Bocconi University"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 0,
+    "investor_network": false,
+    "location": "Milan",
+    "bio": "B2B SaaS marketing executive who helped UiPath and Contentful build category-defining brand positions. Coaches AI SaaS founders on demand generation, product marketing strategy, and community-led growth."
+  },
+  {
+    "id": "mentor_031",
+    "name": "Rohan Malhotra",
+    "industry": [
+      "AI",
+      "E-commerce"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Product Strategy",
+      "Customer Acquisition",
+      "Pricing"
+    ],
+    "experience": 11,
+    "current_role": "Founder, CartAI",
+    "previous_roles": [
+      "Product Lead at Meesho",
+      "Growth Analyst at Flipkart"
+    ],
+    "education": [
+      "BTech CSE, NIT Trichy",
+      "MBA, IIM Bangalore"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Mumbai",
+    "bio": "E-commerce product founder building personalization and dynamic pricing engines for D2C brands in India. Expert in regional language AI commerce, mobile-first conversion optimization, and tier-2 market expansion."
+  },
+  {
+    "id": "mentor_032",
+    "name": "Yolanda Ferreira",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Sales",
+      "Go-To-Market",
+      "Fundraising"
+    ],
+    "experience": 10,
+    "current_role": "Co-Founder, VoiceFlow AI",
+    "previous_roles": [
+      "Enterprise Account Executive at Twilio",
+      "Sales Lead at Segment"
+    ],
+    "education": [
+      "BA Business Administration, NOVA School of Business"
+    ],
+    "mentor_rating": 4.5,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Lisbon",
+    "bio": "Revenue-focused co-founder with enterprise sales DNA. Closed first $1M ARR in 8 months for a conversational AI platform. Helps technical founders build sales processes, hire their first AEs, and close enterprise pilots."
+  },
+  {
+    "id": "mentor_033",
+    "name": "Lior Ben-David",
+    "industry": [
+      "AI",
+      "Cybersecurity"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Engineering Leadership",
+      "Product Strategy",
+      "B2B Sales"
+    ],
+    "experience": 18,
+    "current_role": "Startup Advisor & Angel Investor",
+    "previous_roles": [
+      "Head of Threat Intelligence at Unit 8200",
+      "CTO at SentinelGuard"
+    ],
+    "education": [
+      "BSc Computer Science, Technion"
+    ],
+    "mentor_rating": 4.9,
+    "successful_startups": 3,
+    "investor_network": true,
+    "location": "Tel Aviv",
+    "bio": "Three-time cybersecurity founder with intelligence unit background. Deep expertise in offensive security, AI-driven threat detection, and building Israeli cybersecurity companies for global enterprise markets."
+  },
+  {
+    "id": "mentor_034",
+    "name": "Priscilla Osei-Bonsu",
+    "industry": [
+      "AI",
+      "FinTech"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Fundraising",
+      "Investor Relations",
+      "Finance"
+    ],
+    "experience": 12,
+    "current_role": "Founder, PayPath Africa",
+    "previous_roles": [
+      "Investment Analyst at Partech Africa",
+      "Product Manager at MTN Mobile Money"
+    ],
+    "education": [
+      "BSc Finance, University of Cape Coast",
+      "MBA, Wits Business School"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Accra",
+    "bio": "Pan-African fintech founder building AI-powered cross-border payment infrastructure for SMBs. Expert at impact fundraising, regulatory sandboxes across African central banks, and investor relations for African fintech."
+  },
+  {
+    "id": "mentor_035",
+    "name": "Dmitri Kozlov",
+    "industry": [
+      "AI",
+      "Developer Tools"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Engineering Leadership",
+      "Product Strategy",
+      "Community Building"
+    ],
+    "experience": 14,
+    "current_role": "Co-Founder, DevMind",
+    "previous_roles": [
+      "Principal Engineer at JetBrains",
+      "Staff Engineer at GitLab"
+    ],
+    "education": [
+      "MSc Software Systems, Saint Petersburg State University"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 2,
+    "investor_network": false,
+    "location": "Berlin",
+    "bio": "Open-source developer tools founder with 40,000 GitHub stars across personal projects. Deep expertise in developer experience design, PLG motion for devtools, and building bottom-up enterprise adoption."
+  },
+  {
+    "id": "mentor_036",
+    "name": "Chioma Eze",
+    "industry": [
+      "AI",
+      "EdTech"
+    ],
+    "stages": [
+      "Idea",
+      "Pre-Seed"
+    ],
+    "skills": [
+      "Product Management",
+      "Go-To-Market",
+      "Partnerships"
+    ],
+    "experience": 7,
+    "current_role": "Founder, ScholarAI",
+    "previous_roles": [
+      "Program Officer at USAID EdTech Initiative",
+      "Teacher at Bridge International Academies"
+    ],
+    "education": [
+      "MEd Curriculum Design, University of Nairobi"
+    ],
+    "mentor_rating": 4.5,
+    "successful_startups": 1,
+    "investor_network": false,
+    "location": "Nairobi",
+    "bio": "Educator-turned-founder building AI adaptive learning tools for secondary students in East Africa. Expert in offline-first AI design, NGO and government EdTech partnerships, and pedagogy-informed product development."
+  },
+  {
+    "id": "mentor_037",
+    "name": "Patrick Nguyen",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Finance",
+      "Operations",
+      "Investor Relations"
+    ],
+    "experience": 20,
+    "current_role": "CFO & Operating Partner, Insight Partners",
+    "previous_roles": [
+      "CFO at Veeva Systems",
+      "VP Finance at DocuSign"
+    ],
+    "education": [
+      "BS Accounting, UC Berkeley",
+      "CPA"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 0,
+    "investor_network": true,
+    "location": "New York",
+    "bio": "Finance executive who guided two SaaS unicorns through growth equity rounds and public market debuts. Coaches founders on unit economics, financial reporting for institutional investors, and board-level financial communication."
+  },
+  {
+    "id": "mentor_038",
+    "name": "Isabela Costa",
+    "industry": [
+      "AI",
+      "Marketplaces"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Product Strategy",
+      "Operations",
+      "Growth Marketing"
+    ],
+    "experience": 11,
+    "current_role": "Co-Founder, MatchAI",
+    "previous_roles": [
+      "Head of Marketplace at iFood",
+      "Product Manager at OLX Brazil"
+    ],
+    "education": [
+      "MBA, FGV S\u00c3\u00a3o Paulo"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "S\u00c3\u00a3o Paulo",
+    "bio": "Marketplace founder who built AI-powered matching for professional services in Brazil. Expert in liquidity bootstrapping, supply-demand matching algorithms, and hyperlocal marketplace dynamics in Latin American cities."
+  },
+  {
+    "id": "mentor_039",
+    "name": "Takeshi Yamamoto",
+    "industry": [
+      "AI",
+      "IoT"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Engineering Leadership",
+      "Product Strategy",
+      "Partnerships"
+    ],
+    "experience": 17,
+    "current_role": "CTO, SensorLink",
+    "previous_roles": [
+      "IoT Architect at Hitachi",
+      "Embedded Systems Lead at Sony"
+    ],
+    "education": [
+      "ME Electrical Engineering, University of Tokyo"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 2,
+    "investor_network": false,
+    "location": "Osaka",
+    "bio": "Hardware and IoT CTO with deep expertise in AI edge computing. Built predictive maintenance systems for manufacturing across Japanese industrial clients. Mentors IoT founders on hardware-software integration and sensor data ML."
+  },
+  {
+    "id": "mentor_040",
+    "name": "Ayesha Siddiqui",
+    "industry": [
+      "AI",
+      "HRTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Product Management",
+      "Fundraising",
+      "Go-To-Market"
+    ],
+    "experience": 10,
+    "current_role": "Founder, TalentLens",
+    "previous_roles": [
+      "Product Lead at LinkedIn Pakistan",
+      "HR Technology Consultant at McKinsey"
+    ],
+    "education": [
+      "MBA, Lahore University of Management Sciences"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Karachi",
+    "bio": "HR technology founder applying AI to talent matching for remote work in South Asian markets. Expert in enterprise HR buyer dynamics, ethical AI hiring frameworks, and impact-focused fundraising."
+  },
+  {
+    "id": "mentor_041",
+    "name": "Connor Sullivan",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Seed",
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Product Management",
+      "Engineering Leadership",
+      "Sales"
+    ],
+    "experience": 14,
+    "current_role": "Founder, WorkflowAI",
+    "previous_roles": [
+      "Head of Product at Monday.com",
+      "Senior Engineer at Asana"
+    ],
+    "education": [
+      "BS Computer Science, University of Illinois"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Chicago",
+    "bio": "Workflow automation founder who bridged the gap between no-code tools and AI agents. Built and scaled a team productivity platform to $20M ARR with a 10-person team. Coaches founders on lean product organization design."
+  },
+  {
+    "id": "mentor_042",
+    "name": "Miriam Goldstein",
+    "industry": [
+      "AI",
+      "FinTech"
+    ],
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Investor Relations",
+      "Finance",
+      "Operations"
+    ],
+    "experience": 23,
+    "current_role": "Partner, FinVenture Capital",
+    "previous_roles": [
+      "Managing Director at Mastercard Labs",
+      "Head of Strategic Finance at Klarna"
+    ],
+    "education": [
+      "MBA, Wharton School of Business"
+    ],
+    "mentor_rating": 4.9,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Amsterdam",
+    "bio": "Fintech venture partner and former Mastercard Labs executive with deep regulatory networks across the EU. Coaches AI fintech founders on PSD2/DORA compliance, fundraising narratives, and European expansion strategy."
+  },
+  {
+    "id": "mentor_043",
+    "name": "Adebayo Ojo",
+    "industry": [
+      "AI",
+      "Enterprise Software"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Enterprise Sales",
+      "Go-To-Market",
+      "Partnerships"
+    ],
+    "experience": 15,
+    "current_role": "VP Enterprise, TechFlow Africa",
+    "previous_roles": [
+      "Enterprise Account Director at SAP Africa",
+      "Regional Sales Lead at Oracle Nigeria"
+    ],
+    "education": [
+      "BSc Information Systems, Covenant University"
+    ],
+    "mentor_rating": 4.5,
+    "successful_startups": 0,
+    "investor_network": false,
+    "location": "Abuja",
+    "bio": "Enterprise software sales veteran with 15 years closing complex deals across African public and private sector organizations. Helps AI enterprise founders build sales playbooks for African government and banking clients."
+  },
+  {
+    "id": "mentor_044",
+    "name": "Xiomara Vega",
+    "industry": [
+      "AI",
+      "Consumer Apps"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Product Management",
+      "Brand Building",
+      "B2C Growth"
+    ],
+    "experience": 8,
+    "current_role": "Co-Founder, FeelaAI",
+    "previous_roles": [
+      "Product Manager at Meta (LATAM)",
+      "Growth Manager at Rappi"
+    ],
+    "education": [
+      "BA Industrial Design, Universidad de los Andes"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 1,
+    "investor_network": false,
+    "location": "Bogota",
+    "bio": "Consumer product founder building AI-powered mental wellness apps for young Latinas in Colombia and Mexico. Expert at culturally-nuanced product design, Spanish-language content AI, and consumer app monetization in LATAM."
+  },
+  {
+    "id": "mentor_045",
+    "name": "Oluwatoyin Adewale",
+    "industry": [
+      "AI",
+      "FinTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "Product Strategy",
+      "Fundraising",
+      "Operations"
+    ],
+    "experience": 9,
+    "current_role": "Founder, KreditAI",
+    "previous_roles": [
+      "Risk Analyst at Access Bank",
+      "Data Scientist at Interswitch"
+    ],
+    "education": [
+      "BSc Statistics, University of Ibadan",
+      "MSc Data Science, University of Strathclyde"
+    ],
+    "mentor_rating": 4.5,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Lagos",
+    "bio": "Fintech founder using AI to build psychographic credit scoring for young urban Africans without formal credit histories. Mentors pre-seed fintech founders on alternative data sourcing and CBN regulatory frameworks."
+  },
+  {
+    "id": "mentor_046",
+    "name": "Wei Zhang",
+    "industry": [
+      "AI",
+      "DeepTech"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Machine Learning",
+      "Engineering Leadership",
+      "Fundraising"
+    ],
+    "experience": 16,
+    "current_role": "Co-Founder, QuantumPath AI",
+    "previous_roles": [
+      "AI Research Director at Huawei Research",
+      "Senior Scientist at Baidu Brain"
+    ],
+    "education": [
+      "PhD Computer Vision, Peking University"
+    ],
+    "mentor_rating": 4.8,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Shenzhen",
+    "bio": "Computer vision researcher with 80+ published papers who transitioned to founding AI deep tech companies. Expert at bridging lab-stage research to enterprise deployment and navigating China-global AI fundraising."
+  },
+  {
+    "id": "mentor_047",
+    "name": "Nadine Brunet",
+    "industry": [
+      "AI",
+      "ClimateTech"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed"
+    ],
+    "skills": [
+      "AI Strategy",
+      "Product Strategy",
+      "Fundraising"
+    ],
+    "experience": 10,
+    "current_role": "Founder, Echelon AI",
+    "previous_roles": [
+      "Climate Scientist at Meteo-France",
+      "Data Analyst at Total Energies"
+    ],
+    "education": [
+      "PhD Atmospheric Science, University of Paris-Saclay"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Paris",
+    "bio": "Climate scientist turned founder building AI weather prediction for renewable energy operators. Expert at climate data ML, EU climate tech grant funding, and productizing scientific models for commercial energy markets."
+  },
+  {
+    "id": "mentor_048",
+    "name": "Rhys Morgan",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Series A",
+      "Series B"
+    ],
+    "skills": [
+      "Product Management",
+      "Go-To-Market",
+      "Pricing"
+    ],
+    "experience": 18,
+    "current_role": "VP Product, Vantage AI",
+    "previous_roles": [
+      "Director of Product at Stripe",
+      "Product Lead at Shopify"
+    ],
+    "education": [
+      "BS Physics, University of Oxford"
+    ],
+    "mentor_rating": 4.9,
+    "successful_startups": 1,
+    "investor_network": false,
+    "location": "London",
+    "bio": "Senior product leader who shipped payment and commerce products to 2M+ merchants globally. Expertise in product-led growth, API product design, and usage-based pricing for AI SaaS products."
+  },
+  {
+    "id": "mentor_049",
+    "name": "Zainab Hassan",
+    "industry": [
+      "AI",
+      "EdTech"
+    ],
+    "stages": [
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Fundraising",
+      "Partnerships",
+      "Product Strategy"
+    ],
+    "experience": 11,
+    "current_role": "CEO, MindMosaic",
+    "previous_roles": [
+      "Head of EdTech at GEMS Education",
+      "Product Director at Alef Education"
+    ],
+    "education": [
+      "MEd Education Technology, UAE University"
+    ],
+    "mentor_rating": 4.6,
+    "successful_startups": 2,
+    "investor_network": true,
+    "location": "Abu Dhabi",
+    "bio": "EdTech founder building AI personalized learning for Arabic-speaking K-12 students. Deep expertise in Arabic NLP, Ministry of Education procurement, and building curriculum-aligned AI learning products in the Gulf."
+  },
+  {
+    "id": "mentor_050",
+    "name": "Santiago Reyes",
+    "industry": [
+      "AI",
+      "SaaS"
+    ],
+    "stages": [
+      "Pre-Seed",
+      "Seed",
+      "Series A"
+    ],
+    "skills": [
+      "Sales",
+      "Customer Acquisition",
+      "Go-To-Market"
+    ],
+    "experience": 12,
+    "current_role": "Co-Founder, AutoCloser",
+    "previous_roles": [
+      "Head of Sales at Lemontech",
+      "Account Executive at HubSpot LATAM"
+    ],
+    "education": [
+      "BA Business, Pontificia Universidad Catolica de Chile"
+    ],
+    "mentor_rating": 4.7,
+    "successful_startups": 1,
+    "investor_network": true,
+    "location": "Santiago",
+    "bio": "Sales-led co-founder who built an AI sales automation platform bootstrapped to $2M ARR before raising institutional capital. Coaches LATAM B2B SaaS founders on outbound-led growth and their first enterprise deals."
+  }
+]

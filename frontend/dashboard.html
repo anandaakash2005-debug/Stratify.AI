@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Satquery.AI</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/dashboard-pages.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+
+  <!-- ── Inline fixes: ensures critical layout/component styles are always present ── -->
+  <style>
+    /* ── Risk item ────────────────────────────────────────────────────────── */
+    .risk-item {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      padding: .85rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+    .risk-item:last-child { border-bottom: none; }
+    .risk-level-bar {
+      flex-shrink: 0;
+      width: 4px;
+      height: 42px;
+      border-radius: 4px;
+      background: var(--indigo, #6366f1);
+    }
+    .risk-content { flex: 1; min-width: 0; }
+    .risk-name    { font-size: .85rem; font-weight: 700; margin-bottom: .2rem; }
+    .risk-desc    { font-size: .78rem; color: var(--text-muted, #cbd5e1); line-height: 1.4; }
+    .risk-pct     { flex-shrink: 0; font-size: .75rem; font-weight: 700; }
+
+    /* ── Recommendation card ──────────────────────────────────────────────── */
+    .rec-card {
+      background: rgba(15,23,42,0.72);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 12px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: .75rem;
+      transition: border-color .2s, transform .2s;
+    }
+    .rec-card:hover { border-color: rgba(99,102,241,.4); transform: translateX(3px); }
+    .rec-header { display: flex; align-items: flex-start; gap: 1rem; }
+    .rec-number {
+      flex-shrink: 0;
+      font-size: .7rem;
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+      color: var(--indigo, #6366f1);
+      opacity: .7;
+      padding-top: .1rem;
+    }
+    .rec-title { font-size: .875rem; line-height: 1.5; color: var(--text-primary, #e0e0f0); }
+
+    /* ── Competitor card ──────────────────────────────────────────────────── */
+    .competitor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: .5rem;
+    }
+    .competitor-card { padding: 1.25rem !important; }
+    .competitor-name  { font-weight: 700; font-size: .9rem; margin-bottom: .35rem; }
+    .competitor-niche { font-size: .78rem; color: var(--text-muted, #cbd5e1); margin-bottom: .6rem; line-height: 1.4; }
+    .competitor-threat span {
+      font-size: .72rem;
+      font-weight: 700;
+      padding: .2rem .55rem;
+      border-radius: 999px;
+      background: rgba(245,158,11,.12);
+      color: var(--amber, #f59e0b);
+    }
+
+    /* ── SWOT grid ────────────────────────────────────────────────────────── */
+    .swot-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 640px) { .swot-grid { grid-template-columns: 1fr; } }
+    .swot-card   { padding: 1.25rem !important; }
+    .swot-header { display: flex; align-items: center; gap: .6rem; margin-bottom: .75rem; }
+    .swot-icon   { font-size: 1.3rem; }
+    .swot-title  { font-size: .8rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+    .swot-strengths    .swot-title { color: #10b981; }
+    .swot-weaknesses   .swot-title { color: #f43f5e; }
+    .swot-opportunities .swot-title { color: #6366f1; }
+    .swot-threats      .swot-title { color: #f59e0b; }
+    .swot-list { padding-left: 1.1rem; margin: 0; }
+    .swot-list li {
+      font-size: .8rem;
+      color: var(--text-secondary, #c0c0d8);
+      line-height: 1.55;
+      margin-bottom: .35rem;
+    }
+
+    /* ── Gauge card layout ────────────────────────────────────────────────── */
+    .gauge-canvas-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem auto;
+      width: 180px;
+      height: 180px;
+    }
+    .gauge-center-text {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      pointer-events: none;
+    }
+    .gauge-score {
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .gauge-label { font-size: .75rem; color: var(--text-muted, #cbd5e1); margin-top: .15rem; }
+    .gauge-card-title { font-weight: 700; font-size: .9rem; text-align: center; margin-top: .5rem; }
+    .gauge-card-desc  { font-size: .75rem; color: var(--text-muted, #cbd5e1); text-align: center; margin-top: .2rem; }
+
+    /* ── Stat card ────────────────────────────────────────────────────────── */
+    .stat-card    { padding: 1.5rem !important; }
+    .stat-label   { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted, #cbd5e1); margin-bottom: .5rem; }
+    .stat-value   { font-size: 2rem; font-weight: 900; line-height: 1.1; margin-bottom: .4rem; }
+    .stat-change  { font-size: .75rem; font-weight: 600; }
+    .stat-change.up   { color: #10b981; }
+    .stat-change.down { color: #f43f5e; }
+
+    /* ── Progress bar ─────────────────────────────────────────────────────── */
+    .progress-track { height: 5px; border-radius: 99px; background: rgba(255,255,255,.06); overflow: hidden; }
+    .progress-fill  {
+      height: 100%; border-radius: 99px;
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      width: 0%;
+      transition: width 1.2s cubic-bezier(.4,0,.2,1);
+    }
+    .progress-fill.fill-success { background: linear-gradient(90deg, #10b981, #34d399); }
+    .progress-fill.fill-warning { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+    .progress-fill.fill-danger  { background: linear-gradient(90deg, #f43f5e, #fb7185); }
+    .progress-fill.fill-info    { background: linear-gradient(90deg, #06b6d4, #22d3ee); }
+
+    /* ── Funding bar row ──────────────────────────────────────────────────── */
+    .funding-bar-row   { padding: .5rem 0; }
+    .funding-bar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: .35rem; }
+    .funding-bar-name  { font-size: .8rem; color: var(--text-secondary, #c0c0d8); }
+    .funding-bar-pct   { font-size: .8rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+    /* ── Survival meter ───────────────────────────────────────────────────── */
+    .survival-meter  { text-align: center; padding: 1.5rem 0; }
+    .survival-value  { font-size: 3.5rem; font-weight: 900; color: #6366f1; line-height: 1; }
+    .survival-pct-sign { font-size: 1.4rem; font-weight: 700; color: #6366f1; }
+    .survival-label  { font-size: .8rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--text-muted, #cbd5e1); margin-top: .3rem; }
+    .survival-tagline { font-size: .78rem; color: var(--text-muted, #cbd5e1); margin-top: .25rem; }
+
+    /* ── Timeline ─────────────────────────────────────────────────────────── */
+    .timeline       { display: flex; flex-direction: column; gap: 0; }
+    .timeline-item  { display: flex; align-items: flex-start; gap: .85rem; padding: .85rem 0; border-bottom: 1px solid rgba(255,255,255,.04); }
+    .timeline-item:last-child { border-bottom: none; }
+    .timeline-dot   { flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; margin-top: .35rem; }
+    .timeline-content { flex: 1; min-width: 0; }
+    .timeline-title { font-size: .82rem; font-weight: 700; margin-bottom: .15rem; }
+    .timeline-meta  { font-size: .75rem; color: var(--text-muted, #cbd5e1); line-height: 1.35; }
+    .timeline-time  { flex-shrink: 0; font-size: .7rem; color: var(--text-muted, #cbd5e1); white-space: nowrap; padding-top: .2rem; }
+
+    /* ── Risk distribution legend ─────────────────────────────────────────── */
+    .text-sm   { font-size: .8rem; }
+    .font-mono { font-variant-numeric: tabular-nums; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+<div class="bg-orbs">
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img class="nav-logo-icon" src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="42" height="42" />
+    <span class="nav-logo-text">Satquery.AI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html"    class="nav-link">Home</a></li>
+    <li><a href="analysis.html" class="nav-link">Analyze</a></li>
+    <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+    <li><a href="report.html"   class="nav-link">Reports</a></li>
+    <li><a href="chatbot.html" class="ai-nav-btn">🚀 AI Copilot</a></li>
+  </ul>
+  <div class="nav-cta">
+    <button id="theme-toggle"  class="btn btn-ghost btn-icon" title="Toggle theme">☀️</button>
+    <button id="sidebar-toggle" class="btn btn-ghost btn-icon" title="Toggle sidebar">☰</button>
+    <a href="analysis.html" class="btn btn-primary btn-sm">+ New Analysis</a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-menu">
+  <a href="index.html"    class="nav-mobile-link">Home</a>
+  <a href="analysis.html" class="nav-mobile-link">Analyze</a>
+  <a href="dashboard.html" class="nav-mobile-link">Dashboard</a>
+  <a href="report.html"   class="nav-mobile-link">Reports</a>
+  <a href="chatbot.html" class="nav-mobile-link">🚀 AI Copilot</a>
+</div>
+
+<div class="page-content">
+  <div class="dashboard-layout">
+
+    <!-- ── Sidebar ─────────────────────────────────────────────────────────── -->
+    <aside class="sidebar">
+      <div class="sidebar-section-label">Overview</div>
+      <a href="dashboard.html" class="sidebar-link active">
+        <span class="sidebar-icon">📊</span> Dashboard
+      </a>
+      <a href="report.html" class="sidebar-link">
+        <span class="sidebar-icon">📄</span> Full Report
+      </a>
+
+      <div class="sidebar-section-label">Analysis</div>
+      <a href="#survival"       class="sidebar-link" onclick="return scrollToSection('survival', event)">
+        <span class="sidebar-icon">❤️</span> Survival Score
+      </a>
+      <a href="#risks"          class="sidebar-link" onclick="return scrollToSection('risks', event)">
+        <span class="sidebar-icon">⚠️</span> Risk Map
+        <span class="sidebar-badge-count" id="riskSidebarCount">0</span>
+      </a>
+      <a href="#swot"           class="sidebar-link" onclick="return scrollToSection('swot', event)">
+        <span class="sidebar-icon">🧬</span> SWOT
+      </a>
+      <a href="#competitors"    class="sidebar-link" onclick="return scrollToSection('competitors', event)">
+        <span class="sidebar-icon">⚔️</span> Competitors
+      </a>
+      <a href="#funding"        class="sidebar-link" onclick="return scrollToSection('funding', event)">
+        <span class="sidebar-icon">💰</span> Funding Readiness
+      </a>
+      <a href="#recommendations" class="sidebar-link" onclick="return scrollToSection('recommendations', event)">
+        <span class="sidebar-icon">🤖</span> AI Recommendations
+        <span class="sidebar-badge-count" id="recommendationSidebarCount">0</span>
+      </a>
+
+      <div class="sidebar-section-label">Tools</div>
+      <a href="analysis.html" class="sidebar-link">
+        <span class="sidebar-icon">🔬</span> New Analysis
+      </a>
+      <a href="#" class="sidebar-link" onclick="Modal.open('export-modal');return false">
+        <span class="sidebar-icon">📤</span> Export Report
+      </a>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-link"><span class="sidebar-icon">⚙️</span> Settings</div>
+        <div class="sidebar-link"><span class="sidebar-icon">❓</span> Help</div>
+      </div>
+    </aside>
+    <div class="sidebar-overlay"></div>
+
+    <!-- ── Main content ─────────────────────────────────────────────────────── -->
+    <main class="main-content">
+
+      <!-- Page header -->
+      <div class="page-header anim-fade-in" id="overview">
+        <div class="flex items-center justify-between" style="flex-wrap:wrap;gap:1rem">
+          <div>
+            <div class="flex items-center gap-3 mb-2">
+              <div class="badge badge-success"><span class="dot"></span> Analysis Complete</div>
+              <div class="badge badge-indigo" id="industryBadge">
+  Industry
+</div>
+            </div>
+            <h1 class="page-title" id="pageTitle">
+  Startup — Survival Dashboard
+</h1>
+            <p class="page-subtitle" id="pageSubtitle">Loading analysis data…</p>
+          </div>
+          <div class="flex gap-3" style="flex-wrap:wrap">
+            <button id="refreshBtn" class="btn btn-ghost btn-sm">🔄 Refresh</button>
+            <button id="fullReportBtn" class="btn btn-ghost btn-sm">📤 Export JSON</button>
+            <a href="report.html" class="btn btn-primary btn-sm">📄 Full Report →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── KPI Row ──────────────────────────────────────────────────────── -->
+      <div class="dash-grid" id="survival">
+
+        <!-- Survival score gauge -->
+        <div class="glass-card col-4 score-gauge-card pulse-glow anim-fade-up delay-1"
+             style="padding:1.5rem;text-align:center">
+          <div class="card-header">
+            <div class="card-title">
+              <div class="card-title-icon">❤️</div>
+              Survival Score
+            </div>
+            <div class="badge badge-success" id="survivalBadge">
+  Loading
+</div>
+          </div>
+          <div class="gauge-canvas-wrap">
+            <canvas id="survivalGauge" width="180" height="180"></canvas>
+            <div class="gauge-center-text">
+              <div class="gauge-score gradient-text" id="gaugeScoreText">
+  0
+</div>
+              <div class="gauge-label">/ 100</div>
+            </div>
+          </div>
+          <div class="gauge-card-title" id="gaugeCardTitle"></div>
+          <div class="gauge-card-desc" id="gaugeCardDesc"></div>
+        </div>
+
+        <!-- Monthly Revenue -->
+        <div class="glass-card col-4 stat-card anim-fade-up delay-2">
+          <div class="stat-label">Monthly Revenue</div>
+          <div class="stat-value gradient-text" id="monthlyRevenue">$0</div>
+          <div class="stat-change up" id="revenueChange">
+  Loading...
+</div>
+          <div class="progress-track" style="margin-top:1rem">
+            <div class="progress-fill" id="revenueFill" style="width:0%"></div>
+          </div>
+          <div
+  id="revenueCaption"
+  style="font-size:.72rem;color:var(--text-muted);margin-top:.3rem"
+>
+  Loading...
+</div>
+        </div>
+
+        <!-- Runway -->
+        <div class="glass-card col-4 stat-card anim-fade-up delay-3">
+          <div class="stat-label">Runway Remaining</div>
+          <div class="stat-value" id="runwayRemaining" style="color:var(--amber)">0 mo</div>
+          <div class="stat-change down" id="runwayChange">
+  —
+</div>
+          <div class="progress-track" style="margin-top:1rem">
+            <div
+  class="progress-fill fill-warning"
+  id="runwayFill"
+  style="width:0%"
+></div>
+          </div>
+          <div
+  id="runwayCaption"
+  style="font-size:.72rem;color:var(--text-muted);margin-top:.3rem"
+>
+  —
+</div>
+        </div>
+
+        <!-- Team Health -->
+        <div class="glass-card col-4 stat-card anim-fade-up delay-4">
+          <div class="stat-label">Team Health</div>
+          <div class="stat-value" id="teamHealth" style="color:var(--emerald)">0%</div>
+          <div class="stat-change up" id="teamChange">
+  Loading...
+</div>
+          <div class="progress-track" style="margin-top:1rem">
+            <div
+  class="progress-fill fill-success"
+  id="teamFill"
+  style="width:0%"
+></div>
+          </div>
+          <div
+  id="teamCaption"
+  style="font-size:.72rem;color:var(--text-muted);margin-top:.3rem"
+>
+  Loading...
+</div>
+        </div>
+
+        <!-- Funding Readiness -->
+        <div class="glass-card col-4 stat-card anim-fade-up delay-5">
+          <div class="stat-label">Funding Readiness</div>
+          <div class="stat-value" id="fundingReadiness" style="color:var(--cyan)">0%</div>
+          <div class="stat-change up" id="fundingReadinessChange">
+  Loading...
+</div>
+          <div class="progress-track" style="margin-top:1rem">
+            <div
+  class="progress-fill fill-info"
+  id="fundingReadinessFill"
+  style="width:0%"
+></div>
+          </div>
+          <div
+  id="fundingReadinessCaption"
+  style="font-size:.72rem;color:var(--text-muted);margin-top:.3rem"
+>
+  Loading...
+</div>
+        </div>
+
+        <!-- Market Opportunity -->
+        <div class="glass-card col-4 stat-card anim-fade-up delay-6">
+          <div class="stat-label">Market Opportunity</div>
+          <div class="stat-value gradient-text" id="marketOpportunity">0/100</div>
+          <div class="stat-change up" id="marketChange">
+  Loading...
+</div>
+          <div class="progress-track" style="margin-top:1rem">
+            <div
+  class="progress-fill"
+  id="marketFill"
+  style="width:0%"
+></div>
+          </div>
+          <div
+  id="marketCaption"
+  style="font-size:.72rem;color:var(--text-muted);margin-top:.3rem"
+>
+  Loading...
+</div>
+        </div>
+
+        <!-- Break-even Forecast -->
+        <div class="glass-card col-4 stat-card anim-fade-up delay-7">
+          <div class="stat-label">Break-even Forecast</div>
+          <div class="stat-value" id="breakEvenForecast">Loading...</div>
+        </div>
+
+        <!-- Revenue Trend Chart -->
+        <div class="glass-card col-8 trend-card anim-fade-up delay-2">
+          <div class="card-header">
+            <div class="card-title"><div class="card-title-icon">📈</div> Revenue Projection</div>
+            <div class="card-subtitle" id="revenueChartSubtitle" style="font-size:.72rem;color:var(--text-muted);margin-top:2px">Based on analysis generated ...</div>
+            <div class="tab-bar" data-tab-group="trend">
+              <button class="tab-btn active" id="trend6m" data-tab="6m">6M</button>
+              <button class="tab-btn"        id="trend1y" data-tab="1y">1Y</button>
+            </div>
+          </div>
+          <div class="chart-wrap" style="height:200px">
+            <canvas id="revenueChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Cash Balance Chart -->
+        <div class="glass-card col-8 trend-card anim-fade-up delay-3">
+          <div class="card-header">
+            <div class="card-title"><div class="card-title-icon">💵</div> Cash Balance Projection</div>
+          </div>
+          <div class="chart-wrap" style="height:200px">
+            <canvas id="cashChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Health Radar Chart -->
+        <div class="glass-card col-4 radar-card anim-fade-up delay-3">
+          <div class="card-header">
+            <div class="card-title"><div class="card-title-icon">🧬</div> Health Radar</div>
+          </div>
+          <div class="chart-wrap" style="height:200px">
+            <canvas id="radarChart"></canvas>
+          </div>
+        </div>
+
+      </div><!-- /dash-grid kpi -->
+
+      <!-- ── AI Financial Signals ───────────────────────────────────────────── -->
+      <div class="glass-card anim-fade-up delay-4" style="margin-top:1.5rem;padding:1.5rem" id="financialSignals">
+        <div class="card-header">
+          <div class="card-title"><div class="card-title-icon">📈</div> AI Financial Signals</div>
+        </div>
+        <div id="financialSignalsList">
+          <p style="color:var(--text-muted);padding:.5rem 0">Loading financial signals…</p>
+        </div>
+      </div>
+
+      <!-- ── Risk Vector Map ─────────────────────────────────────────────── -->
+      <div id="risks" style="margin-top:2rem">
+        <div class="card-header">
+          <div class="card-title" style="font-size:1.1rem">
+            <div class="card-title-icon">⚠️</div> Risk Vector Map
+          </div>
+          <div id="riskCountBadge" class="badge badge-danger risk-count-badge">0 Active Risks</div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="glass-card col-8 anim-fade-up">
+            <div style="padding:1.5rem">
+              <div class="risk-list" id="riskList">
+                <p style="color:var(--text-muted);padding:.5rem 0">Loading risk data…</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card col-4 anim-fade-up delay-2" style="padding:1.5rem">
+            <div class="card-title mb-4">
+              <div class="card-title-icon">📊</div> Risk Distribution
+            </div>
+            <div style="position:relative;height:260px;">
+              <canvas id="riskChart"></canvas>
+            </div>
+            <div style="margin-top:1rem;display:flex;flex-direction:column;gap:.5rem">
+              <div class="flex justify-between text-sm">
+                <span style="color:var(--rose,#f43f5e)">● Critical</span>
+                <span class="font-mono" id="criticalRiskCount">0 risks</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span style="color:var(--amber,#f59e0b)">● High</span>
+                <span class="font-mono" id="highRiskCount">0 risks</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span style="color:var(--cyan,#06b6d4)">● Medium</span>
+                <span class="font-mono" id="mediumRiskCount">0 risks</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span style="color:var(--emerald,#10b981)">● Low</span>
+                <span class="font-mono" id="lowRiskCount">0 risks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SWOT Intelligence ───────────────────────────────────────────── -->
+      <div id="swot" style="margin-top:2rem">
+        <div class="card-header">
+          <div class="card-title" style="font-size:1.1rem">
+            <div class="card-title-icon">🧬</div> SWOT Intelligence
+          </div>
+          <div class="badge badge-indigo">AI-Generated</div>
+        </div>
+        <div class="glass-card anim-fade-up">
+          <div style="padding:1.5rem">
+            <div class="swot-grid">
+              <div class="glass-card swot-card swot-strengths">
+                <div class="swot-header">
+                  <div class="swot-icon">💪</div>
+                  <div class="swot-title">Strengths</div>
+                </div>
+                <ul class="swot-list" id="swotStrengths"></ul>
+              </div>
+              <div class="glass-card swot-card swot-weaknesses">
+                <div class="swot-header">
+                  <div class="swot-icon">⚡</div>
+                  <div class="swot-title">Weaknesses</div>
+                </div>
+                <ul class="swot-list" id="swotWeaknesses"></ul>
+              </div>
+              <div class="glass-card swot-card swot-opportunities">
+                <div class="swot-header">
+                  <div class="swot-icon">🚀</div>
+                  <div class="swot-title">Opportunities</div>
+                </div>
+                <ul class="swot-list" id="swotOpportunities"></ul>
+              </div>
+              <div class="glass-card swot-card swot-threats">
+                <div class="swot-header">
+                  <div class="swot-icon">🛡️</div>
+                  <div class="swot-title">Threats</div>
+                </div>
+                <ul class="swot-list" id="swotThreats"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Competitor Landscape ────────────────────────────────────────── -->
+      <div id="competitors" style="margin-top:2rem">
+        <div class="card-header">
+          <div class="card-title" style="font-size:1.1rem">
+            <div class="card-title-icon">⚔️</div> Competitor Landscape
+          </div>
+          <div class="badge badge-warning" id="competitorThreatBadge">0 Competitors Detected</div>
+        </div>
+        <div class="competitor-grid anim-fade-up" id="competitorGrid">
+          <p style="color:var(--text-muted);padding:.5rem 0">Loading competitor data…</p>
+        </div>
+      </div>
+
+      <!-- ── Funding Readiness + Activity Log ───────────────────────────── -->
+      <div id="funding" style="margin-top:2rem">
+        <div class="dash-grid">
+
+          <!-- Funding Readiness Card -->
+          <div class="glass-card col-6 anim-fade-up" style="padding:1.5rem">
+            <div class="card-header">
+              <div class="card-title">
+                <div class="card-title-icon">💰</div> Funding Readiness
+              </div>
+              <div class="badge badge-indigo" id="fundingStatusBadge">Seed-Ready</div>
+            </div>
+            <div class="survival-meter">
+              <div style="display:flex;align-items:baseline;justify-content:center;gap:.1rem">
+                <div class="survival-value" id="fundingScoreValue">0</div>
+                <div class="survival-pct-sign">%</div>
+              </div>
+              <div class="survival-label">Funding Readiness Score</div>
+              <div class="survival-tagline" id="fundingTagline">Close to investor-ready for Seed round</div>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:0">
+              <div class="funding-bar-row">
+                <div class="funding-bar-header">
+                  <div class="funding-bar-name">Traction Metrics</div>
+                  <div class="funding-bar-pct" id="fundingPctTraction" style="color:var(--emerald)">0%</div>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-success" id="fundingFillTraction" data-width="0" style="width:0%"></div>
+                </div>
+              </div>
+              <div class="funding-bar-row">
+                <div class="funding-bar-header">
+                  <div class="funding-bar-name">Team Strength</div>
+                  <div class="funding-bar-pct" id="fundingPctTeam" style="color:var(--emerald)">0%</div>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-success" id="fundingFillTeam" data-width="0" style="width:0%"></div>
+                </div>
+              </div>
+              <div class="funding-bar-row">
+                <div class="funding-bar-header">
+                  <div class="funding-bar-name">Market Timing</div>
+                  <div class="funding-bar-pct" id="fundingPctMarket" style="color:var(--emerald)">0%</div>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-success" id="fundingFillMarket" data-width="0" style="width:0%"></div>
+                </div>
+              </div>
+              <div class="funding-bar-row">
+                <div class="funding-bar-header">
+                  <div class="funding-bar-name">Unit Economics</div>
+                  <div class="funding-bar-pct" id="fundingPctEconomics" style="color:var(--amber)">0%</div>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-warning" id="fundingFillEconomics" data-width="0" style="width:0%"></div>
+                </div>
+              </div>
+              <div class="funding-bar-row">
+                <div class="funding-bar-header">
+                  <div class="funding-bar-name">Investor Materials</div>
+                  <div class="funding-bar-pct" id="fundingPctInvestors" style="color:var(--rose)">0%</div>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-danger" id="fundingFillInvestors" data-width="0" style="width:0%"></div>
+                </div>
+              </div>
+              <div class="funding-bar-row">
+                <div class="funding-bar-header">
+                  <div class="funding-bar-name">Social Proof</div>
+                  <div class="funding-bar-pct" id="fundingPctSocial" style="color:var(--amber)">0%</div>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-warning" id="fundingFillSocial" data-width="0" style="width:0%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Score Progress Timeline -->
+          <div class="glass-card col-6 anim-fade-up delay-2" style="padding:1.5rem">
+            <div class="card-header">
+              <div class="card-title">
+                <div class="card-title-icon">📈</div> Score Progress
+              </div>
+              <span class="text-xs text-muted">Historical</span>
+            </div>
+            <div id="timelineWidget" style="padding:.5rem 0">
+              <p style="color:var(--text-muted);font-size:.85rem">No history yet — run multiple analyses to see progress.</p>
+            </div>
+          </div>
+
+          <!-- Activity Log -->
+          <div class="glass-card col-6 anim-fade-up delay-2" style="padding:1.5rem">
+            <div class="card-header">
+              <div class="card-title">
+                <div class="card-title-icon">📋</div> Activity Log
+              </div>
+              <span class="text-xs text-muted">Live</span>
+            </div>
+            <div class="timeline" id="activityLog">
+  <p style="color:var(--text-muted)">
+    Loading activity...
+  </p>
+</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── AI Recommendations ──────────────────────────────────────────── -->
+      <div id="recommendations" style="margin-top:2rem;margin-bottom:2rem">
+        <div class="card-header">
+          <div class="card-title" style="font-size:1.1rem">
+            <div class="card-title-icon">🤖</div> AI Recommendations
+          </div>
+          <div class="badge badge-warning" id="recommendationsBadge">0 Action Items</div>
+        </div>
+        <div class="dash-grid anim-fade-up">
+          <div class="col-12" id="recommendationList">
+            <p style="color:var(--text-muted);padding:.5rem 0">Loading recommendations…</p>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </main>
+  </div>
+</div>
+
+<!-- ── Export Modal ────────────────────────────────────────────────────────── -->
+<div class="modal-overlay" id="export-modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">📤 Export Report</div>
+      <button class="btn btn-ghost btn-icon" data-modal-close="export-modal">×</button>
+    </div>
+    <div class="modal-body">
+      <p style="font-size:.9rem;color:var(--text-secondary);margin-bottom:1.5rem">
+        Choose an export format for your survival analysis report.
+      </p>
+      <div style="display:flex;flex-direction:column;gap:.75rem">
+        <div class="risk-item" style="cursor:pointer"
+             onclick="Toast.success('Generating…','Your PDF report is being prepared.');Modal.close('export-modal')">
+          <div class="risk-level-bar" style="background:var(--rose,#f43f5e)"></div>
+          <div class="risk-content">
+            <div class="risk-name">📄 PDF Report</div>
+            <div class="risk-desc">Full survival analysis with charts and recommendations — ready to share with investors.</div>
+          </div>
+        </div>
+        <div class="risk-item" style="cursor:pointer"
+             onclick="Toast.success('Generating…','Your CSV export is ready.');Modal.close('export-modal')">
+          <div class="risk-level-bar" style="background:var(--emerald,#10b981)"></div>
+          <div class="risk-content">
+            <div class="risk-name">📊 CSV Data Export</div>
+            <div class="risk-desc">Raw metrics and scores in spreadsheet format for further analysis.</div>
+          </div>
+        </div>
+        <div class="risk-item" style="cursor:pointer"
+             onclick="Toast.success('Link copied!','Share link copied to clipboard.');Modal.close('export-modal')">
+          <div class="risk-level-bar" style="background:var(--indigo,#6366f1)"></div>
+          <div class="risk-content">
+            <div class="risk-name">🔗 Shareable Link</div>
+            <div class="risk-desc">Generate a private link to share this dashboard with your team or advisors.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" data-modal-close="export-modal">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast & Loading -->
+<div id="toast-container"></div>
+<div id="loading-overlay" class="loading-overlay">
+  <div class="loader-orb">
+    <div class="loader-ring"></div>
+    <div class="loader-ring-2"></div>
+  </div>
+  <div class="loader-text">Refreshing Analysis…</div>
+  <div class="loader-steps"></div>
+</div>
+
+<script src="js/utils.js"></script>
+<script type="module" src="js/supabase.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dashboard-init.js"></script>
+<script src="js/ai-mentor-init.js"></script>
+</body>
+</html>

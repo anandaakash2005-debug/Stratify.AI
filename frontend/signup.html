@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account — Satquery.AI</title>
+  <meta name="description" content="Create a Satquery.AI account for AI-powered startup analysis, risk intelligence, and strategic recommendations." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <!-- Page-Specific -->
+  <link rel="stylesheet" href="css/signup.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     AMBIENT BACKGROUND
+     ============================================================ -->
+<div class="bg-orbs">
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- ============================================================
+     NAVBAR — Identical to index.html & signin.html
+     ============================================================ -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img class="nav-logo-icon" src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="42" height="42" />
+    <span class="nav-logo-text">Satquery.AI</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html"    class="nav-link">Home</a></li>
+    <li><a href="analysis.html" class="nav-link">Analyze</a></li>
+    <li><a href="dashboard.html"class="nav-link">Dashboard</a></li>
+    <li><a href="report.html"   class="nav-link">Reports</a></li>
+  </ul>
+
+  <div class="nav-cta">
+    <button id="theme-toggle" class="btn btn-ghost btn-icon" title="Toggle theme">☀️</button>
+    <a href="signin.html"  class="btn btn-ghost btn-sm">Sign In</a>
+    <a href="signup.html"  class="btn btn-primary btn-sm active">Get Started →</a>
+  </div>
+
+  <button class="nav-hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav-mobile-menu">
+  <a href="index.html"    class="nav-mobile-link">Home</a>
+  <a href="analysis.html" class="nav-mobile-link">Analyze</a>
+  <a href="dashboard.html"class="nav-mobile-link">Dashboard</a>
+  <a href="report.html"   class="nav-mobile-link">Reports</a>
+  <a href="signup.html"   class="btn btn-primary" style="margin-top:.5rem">Get Started →</a>
+</div>
+
+<!-- ============================================================
+     PAGE CONTENT
+     ============================================================ -->
+<div class="page-content signup-page">
+  <div class="signup-layout">
+
+    <!-- =============================================
+         LEFT — Visual Showcase Panel
+         ============================================= -->
+    <div class="visual-panel">
+      <div class="visual-inner">
+
+        <div class="visual-tag">
+          <span class="dot"></span>
+          Join 12,400+ Founders
+        </div>
+
+        <h2 class="visual-heading">
+          Intelligence That Helps<br>
+          <span class="gradient-text">Startups Survive</span>
+        </h2>
+
+        <p class="visual-sub">
+          From idea to funding, Satquery.AI gives you the AI-powered clarity
+          to make the right decisions before the market does.
+        </p>
+
+        <!-- Feature Checklist -->
+        <div class="feature-checklist">
+
+          <div class="feature-check-item anim-slide-left delay-1">
+            <div class="check-icon-wrap check-icon-indigo">🎯</div>
+            <div class="check-body">
+              <div class="check-title">Survival Score — 0 to 100</div>
+              <div class="check-desc">A composite AI score predicting your startup's 12-month survival probability, updated as your data changes.</div>
+            </div>
+          </div>
+
+          <div class="feature-check-item anim-slide-left delay-2">
+            <div class="check-icon-wrap check-icon-cyan">📊</div>
+            <div class="check-body">
+              <div class="check-title">Risk Vector Analysis</div>
+              <div class="check-desc">Critical, high, and medium risk signals across financial, market, product, and operational dimensions.</div>
+            </div>
+          </div>
+
+          <div class="feature-check-item anim-slide-left delay-3">
+            <div class="check-icon-wrap check-icon-violet">🧬</div>
+            <div class="check-body">
+              <div class="check-title">Deep SWOT Intelligence</div>
+              <div class="check-desc">AI-generated SWOT tailored to your specific market, team stage, and competitive landscape.</div>
+            </div>
+          </div>
+
+          <div class="feature-check-item anim-slide-left delay-4">
+            <div class="check-icon-wrap check-icon-emerald">💰</div>
+            <div class="check-body">
+              <div class="check-title">Funding Readiness Score</div>
+              <div class="check-desc">Know where you stand before approaching VCs. Benchmark against 12,400+ funded startups.</div>
+            </div>
+          </div>
+
+          <div class="feature-check-item anim-slide-left delay-5">
+            <div class="check-icon-wrap check-icon-amber">🤖</div>
+            <div class="check-body">
+              <div class="check-title">AI Survival Recommendations</div>
+              <div class="check-desc">Prioritized, sequenced playbooks for your startup's weakest areas — not generic advice.</div>
+            </div>
+          </div>
+
+        </div><!-- /feature-checklist -->
+
+        <!-- Social Proof Strip -->
+        <div class="social-proof-strip anim-fade-up delay-6">
+          <div class="avatar-stack">
+            <div class="avatar avatar-a">R</div>
+            <div class="avatar avatar-b">S</div>
+            <div class="avatar avatar-c">M</div>
+            <div class="avatar avatar-d">A</div>
+            <div class="avatar avatar-e">+12k</div>
+          </div>
+          <div class="social-proof-text">
+            <div class="social-proof-count">12,400+ founders</div>
+            <div class="social-proof-sub">already building smarter</div>
+          </div>
+          <div class="social-proof-rating">
+            <div class="stars">★★★★★</div>
+            <div class="rating-val">4.9 / 5.0</div>
+          </div>
+        </div>
+
+      </div><!-- /visual-inner -->
+    </div><!-- /visual-panel -->
+
+    <!-- =============================================
+         RIGHT — Sign Up Card
+         ============================================= -->
+    <div class="auth-panel">
+      <div class="auth-card">
+
+        <!-- Success Overlay (shown after signup) -->
+        <div class="success-overlay" id="success-overlay" role="status" aria-live="polite">
+          <div class="success-ring">✓</div>
+          <div class="success-title">You're in, <span class="success-name"></span>! 🎉</div>
+          <p class="success-sub">
+            Your Satquery.AI account is ready.<br>
+            Taking you to your dashboard now.
+          </p>
+          <p class="success-note" style="margin-top:0.75rem; color:var(--text-secondary); font-size:0.95rem;">
+            In a full Supabase integration, an email confirmation would be sent to complete your signup.
+          </p>
+          <div class="success-redirect">
+            <span class="redirect-dot"></span>
+            Redirecting to dashboard…
+          </div>
+        </div>
+
+        <!-- Auth Header -->
+        <div class="auth-header">
+          <div class="auth-logo-ring"><img src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="40" height="40" /></div>
+          <h1 class="auth-title">Create Your Account</h1>
+          <p class="auth-subtitle">
+            Free forever for solo founders.<br>
+            No credit card required.
+          </p>
+        </div>
+
+        <!-- OAuth first (common SaaS pattern) -->
+        <div class="oauth-grid" style="margin-bottom:1.25rem;">
+          <button type="button" id="btn-google" class="btn-oauth">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Continue with Google
+          </button>
+
+          <button type="button" id="btn-github" class="btn-oauth">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            Continue with GitHub
+          </button>
+        </div>
+
+        <!-- Divider -->
+        <div class="auth-divider" style="margin-bottom:1.25rem;">
+          <div class="auth-divider-line"></div>
+          <span class="auth-divider-text">or sign up with email</span>
+          <div class="auth-divider-line"></div>
+        </div>
+
+        <!-- Signup Form -->
+        <form id="signup-form" class="auth-form" novalidate autocomplete="on">
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="full-name" class="form-label">
+              Full Name <span class="req">*</span>
+            </label>
+            <div class="input-wrap">
+              <span class="input-icon">👤</span>
+              <input
+                type="text"
+                id="full-name"
+                name="name"
+                class="form-control"
+                placeholder="Rahul Sharma"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="field-message" id="name-msg" role="alert"></div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email" class="form-label">
+              Work Email <span class="req">*</span>
+            </label>
+            <div class="input-wrap">
+              <span class="input-icon">✉</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="founder@startup.io"
+                autocomplete="email"
+                inputmode="email"
+                required
+              />
+            </div>
+            <div class="field-message" id="email-msg" role="alert"></div>
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <label for="password" class="form-label">
+              Password <span class="req">*</span>
+            </label>
+            <div class="input-wrap">
+              <span class="input-icon">🔒</span>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="Create a strong password"
+                autocomplete="new-password"
+                required
+              />
+              <button
+                type="button"
+                id="pw-toggle"
+                class="input-toggle"
+                aria-label="Show password"
+              >👁</button>
+            </div>
+
+            <!-- Password Strength Meter -->
+            <div class="strength-wrap" id="strength-wrap">
+              <div class="strength-bars" id="strength-bars">
+                <div class="strength-bar"></div>
+                <div class="strength-bar"></div>
+                <div class="strength-bar"></div>
+                <div class="strength-bar"></div>
+              </div>
+              <div class="strength-label">
+                <div class="strength-hints" id="strength-hints">
+                  <span class="strength-hint" data-criteria="len">8+ chars</span>
+                  <span class="strength-hint" data-criteria="upper">Uppercase</span>
+                  <span class="strength-hint" data-criteria="num">Number</span>
+                  <span class="strength-hint" data-criteria="symbol">Symbol</span>
+                </div>
+                <span class="strength-label-text" id="strength-label-text"></span>
+              </div>
+            </div>
+
+            <div class="field-message" id="password-msg" role="alert"></div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="form-group">
+            <label for="confirm-password" class="form-label">
+              Confirm Password <span class="req">*</span>
+            </label>
+            <div class="input-wrap">
+              <span class="input-icon">🔐</span>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                class="form-control"
+                placeholder="Re-enter your password"
+                autocomplete="new-password"
+                required
+              />
+              <button
+                type="button"
+                id="confirm-toggle"
+                class="input-toggle"
+                aria-label="Show password"
+              >👁</button>
+            </div>
+            <div class="field-message" id="confirm-msg" role="alert"></div>
+          </div>
+
+          <!-- Terms -->
+          <div class="form-group">
+            <label class="terms-wrap">
+              <input type="checkbox" id="terms" name="terms" required />
+              <span class="terms-label">
+                I agree to Satquery.AI's
+                <a href="#">Terms of Service</a> and
+                <a href="#">Privacy Policy</a>.
+                I'm cool with receiving product emails (unsubscribe anytime).
+              </span>
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            id="signup-btn"
+            class="btn-signup"
+          >
+            <span class="btn-spinner"></span>
+            <span class="btn-text">🚀 Create My Free Account</span>
+          </button>
+
+        </form><!-- /form -->
+
+        <!-- Switch to Sign In -->
+        <div class="auth-switch" style="margin-top:1.25rem;">
+          Already have an account?
+          <a href="signin.html">Sign in →</a>
+        </div>
+
+      </div><!-- /auth-card -->
+    </div><!-- /auth-panel -->
+
+  </div><!-- /signup-layout -->
+</div><!-- /page-content -->
+
+<!-- Toast Container -->
+<div id="toast-container"></div>
+
+<!-- ============================================================
+     SCRIPTS — Global first, page-specific last
+     ============================================================ -->
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+<script type="module" src="js/signup.js"></script>
+
+</body>
+</html>

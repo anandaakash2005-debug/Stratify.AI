@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In — Satquery.AI</title>
+  <meta name="description" content="Sign in to your Satquery.AI account to access AI-powered startup intelligence and analysis." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <!-- Page-Specific Styles -->
+  <link rel="stylesheet" href="css/signin.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     AMBIENT BACKGROUND — Same as index.html
+     ============================================================ -->
+<div class="bg-orbs">
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- ============================================================
+     NAVBAR — Identical to index.html
+     ============================================================ -->
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <img class="nav-logo-icon" src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="42" height="42" />
+    <span class="nav-logo-text">Satquery.AI</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html"    class="nav-link">Home</a></li>
+    <li><a href="analysis.html" class="nav-link">Analyze</a></li>
+    <li><a href="dashboard.html"class="nav-link">Dashboard</a></li>
+    <li><a href="report.html"   class="nav-link">Reports</a></li>
+  </ul>
+
+  <div class="nav-cta">
+    <button id="theme-toggle" class="btn btn-ghost btn-icon" title="Toggle theme">☀️</button>
+    <a href="signin.html"  class="btn btn-ghost btn-sm active">Sign In</a>
+    <a href="analysis.html" class="btn btn-primary btn-sm">Get Started →</a>
+  </div>
+
+  <button class="nav-hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav-mobile-menu">
+  <a href="index.html"    class="nav-mobile-link">Home</a>
+  <a href="analysis.html" class="nav-mobile-link">Analyze</a>
+  <a href="dashboard.html"class="nav-mobile-link">Dashboard</a>
+  <a href="report.html"   class="nav-mobile-link">Reports</a>
+  <a href="analysis.html" class="btn btn-primary" style="margin-top:.5rem">Get Started →</a>
+</div>
+
+<!-- ============================================================
+     PAGE CONTENT
+     ============================================================ -->
+<div class="page-content signin-page">
+  <div class="signin-layout">
+
+    <!-- =============================================
+         LEFT — Authentication Card
+         ============================================= -->
+    <div class="auth-panel">
+      <div class="auth-card anim-fade-up">
+
+        <!-- Logo ring + headings -->
+        <div class="auth-header">
+          <div class="auth-logo-ring"><img src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="40" height="40" /></div>
+          <h1 class="auth-title">Welcome Back</h1>
+          <p class="auth-subtitle">
+            Sign in to your Satquery.AI account and<br>
+            access your startup intelligence dashboard.
+          </p>
+        </div>
+
+        <!-- Sign In Form -->
+        <form id="signin-form" class="auth-form" novalidate autocomplete="on">
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email" class="form-label">
+              Email Address <span class="req">*</span>
+            </label>
+            <div class="input-wrap">
+              <span class="input-icon">✉</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="founder@startup.io"
+                autocomplete="email"
+                inputmode="email"
+                required
+              />
+            </div>
+            <div class="field-message" id="email-msg" role="alert"></div>
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+            <label for="password" class="form-label">
+              Password <span class="req">*</span>
+            </label>
+            <div class="input-wrap">
+              <span class="input-icon">🔒</span>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="Minimum 8 characters"
+                autocomplete="current-password"
+                required
+              />
+              <button
+                type="button"
+                id="pw-toggle"
+                class="input-toggle"
+                aria-label="Show password"
+              >👁</button>
+            </div>
+            <div class="field-message" id="password-msg" role="alert"></div>
+          </div>
+
+          <!-- Remember me + Forgot password -->
+          <div class="auth-row">
+            <label class="checkbox-wrap">
+              <input type="checkbox" id="remember" name="remember" />
+              <span class="checkbox-label">Remember me</span>
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <!-- Sign In Button -->
+          <button
+            type="submit"
+            id="signin-btn"
+            class="btn btn-primary btn-signin"
+          >
+            <span class="btn-spinner"></span>
+            <span class="btn-text">⚡ Sign In to Satquery.AI</span>
+          </button>
+
+          <!-- Demo shortcut -->
+          <button
+            type="button"
+            id="demo-signin"
+            class="btn btn-ghost w-full"
+            style="font-size:.82rem;"
+          >
+            🎯 Try with demo credentials
+          </button>
+
+        </form><!-- /form -->
+
+        <!-- OAuth Divider -->
+        <div class="auth-divider" style="margin: 1.25rem 0;">
+          <div class="auth-divider-line"></div>
+          <span class="auth-divider-text">or continue with</span>
+          <div class="auth-divider-line"></div>
+        </div>
+
+        <!-- OAuth Buttons -->
+        <div class="oauth-grid">
+          <button type="button" id="btn-google" class="btn-oauth">
+            <!-- Google icon inline SVG -->
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Google
+          </button>
+
+          <button type="button" id="btn-github" class="btn-oauth">
+            <!-- GitHub icon inline SVG -->
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            GitHub
+          </button>
+        </div>
+
+        <!-- Switch to Sign Up -->
+        <div class="auth-switch" style="margin-top: 1.5rem;">
+          Don't have an account?
+          <a href="signup.html">Create one free →</a>
+        </div>
+
+        <!-- Terms -->
+        <p class="auth-terms">
+          By signing in you agree to our
+          <a href="#">Terms of Service</a> and
+          <a href="#">Privacy Policy</a>.
+        </p>
+
+      </div><!-- /auth-card -->
+    </div><!-- /auth-panel -->
+
+    <!-- =============================================
+         RIGHT — Visual Showcase Panel
+         ============================================= -->
+    <div class="visual-panel">
+      <div class="visual-inner">
+
+        <!-- Heading -->
+        <div class="visual-tag">
+          <span class="dot" style="width:6px;height:6px;border-radius:50%;background:var(--indigo-light);display:inline-block;"></span>
+          Live Intelligence Platform
+        </div>
+
+        <h2 class="visual-heading">
+          Your Startup's<br>
+          <span class="gradient-text">Command Center</span>
+        </h2>
+
+        <p class="visual-sub">
+          Real-time survival analytics, competitor tracking, and AI-powered
+          recommendations — all in one place. Trusted by 12,400+ founders.
+        </p>
+
+        <!-- Dashboard Preview Card -->
+        <div class="dashboard-preview">
+
+          <!-- Card chrome -->
+          <div class="dashboard-preview-header">
+            <span class="dp-title">Satquery.AI Dashboard</span>
+            <div class="dp-dots">
+              <div class="dp-dot dp-dot-red"></div>
+              <div class="dp-dot dp-dot-amber"></div>
+              <div class="dp-dot dp-dot-green"></div>
+            </div>
+          </div>
+
+          <!-- Score Ring -->
+          <div class="score-ring-preview">
+            <svg class="score-ring-svg" width="80" height="80" viewBox="0 0 80 80">
+              <!-- Background track -->
+              <circle
+                cx="40" cy="40" r="34"
+                fill="none"
+                stroke="rgba(255,255,255,0.05)"
+                stroke-width="7"
+              />
+              <!-- Animated arc -->
+              <circle
+                class="score-arc"
+                cx="40" cy="40" r="34"
+                fill="none"
+                stroke="url(#scoreGrad)"
+                stroke-width="7"
+                stroke-linecap="round"
+                transform="rotate(-90 40 40)"
+                stroke-dasharray="220"
+                stroke-dashoffset="220"
+              />
+              <defs>
+                <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%"   stop-color="#6366f1"/>
+                  <stop offset="50%"  stop-color="#8b5cf6"/>
+                  <stop offset="100%" stop-color="#06b6d4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <div class="score-ring-info">
+              <div class="score-ring-value" data-count="78">0</div>
+              <div class="score-ring-label">Health Score</div>
+              <div class="score-ring-sub">↑ +12 this month</div>
+            </div>
+          </div>
+
+          <!-- Metric Bars -->
+          <div class="mini-metrics">
+            <div class="mini-metric-row">
+              <div class="mini-metric-header">
+                <span class="mini-metric-name">Market Readiness</span>
+                <span class="mini-metric-val">84%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill fill-info" data-width="84" style="width:0%"></div>
+              </div>
+            </div>
+
+            <div class="mini-metric-row">
+              <div class="mini-metric-header">
+                <span class="mini-metric-name">Funding Readiness</span>
+                <span class="mini-metric-val">61%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" data-width="61" style="width:0%"></div>
+              </div>
+            </div>
+
+            <div class="mini-metric-row">
+              <div class="mini-metric-header">
+                <span class="mini-metric-name">Burn Rate Risk</span>
+                <span class="mini-metric-val">38%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill fill-danger" data-width="38" style="width:0%"></div>
+              </div>
+            </div>
+
+            <div class="mini-metric-row">
+              <div class="mini-metric-header">
+                <span class="mini-metric-name">PMF Score</span>
+                <span class="mini-metric-val">72%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill fill-success" data-width="72" style="width:0%"></div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /dashboard-preview -->
+
+        <!-- Floating metric cards -->
+        <div class="floating-cards">
+
+          <div class="float-card float-card-1">
+            <div class="float-icon float-icon-green">📈</div>
+            <div>
+              <div class="float-label">Survival Probability</div>
+              <div class="float-value">73% → High</div>
+            </div>
+          </div>
+
+          <div class="float-card float-card-2">
+            <div class="float-icon float-icon-indigo">⚡</div>
+            <div>
+              <div class="float-label">AI Insights Generated</div>
+              <div class="float-value">24 Recommendations</div>
+            </div>
+          </div>
+
+          <div class="float-card float-card-3">
+            <div class="float-icon float-icon-amber">💰</div>
+            <div>
+              <div class="float-label">Runway Remaining</div>
+              <div class="float-value">8.4 Months</div>
+            </div>
+          </div>
+
+        </div><!-- /floating-cards -->
+
+        <!-- Trust badges -->
+        <div class="trust-row">
+          <div class="trust-item">
+            <span class="trust-icon">🔒</span>
+            <span>256-bit encryption</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✅</span>
+            <span>SOC 2 compliant</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🌍</span>
+            <span>12,400+ founders</span>
+          </div>
+        </div>
+
+      </div><!-- /visual-inner -->
+    </div><!-- /visual-panel -->
+
+  </div><!-- /signin-layout -->
+</div><!-- /page-content -->
+
+<!-- ============================================================
+     TOAST CONTAINER (from style.css)
+     ============================================================ -->
+<div id="toast-container"></div>
+
+<!-- ============================================================
+     SCRIPTS — Global first, page-specific last
+     ============================================================ -->
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+<script type="module" src="js/signin.js"></script>
+
+</body>
+</html>
