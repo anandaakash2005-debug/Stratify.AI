@@ -105,19 +105,16 @@ The persistence QA uses a local PGlite database.
 
 ## Remaining deployment decisions
 
-- Supply real Render secrets and exact service/custom-domain origins.
-- Confirm the selected Render plan can run PyTorch and the lazy-loaded
-  SentenceTransformer models without memory exhaustion.
-- Before public launch, restrict or remove the unauthenticated
-  `/api/v1/health/ai` endpoint: it makes a real OpenRouter request and returns
-  provider exception text. It was left unchanged because the existing API
-  contract is in scope for preservation; Render's configured health check uses
-  the separate, non-billable `/api/v1/health` endpoint.
-- Review and apply Supabase migrations in the real project when authorized.
-- Choose an OpenRouter model and verify its pricing/availability in the
-  provider dashboard; paid inference has not been tested.
-- Complete a live deployment smoke test after Git/GitHub setup. No Git
-  repository was initialized and no deploy was performed here.
+- Supply the required Render secrets and exact service or custom-domain origins.
+- Confirm that the selected Render plan has enough memory and disk for PyTorch and the lazy-loaded SentenceTransformer models.
+- `/api/v1/health/ai` is a non-billable configuration-status endpoint. It does not contact OpenRouter, consume tokens, or expose provider exceptions.
+- Render uses `/api/v1/health` for its health check.
+- Review and manually apply the required Supabase migrations.
+- Select a currently available OpenRouter model and verify its pricing.
+- Complete a live authentication, analysis, persistence, dashboard, report, and mentor smoke test after Render deployment.
+- Git was initialized and the project was pushed successfully to:
+  `https://github.com/anandaakash2005-debug/Stratify.AI`
+- No Render deployment or paid OpenRouter request has been performed yet.
 
 ## Official Render references
 
