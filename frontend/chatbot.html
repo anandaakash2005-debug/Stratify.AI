@@ -2,700 +2,929 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Mentor — Satquery.AI</title>
-  <meta name="description" content="AI-powered startup mentor providing personalized advice, recommendations, and strategic guidance." />
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>AI Copilot — Satquery.AI</title>
+
+  <meta
+    name="description"
+    content="Satquery.AI provides an AI-powered startup copilot for personalized analysis, recommendations, risk intelligence, funding strategy, and growth guidance."
+  />
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="assets/icons/favicon.svg"
+  />
+
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animations.css" />
-  <style>
-    .chatbot-page {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem 1rem;
-    }
-    .chatbot-header {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-    .chatbot-header h1 { font-size: 1.6rem; }
-    .chatbot-header p { color: var(--text-muted); font-size: .9rem; }
 
-    .chat-container {
-      background: var(--glass-bg);
-      backdrop-filter: blur(16px);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--r-lg);
+  <style>
+    .chat-layout {
+      display: flex;
+      width: min(1200px, calc(100% - 2rem));
+      min-height: calc(100vh - var(--nav-h, 68px) - 2rem);
+      margin: 0 auto 1rem;
+      padding-top: calc(var(--nav-h, 68px) + 20px);
+      gap: 1rem;
+    }
+
+    .chat-sidebar {
+      width: 300px;
+      flex-shrink: 0;
       display: flex;
       flex-direction: column;
-      height: 60vh;
-      min-height: 380px;
       overflow: hidden;
+      padding: 1rem;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r-lg);
+      backdrop-filter: blur(16px);
+    }
+
+    .sidebar-search {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 0.75rem;
+      padding: 0.55rem 0.75rem;
+      color: var(--text-primary);
+      font-size: 0.8rem;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--r-sm);
+      outline: none;
+    }
+
+    .sidebar-search::placeholder {
+      color: var(--text-muted);
+    }
+
+    .sidebar-search:focus {
+      border-color: var(--indigo);
+    }
+
+    .sidebar-section-label {
+      margin-bottom: 0.5rem;
+      color: var(--text-muted);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .sidebar-chat-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      overflow-y: auto;
+    }
+
+    .sidebar-chat-list::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    .sidebar-chat-list::-webkit-scrollbar-thumb {
+      background: var(--indigo);
+      border-radius: 4px;
+    }
+
+    .sidebar-empty-message {
+      margin: 0;
+      padding: 0.5rem 0;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+    }
+
+    .chat-history-item {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      line-height: 1.35;
+      text-align: left;
+      background: transparent;
+      border: 0;
+      border-radius: var(--r-sm);
+      cursor: pointer;
+      transition:
+        color 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .chat-history-item:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .chat-history-item .h-title {
+      overflow: hidden;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .chat-history-item .h-meta {
+      margin-top: 0.15rem;
+      color: var(--text-muted);
+      font-size: 0.68rem;
+    }
+
+    .chat-history-item .h-badge {
+      display: inline-block;
+      margin-top: 0.2rem;
+      padding: 0.1rem 0.35rem;
+      color: var(--indigo-light);
+      font-size: 0.6rem;
+      background: rgba(99, 102, 241, 0.15);
+      border-radius: 4px;
+    }
+
+    .chat-main {
+      min-width: 0;
+      min-height: 60vh;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--r-lg);
+      backdrop-filter: blur(16px);
     }
 
     .chat-header-bar {
       display: flex;
       align-items: center;
-      gap: .75rem;
-      padding: .85rem 1.25rem;
+      gap: 0.75rem;
+      padding: 0.85rem 1.25rem;
       border-bottom: 1px solid var(--glass-border);
     }
+
+    .chat-header-bar > span {
+      color: var(--text-primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .chat-header-bar small {
+      margin-left: auto;
+      color: var(--text-muted);
+      font-size: 0.72rem;
+    }
+
     .chat-status-dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--emerald);
+      width: 8px;
+      height: 8px;
       flex-shrink: 0;
-    }
-    .chat-status-dot.no-analysis { background: var(--amber); }
-    .chat-header-bar span { font-size: .85rem; font-weight: 600; color: var(--text-primary); }
-    .chat-header-bar small { font-size: .72rem; color: var(--text-muted); margin-left: auto; }
-
-    .chat-messages {
-      flex: 1;
-      overflow-y: auto;
-      padding: 1rem 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: .85rem;
-      scroll-behavior: smooth;
-    }
-    .chat-messages::-webkit-scrollbar { width: 4px; }
-    .chat-messages::-webkit-scrollbar-thumb { background: var(--indigo); border-radius: 4px; }
-
-    .msg {
-      max-width: 82%;
-      padding: .7rem 1rem;
-      border-radius: var(--r-md);
-      font-size: .875rem;
-      line-height: 1.55;
-      animation: msgIn .25s ease;
-      word-wrap: break-word;
-    }
-    @keyframes msgIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .msg.user {
-      align-self: flex-end;
-      background: var(--indigo);
-      color: #fff;
-      border-bottom-right-radius: 4px;
-    }
-    .msg.bot {
-      align-self: flex-start;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.05);
-      border-bottom-left-radius: 4px;
-    }
-    .msg.bot .msg-meta {
-      display: block;
-      font-size: .65rem;
-      color: var(--text-muted);
-      margin-top: .5rem;
-      opacity: .6;
-    }
-
-    .chat-typing {
-      align-self: flex-start;
-      display: flex;
-      align-items: center;
-      gap: .35rem;
-      padding: .7rem 1rem;
-      background: rgba(255,255,255,.06);
-      border-radius: var(--r-md);
-      border-bottom-left-radius: 4px;
-    }
-    .chat-typing span {
-      width: 6px; height: 6px;
+      background: var(--emerald);
       border-radius: 50%;
-      background: var(--text-muted);
-      animation: typingBounce 1.2s infinite;
-    }
-    .chat-typing span:nth-child(2) { animation-delay: .2s; }
-    .chat-typing span:nth-child(3) { animation-delay: .4s; }
-    @keyframes typingBounce {
-      0%,60%,100% { transform: translateY(0); }
-      30% { transform: translateY(-6px); }
     }
 
-    .chat-input-area {
-      display: flex;
-      gap: .5rem;
-      padding: .85rem 1.25rem;
-      border-top: 1px solid var(--glass-border);
+    .chat-status-dot.no-analysis {
+      background: var(--amber);
     }
-    .chat-input-area input {
-      flex: 1;
-      background: rgba(0,0,0,.3);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--r-sm);
-      padding: .6rem .85rem;
-      color: var(--text-primary);
-      font-size: .875rem;
-      outline: none;
-    }
-    .chat-input-area input::placeholder { color: var(--text-muted); opacity: .6; }
-    .chat-input-area input:focus { border-color: var(--indigo); }
-    .chat-input-area button {
-      background: var(--indigo);
-      color: #fff;
-      border: none;
-      border-radius: var(--r-sm);
-      padding: .6rem 1.1rem;
-      font-weight: 600;
-      cursor: pointer;
-      font-size: .875rem;
-      transition: background .2s;
-    }
-    .chat-input-area button:hover { background: var(--indigo-light); }
-    .chat-input-area button:disabled { opacity: .4; cursor: not-allowed; }
 
     .chat-analysis-badge {
       display: flex;
       align-items: center;
-      gap: .5rem;
-      padding: .55rem 1rem;
-      margin: 0 1.25rem .5rem;
-      border-radius: var(--r-sm);
-      font-size: .75rem;
-      background: rgba(16,185,129,.1);
-      border: 1px solid rgba(16,185,129,.2);
+      gap: 0.5rem;
+      margin: 0 1.25rem 0.5rem;
+      padding: 0.55rem 1rem;
       color: var(--emerald-light);
+      font-size: 0.75rem;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      border-radius: var(--r-sm);
     }
+
     .chat-analysis-badge.no-analysis {
-      background: rgba(245,158,11,.1);
-      border-color: rgba(245,158,11,.2);
       color: var(--amber-light);
+      background: rgba(245, 158, 11, 0.1);
+      border-color: rgba(245, 158, 11, 0.2);
     }
+
     .chat-analysis-badge a {
       margin-left: auto;
       color: var(--indigo-light);
+      font-weight: 600;
       text-decoration: none;
-      font-weight: 600;
     }
-    .chat-analysis-badge a:hover { text-decoration: underline; }
 
-    .welcome-suggestions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .5rem;
-      margin-top: .5rem;
+    .chat-analysis-badge a:hover {
+      text-decoration: underline;
     }
-    .welcome-suggestions button {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--r-sm);
-      padding: .4rem .75rem;
-      color: var(--text-secondary);
-      font-size: .78rem;
-      cursor: pointer;
-      transition: all .2s;
-    }
-    .welcome-suggestions button:hover {
-      background: rgba(99,102,241,.15);
-      border-color: var(--indigo);
-      color: var(--text-primary);
-    }
-    /* ─── ChatGPT-style layout ─────────────────────────────────────────────── */
-    .chat-layout {
-      display: flex;
-      max-width: 1200px;
-      margin: 0 auto 1rem;
-      padding: calc(var(--nav-h, 68px) + 20px) 1rem 0;
-      gap: 1rem;
-      min-height: 100vh;
-    }
-    .chat-sidebar {
-      width: 300px;
-      flex-shrink: 0;
-      background: var(--glass-bg);
-      backdrop-filter: blur(16px);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--r-lg);
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
-    .chat-sidebar .sidebar-search {
-      background: rgba(0,0,0,.3);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--r-sm);
-      padding: .55rem .75rem;
-      color: var(--text-primary);
-      font-size: .8rem;
-      outline: none;
-      margin-bottom: .75rem;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    .chat-sidebar .sidebar-search::placeholder { color: var(--text-muted); }
-    .chat-sidebar .sidebar-search:focus { border-color: var(--indigo); }
-    .sidebar-section-label {
-      font-size: .68rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      color: var(--text-muted);
-      margin-bottom: .5rem;
-    }
-    .sidebar-chat-list {
+
+    .chat-messages {
       flex: 1;
-      overflow-y: auto;
       display: flex;
       flex-direction: column;
-      gap: .35rem;
+      gap: 0.85rem;
+      overflow-y: auto;
+      padding: 1rem 1.25rem;
+      scroll-behavior: smooth;
     }
-    .sidebar-chat-list::-webkit-scrollbar { width: 3px; }
-    .sidebar-chat-list::-webkit-scrollbar-thumb { background: var(--indigo); border-radius: 4px; }
 
-    .chat-history-item {
-      padding: .6rem .75rem;
-      border-radius: var(--r-sm);
-      cursor: pointer;
-      font-size: .78rem;
-      color: var(--text-secondary);
-      line-height: 1.35;
-      transition: background .2s;
-      border: none;
-      background: transparent;
-      text-align: left;
-      width: 100%;
+    .chat-messages::-webkit-scrollbar {
+      width: 4px;
     }
-    .chat-history-item:hover {
-      background: rgba(255,255,255,.06);
-      color: var(--text-primary);
-    }
-    .chat-history-item .h-title {
-      font-weight: 600;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .chat-history-item .h-meta {
-      font-size: .68rem;
-      color: var(--text-muted);
-      margin-top: .15rem;
-    }
-    .chat-history-item .h-badge {
-      display: inline-block;
-      font-size: .6rem;
-      padding: .1rem .35rem;
+
+    .chat-messages::-webkit-scrollbar-thumb {
+      background: var(--indigo);
       border-radius: 4px;
-      background: rgba(99,102,241,.15);
-      color: var(--indigo-light);
-      margin-top: .2rem;
     }
-
-    .chat-main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      background: var(--glass-bg);
-      backdrop-filter: blur(16px);
-      border: 1px solid var(--glass-border);
-      border-radius: var(--r-lg);
-      overflow: hidden;
-      min-height: 60vh;
-    }
-    .chat-main .chat-header-bar {
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-      padding: .85rem 1.25rem;
-      border-bottom: 1px solid var(--glass-border);
-    }
-    .chat-main .chat-status-dot {
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: var(--emerald);
-      flex-shrink: 0;
-    }
-    .chat-main .chat-status-dot.no-analysis { background: var(--amber); }
-    .chat-main .chat-header-bar span { font-size: .85rem; font-weight: 600; color: var(--text-primary); }
-    .chat-main .chat-header-bar small { font-size: .72rem; color: var(--text-muted); margin-left: auto; }
-
-    .chat-messages {
-      flex: 1;
-      overflow-y: auto;
-      padding: 1rem 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: .85rem;
-      scroll-behavior: smooth;
-    }
-    .chat-messages::-webkit-scrollbar { width: 4px; }
-    .chat-messages::-webkit-scrollbar-thumb { background: var(--indigo); border-radius: 4px; }
 
     .msg {
       max-width: 82%;
-      padding: .7rem 1rem;
-      border-radius: var(--r-md);
-      font-size: .875rem;
+      padding: 0.7rem 1rem;
+      overflow-wrap: anywhere;
+      font-size: 0.875rem;
       line-height: 1.55;
-      animation: msgIn .25s ease;
-      word-wrap: break-word;
+      border-radius: var(--r-md);
+      animation: message-in 0.25s ease;
     }
-    @keyframes msgIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to   { opacity: 1; transform: translateY(0); }
+
+    @keyframes message-in {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     .msg.user {
       align-self: flex-end;
+      color: #ffffff;
       background: var(--indigo);
-      color: #fff;
       border-bottom-right-radius: 4px;
     }
+
     .msg.bot {
       align-self: flex-start;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.05);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.05);
       border-bottom-left-radius: 4px;
     }
-    .msg.bot .msg-meta {
+
+    .msg-meta {
       display: block;
-      font-size: .65rem;
+      margin-top: 0.5rem;
       color: var(--text-muted);
-      margin-top: .5rem;
-      opacity: .6;
+      font-size: 0.65rem;
+      opacity: 0.6;
     }
 
     .chat-typing {
       align-self: flex-start;
       display: flex;
       align-items: center;
-      gap: .35rem;
-      padding: .7rem 1rem;
-      background: rgba(255,255,255,.06);
+      gap: 0.35rem;
+      padding: 0.7rem 1rem;
+      background: rgba(255, 255, 255, 0.06);
       border-radius: var(--r-md);
       border-bottom-left-radius: 4px;
     }
+
     .chat-typing span {
-      width: 6px; height: 6px;
-      border-radius: 50%;
+      width: 6px;
+      height: 6px;
       background: var(--text-muted);
-      animation: typingBounce 1.2s infinite;
+      border-radius: 50%;
+      animation: typing-bounce 1.2s infinite;
     }
-    .chat-typing span:nth-child(2) { animation-delay: .2s; }
-    .chat-typing span:nth-child(3) { animation-delay: .4s; }
-    @keyframes typingBounce {
-      0%,60%,100% { transform: translateY(0); }
-      30% { transform: translateY(-6px); }
+
+    .chat-typing span:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .chat-typing span:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes typing-bounce {
+      0%,
+      60%,
+      100% {
+        transform: translateY(0);
+      }
+
+      30% {
+        transform: translateY(-6px);
+      }
     }
 
     .chat-input-area {
       display: flex;
-      gap: .5rem;
-      padding: .85rem 1.25rem;
+      gap: 0.5rem;
+      padding: 0.85rem 1.25rem;
       border-top: 1px solid var(--glass-border);
     }
+
     .chat-input-area input {
+      min-width: 0;
       flex: 1;
-      background: rgba(0,0,0,.3);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--r-sm);
-      padding: .6rem .85rem;
+      padding: 0.6rem 0.85rem;
       color: var(--text-primary);
-      font-size: .875rem;
+      font-size: 0.875rem;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--r-sm);
       outline: none;
     }
-    .chat-input-area input::placeholder { color: var(--text-muted); opacity: .6; }
-    .chat-input-area input:focus { border-color: var(--indigo); }
+
+    .chat-input-area input::placeholder {
+      color: var(--text-muted);
+      opacity: 0.6;
+    }
+
+    .chat-input-area input:focus {
+      border-color: var(--indigo);
+    }
+
     .chat-input-area button {
+      padding: 0.6rem 1.1rem;
+      color: #ffffff;
+      font-size: 0.875rem;
+      font-weight: 600;
       background: var(--indigo);
-      color: #fff;
-      border: none;
+      border: 0;
       border-radius: var(--r-sm);
-      padding: .6rem 1.1rem;
-      font-weight: 600;
       cursor: pointer;
-      font-size: .875rem;
-      transition: background .2s;
+      transition: background 0.2s ease;
     }
-    .chat-input-area button:hover { background: var(--indigo-light); }
-    .chat-input-area button:disabled { opacity: .4; cursor: not-allowed; }
 
-    .chat-analysis-badge {
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      padding: .55rem 1rem;
-      margin: 0 1.25rem .5rem;
-      border-radius: var(--r-sm);
-      font-size: .75rem;
-      background: rgba(16,185,129,.1);
-      border: 1px solid rgba(16,185,129,.2);
-      color: var(--emerald-light);
+    .chat-input-area button:hover {
+      background: var(--indigo-light);
     }
-    .chat-analysis-badge.no-analysis {
-      background: rgba(245,158,11,.1);
-      border-color: rgba(245,158,11,.2);
-      color: var(--amber-light);
-    }
-    .chat-analysis-badge a {
-      margin-left: auto;
-      color: var(--indigo-light);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .chat-analysis-badge a:hover { text-decoration: underline; }
 
-    .welcome-suggestions {
+    .chat-input-area button:disabled {
+      cursor: not-allowed;
+      opacity: 0.4;
+    }
+
+    .welcome-suggestions,
+    .mentor-suggestions {
       display: flex;
       flex-wrap: wrap;
-      gap: .5rem;
-      margin-top: .5rem;
-    }
-    .welcome-suggestions button {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--r-sm);
-      padding: .4rem .75rem;
-      color: var(--text-secondary);
-      font-size: .78rem;
-      cursor: pointer;
-      transition: all .2s;
-    }
-    .welcome-suggestions button:hover {
-      background: rgba(99,102,241,.15);
-      border-color: var(--indigo);
-      color: var(--text-primary);
+      gap: 0.5rem;
+      margin-top: 0.75rem;
     }
 
-    /* ─── Mentor Response Cards ───────────────────────────────────────────── */
+    .welcome-suggestions button,
+    .mentor-suggestions button {
+      padding: 0.4rem 0.75rem;
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--r-sm);
+      cursor: pointer;
+      transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .welcome-suggestions button:hover,
+    .mentor-suggestions button:hover {
+      color: var(--text-primary);
+      background: rgba(99, 102, 241, 0.15);
+      border-color: var(--indigo);
+    }
+
     .mentor-headline {
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
       font-size: 1rem;
       font-weight: 700;
-      color: var(--text-primary);
-      margin-bottom: .5rem;
       line-height: 1.4;
     }
+
     .mentor-summary {
-      font-size: .85rem;
+      margin-bottom: 0.75rem;
       color: var(--text-secondary);
+      font-size: 0.85rem;
       line-height: 1.55;
-      margin-bottom: .75rem;
     }
+
     .mentor-metrics {
       display: flex;
       flex-wrap: wrap;
-      gap: .5rem;
-      margin-bottom: .75rem;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
     }
+
     .mentor-metric-chip {
       display: inline-flex;
       align-items: center;
-      gap: .35rem;
-      padding: .3rem .65rem;
-      border-radius: 20px;
-      font-size: .75rem;
+      gap: 0.35rem;
+      padding: 0.3rem 0.65rem;
+      font-size: 0.75rem;
       font-weight: 600;
-      border: 1px solid rgba(255,255,255,.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
     }
-    .mentor-metric-chip.red   { background: rgba(239,68,68,.15); color: #f87171; border-color: rgba(239,68,68,.3); }
-    .mentor-metric-chip.yellow{ background: rgba(234,179,8,.15); color: #fbbf24; border-color: rgba(234,179,8,.3); }
-    .mentor-metric-chip.green { background: rgba(16,185,129,.15); color: #34d399; border-color: rgba(16,185,129,.3); }
+
+    .mentor-metric-chip.red {
+      color: #f87171;
+      background: rgba(239, 68, 68, 0.15);
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+
+    .mentor-metric-chip.yellow {
+      color: #fbbf24;
+      background: rgba(234, 179, 8, 0.15);
+      border-color: rgba(234, 179, 8, 0.3);
+    }
+
+    .mentor-metric-chip.green {
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.15);
+      border-color: rgba(16, 185, 129, 0.3);
+    }
 
     .mentor-section {
-      margin-bottom: .65rem;
+      margin-bottom: 0.65rem;
     }
+
     .mentor-section-title {
-      font-size: .72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .05em;
+      margin-bottom: 0.35rem;
       color: var(--text-muted);
-      margin-bottom: .35rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
+
     .mentor-insight-item {
-      font-size: .82rem;
+      margin-bottom: 0.25rem;
+      padding: 0.3rem 0 0.3rem 0.75rem;
       color: var(--text-secondary);
-      padding: .3rem 0 .3rem .75rem;
-      border-left: 2px solid var(--indigo);
-      margin-bottom: .25rem;
+      font-size: 0.82rem;
       line-height: 1.4;
+      border-left: 2px solid var(--indigo);
     }
+
     .mentor-action-item {
+      width: 100%;
       display: flex;
       align-items: flex-start;
-      gap: .5rem;
-      font-size: .82rem;
+      gap: 0.5rem;
+      padding: 0.25rem 0;
       color: var(--text-secondary);
-      padding: .25rem 0;
+      font: inherit;
+      font-size: 0.82rem;
+      text-align: left;
+      background: transparent;
+      border: 0;
       cursor: pointer;
     }
-    .mentor-action-item:hover { color: var(--text-primary); }
+
+    .mentor-action-item:hover {
+      color: var(--text-primary);
+    }
+
     .mentor-action-checkbox {
-      width: 16px; height: 16px;
-      border: 2px solid var(--text-muted);
-      border-radius: 3px;
+      width: 16px;
+      height: 16px;
       flex-shrink: 0;
       margin-top: 2px;
-      cursor: pointer;
-      transition: all .2s;
+      border: 2px solid var(--text-muted);
+      border-radius: 3px;
+      transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
     }
+
     .mentor-action-checkbox.checked {
       background: var(--indigo);
       border-color: var(--indigo);
     }
+
     .mentor-action-checkbox.checked::after {
-      content: '✓';
+      content: "✓";
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: #ffffff;
       font-size: 11px;
       font-weight: 700;
     }
+
     .mentor-follow-up {
-      margin-top: .75rem;
-      padding: .5rem .75rem;
-      background: rgba(99,102,241,.08);
-      border-radius: var(--r-sm);
-      font-size: .82rem;
+      margin-top: 0.75rem;
+      padding: 0.5rem 0.75rem;
       color: var(--indigo-light);
+      font-size: 0.82rem;
+      background: rgba(99, 102, 241, 0.08);
       border-left: 3px solid var(--indigo);
-    }
-    .mentor-suggestions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .4rem;
-      margin-top: .75rem;
-    }
-    .mentor-suggestions button {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
       border-radius: var(--r-sm);
-      padding: .35rem .65rem;
-      color: var(--text-secondary);
-      font-size: .75rem;
-      cursor: pointer;
-      transition: all .2s;
-      white-space: nowrap;
     }
-    .mentor-suggestions button:hover {
-      background: rgba(99,102,241,.15);
-      border-color: var(--indigo);
-      color: var(--text-primary);
-    }
+
     .mentor-deep-toggle {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--r-sm);
-      padding: .35rem .65rem;
+      margin-top: 0.5rem;
+      padding: 0.35rem 0.65rem;
       color: var(--text-muted);
-      font-size: .72rem;
+      font-size: 0.72rem;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--r-sm);
       cursor: pointer;
-      margin-top: .5rem;
-      transition: all .2s;
     }
+
     .mentor-deep-toggle:hover {
       color: var(--text-primary);
       border-color: var(--indigo);
     }
+
     .mentor-deep-content {
       display: none;
-      margin-top: .5rem;
-      padding: .5rem .75rem;
-      background: rgba(0,0,0,.15);
-      border-radius: var(--r-sm);
-      font-size: .82rem;
+      margin-top: 0.5rem;
+      padding: 0.5rem 0.75rem;
       color: var(--text-secondary);
+      font-size: 0.82rem;
       line-height: 1.5;
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: var(--r-sm);
     }
-    .mentor-deep-content.open { display: block; }
+
+    .mentor-deep-content.open {
+      display: block;
+    }
+
+    .mentor-card {
+      margin-bottom: 0.6rem;
+      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+    }
+
+    .mentor-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .mentor-card-medal {
+      font-size: 1.1rem;
+    }
+
+    .mentor-card-identity {
+      min-width: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mentor-card-identity strong {
+      color: var(--text-primary);
+    }
+
+    .mentor-card-identity span {
+      color: var(--text-muted);
+      font-size: 0.78rem;
+    }
+
+    .mentor-card-reason {
+      padding-left: 1.7rem;
+      color: var(--text-secondary);
+      font-size: 0.78rem;
+      line-height: 1.4;
+    }
+
+    .mentor-next-steps {
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 850px) {
+      .chat-layout {
+        width: min(100% - 1rem, 720px);
+        flex-direction: column;
+      }
+
+      .chat-sidebar {
+        width: auto;
+        max-height: 240px;
+      }
+
+      .chat-main {
+        min-height: 68vh;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .chat-layout {
+        width: calc(100% - 0.75rem);
+        padding-top: calc(var(--nav-h, 68px) + 10px);
+      }
+
+      .chat-sidebar {
+        padding: 0.75rem;
+      }
+
+      .chat-header-bar,
+      .chat-input-area {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+      }
+
+      .chat-analysis-badge {
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+      }
+
+      .chat-messages {
+        padding: 0.8rem;
+      }
+
+      .msg {
+        max-width: 92%;
+      }
+
+      .chat-analysis-badge {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .chat-analysis-badge a {
+        margin-left: 0;
+      }
+
+      .chat-input-area button {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+      }
+    }
   </style>
 </head>
+
 <body>
-<div class="bg-orbs">
-  <div class="bg-orb bg-orb-1"></div>
-  <div class="bg-orb bg-orb-2"></div>
-  <div class="bg-orb bg-orb-3"></div>
-</div>
-<div class="bg-grid"></div>
-
-<!-- Navbar -->
-<nav class="navbar">
-  <a href="index.html" class="nav-logo">
-    <img class="nav-logo-icon" src="assets/icons/satquery-logo.svg" alt="Satquery.AI logo" width="42" height="42" />
-    <span class="nav-logo-text">Satquery.AI</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="index.html" class="nav-link">Home</a></li>
-    <li><a href="analysis.html" class="nav-link">Analyze</a></li>
-    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
-    <li><a href="report.html" class="nav-link">Reports</a></li>
-    <li><a href="chatbot.html" class="ai-nav-btn active">🚀 AI Copilot</a></li>
-  </ul>
-  <div class="nav-cta">
-    <button id="theme-toggle" class="btn btn-ghost btn-icon" title="Toggle theme">☀️</button>
-    <a href="dashboard.html" class="btn btn-ghost btn-sm">View Dashboard</a>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
   </div>
-  <button class="nav-hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-<div class="nav-mobile-menu">
-  <a href="index.html" class="nav-mobile-link">Home</a>
-  <a href="analysis.html" class="nav-mobile-link">Analyze</a>
-  <a href="dashboard.html" class="nav-mobile-link">Dashboard</a>
-  <a href="report.html" class="nav-mobile-link">Reports</a>
-  <a href="chatbot.html" class="ai-nav-btn">🚀 AI Copilot</a>
-</div>
 
-<div class="chat-layout">
-  <aside class="chat-sidebar">
-    <button id="new-chat-btn" class="btn btn-glass" style="width:100%;margin-bottom:.75rem">+ New Chat</button>
-    <input type="text" id="chat-search" class="sidebar-search" placeholder="Search chats..." />
-    <div class="sidebar-section-label">Recent Conversations</div>
-    <div id="recent-chats" class="sidebar-chat-list"></div>
-  </aside>
+  <div class="bg-grid" aria-hidden="true"></div>
 
-  <main class="chat-main">
-    <div class="chat-header-bar">
-      <div class="chat-status-dot" id="chat-status-dot"></div>
-      <span>Startup Analyst</span>
-      <small id="analysis-label">No analysis loaded</small>
+  <nav class="navbar">
+    <a
+      href="index.html"
+      class="nav-logo"
+      aria-label="Satquery.AI home"
+    >
+      <img
+        class="nav-logo-icon"
+        src="assets/icons/satquery-logo.svg"
+        alt="Satquery.AI logo"
+        width="42"
+        height="42"
+      />
+
+      <span class="nav-logo-text">Satquery.AI</span>
+    </a>
+
+    <ul class="nav-links">
+      <li>
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+
+      <li>
+        <a href="analysis.html" class="nav-link">Analyze</a>
+      </li>
+
+      <li>
+        <a href="dashboard.html" class="nav-link">
+          Dashboard
+        </a>
+      </li>
+
+      <li>
+        <a href="report.html" class="nav-link">Reports</a>
+      </li>
+
+      <li>
+        <a
+          href="chatbot.html"
+          class="ai-nav-btn active"
+          aria-current="page"
+        >
+          🚀 AI Copilot
+        </a>
+      </li>
+    </ul>
+
+    <div class="nav-cta">
+      <button
+        id="theme-toggle"
+        class="btn btn-ghost btn-icon"
+        type="button"
+        title="Toggle theme"
+        aria-label="Toggle theme"
+      >
+        ☀️
+      </button>
+
+      <a
+        href="dashboard.html"
+        class="btn btn-ghost btn-sm"
+      >
+        View Dashboard
+      </a>
     </div>
 
-    <div id="analysis-badge" class="chat-analysis-badge no-analysis">
-      <span>⚠️ No analysis data found. Run an analysis first.</span>
-      <a href="analysis.html">Analyze Now →</a>
-    </div>
+    <button
+      class="nav-hamburger"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-    <div class="chat-messages" id="chat-messages">
-      <div class="msg bot">
-        Hi! I'm your startup intelligence assistant. Ask me anything about your analysis — survival score, risks, funding readiness, team evaluation, or recommendations.
-        <div class="welcome-suggestions">
-          <button onclick="window.ChatBot.send('What is my survival score?')">What is my survival score?</button>
-          <button onclick="window.ChatBot.send('What are my biggest risks?')">What are my biggest risks?</button>
-          <button onclick="window.ChatBot.send('How can I improve funding readiness?')">How can I improve funding readiness?</button>
-          <button onclick="window.ChatBot.send('Analyze my startup')">Analyze my startup</button>
+  <div class="nav-mobile-menu">
+    <a href="index.html" class="nav-mobile-link">Home</a>
+
+    <a href="analysis.html" class="nav-mobile-link">
+      Analyze
+    </a>
+
+    <a href="dashboard.html" class="nav-mobile-link">
+      Dashboard
+    </a>
+
+    <a href="report.html" class="nav-mobile-link">
+      Reports
+    </a>
+
+    <a
+      href="chatbot.html"
+      class="ai-nav-btn active"
+      aria-current="page"
+    >
+      🚀 AI Copilot
+    </a>
+  </div>
+
+  <div class="chat-layout">
+    <aside class="chat-sidebar">
+      <button
+        id="new-chat-btn"
+        class="btn btn-glass"
+        type="button"
+        style="width: 100%; margin-bottom: 0.75rem"
+      >
+        + New Chat
+      </button>
+
+      <label
+        for="chat-search"
+        class="sidebar-section-label"
+      >
+        Search conversations
+      </label>
+
+      <input
+        type="search"
+        id="chat-search"
+        class="sidebar-search"
+        placeholder="Search chats..."
+        autocomplete="off"
+      />
+
+      <div class="sidebar-section-label">
+        Recent Conversations
+      </div>
+
+      <div
+        id="recent-chats"
+        class="sidebar-chat-list"
+        aria-live="polite"
+      ></div>
+    </aside>
+
+    <main class="chat-main">
+      <div class="chat-header-bar">
+        <div
+          class="chat-status-dot"
+          id="chat-status-dot"
+          aria-hidden="true"
+        ></div>
+
+        <span>Startup Analyst</span>
+
+        <small id="analysis-label">
+          No analysis loaded
+        </small>
+      </div>
+
+      <div
+        id="analysis-badge"
+        class="chat-analysis-badge no-analysis"
+      >
+        <span>
+          ⚠️ No analysis data found. Run an analysis first.
+        </span>
+
+        <a href="analysis.html">Analyze Now →</a>
+      </div>
+
+      <div
+        class="chat-messages"
+        id="chat-messages"
+        aria-live="polite"
+        aria-label="AI Copilot conversation"
+      >
+        <div class="msg bot">
+          <div>
+            Hi! I'm your startup intelligence assistant.
+            Ask me anything about your analysis — survival
+            score, risks, funding readiness, team evaluation,
+            or recommendations.
+          </div>
+
+          <div class="welcome-suggestions">
+            <button
+              type="button"
+              onclick="window.ChatBot.send('What is my survival score?')"
+            >
+              What is my survival score?
+            </button>
+
+            <button
+              type="button"
+              onclick="window.ChatBot.send('What are my biggest risks?')"
+            >
+              What are my biggest risks?
+            </button>
+
+            <button
+              type="button"
+              onclick="window.ChatBot.send('How can I improve funding readiness?')"
+            >
+              How can I improve funding readiness?
+            </button>
+
+            <button
+              type="button"
+              onclick="window.ChatBot.send('Analyze my startup')"
+            >
+              Analyze my startup
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="chat-input-area">
-      <input type="text" id="chat-input" placeholder="Ask about your startup..." autocomplete="off" />
-      <button id="chat-send-btn">Send</button>
-    </div>
-  </main>
-</div>
+      <div class="chat-input-area">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Ask about your startup..."
+          autocomplete="off"
+          aria-label="Message for the AI Copilot"
+        />
 
-<!-- Toast & Loading -->
-<div id="toast-container"></div>
-<div id="loading-overlay" class="loading-overlay">
-  <div class="loader-orb">
-    <div class="loader-ring"></div>
-    <div class="loader-ring-2"></div>
+        <button
+          id="chat-send-btn"
+          type="button"
+        >
+          Send
+        </button>
+      </div>
+    </main>
   </div>
-  <div class="loader-text">Thinking…</div>
-  <div class="loader-steps"></div>
-</div>
 
-<script src="js/utils.js"></script>
-<script src="js/main.js"></script>
-<script type="module" src="js/config.js"></script>
-<script src="js/chatbot.js"></script>
+  <div id="toast-container"></div>
+
+  <div
+    id="loading-overlay"
+    class="loading-overlay"
+    aria-hidden="true"
+  >
+    <div class="loader-orb">
+      <div class="loader-ring"></div>
+      <div class="loader-ring-2"></div>
+    </div>
+
+    <div class="loader-text">Thinking…</div>
+    <div class="loader-steps"></div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="js/chatbot.js"></script>
 </body>
 </html>
