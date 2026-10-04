@@ -2,34 +2,47 @@ services:
   - type: web
     name: satquery-api
     runtime: python
+    plan: free
     rootDir: backend
     autoDeployTrigger: "off"
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /api/v1/health
+
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.13
+
       - key: ENVIRONMENT
         value: production
+
       - key: DEBUG
         value: "false"
+
       - key: AI_PROVIDER
         value: openrouter
+
       - key: SECRET_KEY
         generateValue: true
+
       - key: OPENROUTER_API_KEY
         sync: false
+
       - key: PRIMARY_MODEL
         sync: false
+
       - key: SUPABASE_URL
         sync: false
+
       - key: SUPABASE_ANON_KEY
         sync: false
+
       - key: SUPABASE_SERVICE_KEY
         sync: false
+
       - key: ALLOWED_ORIGINS
         sync: false
+
       - key: ALLOWED_HOSTS
         sync: false
 
@@ -40,19 +53,23 @@ services:
     autoDeployTrigger: "off"
     buildCommand: node scripts/build-render-frontend.mjs
     staticPublishPath: ./dist
+
     envVars:
       - key: SATQUERY_API_URL
         fromService:
           type: web
           name: satquery-api
           property: host
+
     headers:
       - path: /*
         name: X-Content-Type-Options
         value: nosniff
+
       - path: /*
         name: Referrer-Policy
         value: strict-origin-when-cross-origin
+
       - path: /*
         name: X-Frame-Options
         value: DENY
